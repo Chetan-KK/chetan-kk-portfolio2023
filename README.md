@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Chetan-KK
 - 👀 I’m interested in Web Devlopment
-- 🌱 I’m currently learning Js
+- 🌱 I’m currently learning THREE JS
 - 💞️ I’m looking to collaborate on Website
 - 📫 How to reach me Mail me
