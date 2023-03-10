@@ -1,0 +1,23 @@
+.Hero {
+  justify-content: space-around;
+  margin: 3rem 0 9rem 0;
+}
+.Hero .left {
+  width: 40rem;
+}
+.Hero .left .main-titles {
+  margin: 1.5rem 0;
+}
+.Hero .left .sub-heading {
+  width: 27rem;
+  margin: 1rem 0;
+}
+.Hero .left .connect .button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+.Hero .right img {
+  width: 25rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+}

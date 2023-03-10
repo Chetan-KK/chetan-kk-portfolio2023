@@ -1,0 +1,58 @@
+.Projects {
+  margin: 5vw;
+  text-align: center;
+}
+.projects {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projects .Project {
+  width: 20rem;
+  margin: 2rem;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  transition: var(--transition);
+}
+.projects .Project:hover {
+  transform: translateY(-5px);
+}
+.projects .Project img {
+  width: 15rem;
+  height: 9rem;
+  border-radius: 5px;
+}
+.projects .Project .title {
+  justify-content: space-between;
+  font-family: var(--ff);
+  margin: 1rem 0 0 0;
+  position: relative;
+}
+.projects .Project .title .name {
+  text-align: left;
+}
+.projects .Project .title .name {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.projects .Project .title .year {
+  color: var(--text-c-link);
+  width: 4.5rem;
+  font-size: 0.8rem;
+}
+.projects .Project .desc {
+  margin: 1rem 0 2rem 0;
+  text-align: left;
+}
+.projects .Project .desc a {
+  font-size: 0.7rem;
+  color: var(--light-text-c);
+  font-family: var(--ff);
+}
+.projects .Project .button {
+  padding: 0.7rem 1.4rem;
+}
+.projects .Project .git {
+  padding: 0.7rem 1rem;
+}
