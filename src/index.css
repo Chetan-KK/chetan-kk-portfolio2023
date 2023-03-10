@@ -15,14 +15,25 @@
   --primary-color: #ff014f;
   --secondary-color: #131313;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
-  --button-gradient: linear-gradient(145deg, #151616, #000000);
+  --button-gradient: linear-gradient(145deg, #141414, #0a0a0a);
   --blur-c: rgba(32, 32, 32, 0.5);
   --text-c-link: #96a3b6;
   --text-c-hover: #f8f9fa;
   --light-text-c: #e1e6ee;
-  --shadow: 5px 5px 15px #1e2022, -5px -5px 15px #0f0f0f;
+  --shadow: 5px 5px 15px #1a1a1b, -5px -5px 15px #0f0f0f;
   --ff: "Poppins", sans-serif;
   --transition: 0.2s;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-image: var(--primary-gradient);
+  border-radius: 100vw;
+}
+::selection {
+  background-color: var(--primary-color);
+  color: var(--light-text-c);
 }
 *,
 *::before,
@@ -37,9 +48,11 @@ a {
 body {
   background-color: var(--secondary-color);
 }
-hr {
+.hr {
   width: 80vw;
   margin: auto;
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
 }
 .center {
   text-align: center;
@@ -58,7 +71,7 @@ hr {
   left: 0;
   height: 3px;
   border-radius: 100vw;
-  width: 30%;
+  width: 30px;
   transition: var(--transition);
   background-image: var(--primary-gradient);
 }

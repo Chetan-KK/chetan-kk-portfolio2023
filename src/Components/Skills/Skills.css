@@ -1,0 +1,54 @@
+.Skills {
+  text-align: center;
+}
+.all-skills {
+  margin: 2rem;
+  justify-content: space-around;
+}
+.all-skills .left {
+  width: 40vw;
+  text-align: left;
+  color: var(--light-text-c);
+  font-family: var(--ff);
+}
+.all-skills .left ul li {
+  list-style-type: "</> ";
+  position: relative;
+  margin: 1rem 0;
+}
+.all-skills .right {
+  width: 45vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.all-skills .skill-img {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  filter: grayscale(1);
+  aspect-ratio: 1;
+  transition: var(--transition);
+  position: relative;
+}
+.all-skills .right .Skill {
+  position: relative;
+}
+.all-skills .right .Skill::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0%;
+  width: 0%;
+  background-color: var(--primary-color);
+  border-radius: 100vw;
+  /* box-shadow: 0 0 100px 40px var(--primary-color); */
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+}
+.all-skills .right .Skill:hover::before {
+  box-shadow: 0 0 70px 20px var(--primary-color);
+}
+.all-skills .skill-img:hover {
+  filter: grayscale(0);
+}

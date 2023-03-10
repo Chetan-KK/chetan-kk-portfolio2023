@@ -3,9 +3,8 @@ import icon from "/favicon.svg";
 import "./Navbar.css";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [scrolled, setScrolled] = useState(false);
-  const [mode, setMode] = useState("light");
 
   window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 300) {
@@ -14,18 +13,6 @@ export default function Navbar() {
       setScrolled(false);
     }
   });
-
-  function toggleMode() {
-    if (mode === "light") {
-      setMode("dark");
-      window.document.body.classList.add("dark");
-      window.document.body.classList.remove("light");
-    } else {
-      setMode("light");
-      window.document.body.classList.add("light");
-      window.document.body.classList.remove("dark");
-    }
-  }
 
   return (
     <div className={`Navbar flex ${scrolled ? "stick" : ""}`}>
@@ -50,14 +37,14 @@ export default function Navbar() {
           <div className="button contact-button">Contact</div>
         </Link>
         <div
-          onClick={toggleMode}
+          onClick={props.modeEvent}
           className="button flex"
           style={{ justifyContent: "center", width: "40px", height: "40px" }}
         >
-          {mode == "light" ? (
-            <i class="fa-solid fa-moon"></i>
+          {props.mode == "light" ? (
+            <i className="fa-solid fa-moon"></i>
           ) : (
-            <i class="fa-solid fa-sun"></i>
+            <i className="fa-solid fa-sun"></i>
           )}
         </div>
       </div>

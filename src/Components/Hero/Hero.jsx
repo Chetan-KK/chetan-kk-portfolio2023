@@ -1,8 +1,9 @@
 import React from "react";
 import "./Hero.css";
 import myImg from "/me.png";
+import myDarkImg from "/medark.png";
 
-function Hero() {
+function Hero(props) {
   return (
     <div className="Hero flex">
       <div className="left">
@@ -44,7 +45,9 @@ function Hero() {
         </div>
       </div>
       <div className="right">
-        <img src={myImg} alt="" />
+        <div className={props.mode === "dark" ? "darkImg" : ""}>
+          <img src={myImg} alt="" />
+        </div>
       </div>
     </div>
   );

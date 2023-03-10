@@ -26,7 +26,7 @@
 .projects .Project .title {
   justify-content: space-between;
   font-family: var(--ff);
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
   position: relative;
 }
 .projects .Project .title .name {
@@ -42,7 +42,7 @@
   font-size: 0.8rem;
 }
 .projects .Project .desc {
-  margin: 1rem 0 2rem 0;
+  margin: 2rem 0 3rem 0;
   text-align: left;
 }
 .projects .Project .desc a {

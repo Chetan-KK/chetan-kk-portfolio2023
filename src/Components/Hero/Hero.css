@@ -21,3 +21,16 @@
   box-shadow: var(--shadow);
   border-radius: 20px;
 }
+.darkImg {
+  position: relative;
+}
+.darkImg::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.548);
+}
