@@ -72,7 +72,7 @@
     padding: calc(3rem + 3vw);
     box-shadow: var(--shadow);
     background-color: var(--blur);
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(80px);
     top: 0;
     right: 0;
     z-index: 99;
@@ -86,6 +86,7 @@
     right: -100% !important;
   }
   .Navbar .right .buttons {
+    padding-bottom: 4rem;
     flex-wrap: wrap;
     height: 100%;
     padding-top: 3rem;
@@ -113,6 +114,11 @@
   .Navbar {
     padding: 1rem 0.5rem;
   }
+  .Navbar .right {
+    padding: 2rem 1rem;
+    align-items: flex-start;
+    gap: 0;
+  }
   .Navbar .logo {
     font-size: 1rem;
   }
@@ -127,6 +133,6 @@
 
   .Navbar .right .buttons {
     padding-top: 0;
-    height: max-content;
+    height: min-content;
   }
 }
