@@ -52,3 +52,14 @@
 .all-skills .skill-img:hover {
   filter: grayscale(0);
 }
+@media screen and (max-width: 900px) {
+  .all-skills {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .all-skills .left,
+  .all-skills .right {
+    width: 80vw;
+  }
+}

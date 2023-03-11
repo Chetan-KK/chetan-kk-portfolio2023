@@ -1,9 +1,11 @@
 .Hero {
   justify-content: space-around;
-  margin: 3rem 0 9rem 0;
+  flex-wrap: wrap;
+  margin: 9rem 2rem 9rem 2rem;
 }
 .Hero .left {
   width: 40rem;
+  margin-bottom: 3rem;
 }
 .Hero .left .main-titles {
   margin: 1.5rem 0;
@@ -14,7 +16,8 @@
 }
 .Hero .left .connect .button {
   padding: 0.5rem 1rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
+  z-index: 1;
 }
 .Hero .right img {
   width: 25rem;
@@ -23,6 +26,7 @@
 }
 .darkImg {
   position: relative;
+  z-index: -1;
 }
 .darkImg::before {
   content: "";
@@ -32,5 +36,14 @@
   width: 100%;
   position: absolute;
   border-radius: 20px;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.548);
+}
+@media screen and (max-width: 600px) {
+  .Hero .left .sub-heading {
+    width: 80vw;
+  }
+  .Hero .right img {
+    width: 80vw;
+  }
 }

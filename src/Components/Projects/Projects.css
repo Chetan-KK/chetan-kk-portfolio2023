@@ -7,6 +7,7 @@
   justify-content: space-around;
 }
 .projects .Project {
+  min-width: 20rem;
   width: 20rem;
   margin: 2rem;
   box-shadow: var(--shadow);

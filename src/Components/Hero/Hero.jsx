@@ -1,7 +1,6 @@
 import React from "react";
 import "./Hero.css";
 import myImg from "/me.png";
-import myDarkImg from "/medark.png";
 
 function Hero(props) {
   return (

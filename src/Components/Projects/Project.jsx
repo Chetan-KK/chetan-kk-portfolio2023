@@ -21,7 +21,7 @@ function Project(props) {
       </div>
       <div className="buttons">
         <a href={props.link} className="button preview-button">
-          Preview <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Preview <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <a href={props.gitLink} className="button preview-button git">
           <i className="fa-brands fa-github"></i>

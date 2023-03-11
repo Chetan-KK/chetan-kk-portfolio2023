@@ -148,3 +148,8 @@ b {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 7vw;
+  }
+}
