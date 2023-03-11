@@ -63,3 +63,11 @@
     width: 80vw;
   }
 }
+@media screen and (max-width: 600px) {
+  .all-skills .left ul li {
+    list-style-type: none;
+  }
+  .all-skills .right {
+    width: 90vw;
+  }
+}

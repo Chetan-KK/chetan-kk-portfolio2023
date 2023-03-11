@@ -152,4 +152,10 @@ b {
   .main-title {
     font-size: 7vw;
   }
+  .heading {
+    font-size: 0.8rem;
+  }
+  .sub-heading {
+    font-size: 0.8rem;
+  }
 }

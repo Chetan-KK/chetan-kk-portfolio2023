@@ -103,18 +103,30 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .menuToggle {
+    font-size: 1.5rem;
+    height: 40px;
+    width: 40px;
+    top: 15px;
+    right: 20px;
+  }
+  .Navbar {
+    padding: 1rem 0.5rem;
+  }
   .Navbar .logo {
     font-size: 1rem;
   }
   .Navbar .logo .icon {
     margin: 8px 10px;
-    width: 50px;
+    width: 30px;
   }
   .Navbar .links .link {
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: var(--light-text-c);
   }
+
   .Navbar .right .buttons {
+    padding-top: 0;
     height: max-content;
   }
 }

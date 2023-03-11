@@ -21,7 +21,7 @@ function Hero(props) {
         </div>
         <div className="connect">
           <div className="heading">Connect with me</div>
-          <div className="flex">
+          <div className="buttons flex">
             <a href="https://github.com/Chetan-KK" className="button">
               <i className="fa-brands fa-github"></i>
             </a>
