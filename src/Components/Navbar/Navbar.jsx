@@ -31,7 +31,7 @@ export default function Navbar(props) {
       </div>
       <div onClick={toggleNav} className="menuToggle flex">
         {menuToggle ? (
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         ) : (
           <i className="fa-solid fa-bars"></i>
         )}

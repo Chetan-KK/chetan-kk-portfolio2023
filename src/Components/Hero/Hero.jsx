@@ -1,4 +1,5 @@
 import React from "react";
+import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
 
@@ -11,7 +12,6 @@ function Hero(props) {
           <div className="main-title">
             Hello, I'm <b>Chetan Khulage</b>
           </div>
-
           <div className="main-title">Full-stack Developer</div>
         </div>
         <div className="sub-heading">
@@ -19,29 +19,7 @@ function Hero(props) {
           3D web development, i have worked on web development from around 3
           years
         </div>
-        <div className="connect">
-          <div className="heading">Connect with me</div>
-          <div className="buttons flex">
-            <a href="https://github.com/Chetan-KK" className="button">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/chetan-khulage/"
-              className="button"
-            >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/c_h_e_t_a_n__k/"
-              className="button"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@chetankhulage" className="button">
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-          </div>
-        </div>
+        <Connect />
       </div>
       <div className="right">
         <div className={props.mode === "dark" ? "darkImg" : ""}>

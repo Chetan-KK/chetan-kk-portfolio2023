@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Project(props) {
   return (
     <div className="Project">
-      <Link to={`/${props.title}`}>
+      <Link to={`/${props.title}`} className="imgWrapper">
         <img src={props.imgSrc} alt="" />
       </Link>
 

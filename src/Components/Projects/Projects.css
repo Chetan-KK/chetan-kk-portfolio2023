@@ -23,6 +23,11 @@
   width: 15rem;
   height: 9rem;
   border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+.projects .Project img:hover {
+  scale: 1.07;
 }
 .projects .Project .title {
   justify-content: space-between;

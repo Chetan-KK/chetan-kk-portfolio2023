@@ -14,11 +14,6 @@
   width: 27rem;
   margin: 1rem 0;
 }
-.Hero .left .connect .button {
-  padding: 0.5rem 1rem;
-  margin: 1rem 0.5rem;
-  z-index: 1;
-}
 .Hero .right img {
   width: 25rem;
   box-shadow: var(--shadow);

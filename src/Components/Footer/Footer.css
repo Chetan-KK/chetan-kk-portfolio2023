@@ -1,0 +1,26 @@
+.Footer {
+  background-image: var(--button-gradient);
+  padding: 2rem 3rem 1rem 3rem;
+  justify-content: space-between;
+}
+.Footer .logo img {
+  width: 50px;
+}
+.Footer .logo {
+  gap: 1rem;
+  font-family: var(--ff);
+  color: var(--light-text-c);
+}
+@media screen and (max-width: 840px) {
+  .Footer {
+    flex-direction: column;
+  }
+  .Footer .connect {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Footer .logo {
+    flex-direction: column;
+  }
+}

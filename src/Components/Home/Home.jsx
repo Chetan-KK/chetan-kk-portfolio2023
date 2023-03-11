@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import { useEffect } from "react";
+import Footer from "../Footer/Footer";
 
 function Home() {
   const [mode, setMode] = useState("light");
@@ -36,6 +37,7 @@ function Home() {
       <hr className="hr" />
       <Projects />
       <Skills />
+      <Footer />
     </div>
   );
 }
