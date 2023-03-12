@@ -15,6 +15,9 @@
   .Footer {
     flex-direction: column;
   }
+  .Footer .logo {
+    margin-bottom: 2rem;
+  }
   .Footer .connect {
     text-align: center;
   }

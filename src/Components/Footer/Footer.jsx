@@ -8,8 +8,10 @@ function Footer() {
     <div className="Footer flex">
       <div className="logo flex">
         <img src={logo} alt="icon" />
-        &copy; 2022. All rights reserved by
-        <a href="https://www.linkedin.com/in/chetan-khulage/">@chetankhulage</a>
+        &copy; 2023. All rights reserved by
+        <a href="https://www.linkedin.com/in/chetan-khulage/" className="link">
+          @chetankhulage
+        </a>
       </div>
       <Connect />
     </div>

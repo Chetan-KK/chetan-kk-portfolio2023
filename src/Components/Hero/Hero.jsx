@@ -5,7 +5,7 @@ import myImg from "/me.png";
 
 function Hero(props) {
   return (
-    <div className="Hero flex">
+    <div className="Hero flex" id="hero">
       <div className="left">
         <div className="heading">Welcome to my 2023 Portfolio </div>
         <div className="main-titles">
@@ -22,9 +22,7 @@ function Hero(props) {
         <Connect />
       </div>
       <div className="right">
-        <div className={props.mode === "dark" ? "darkImg" : ""}>
-          <img src={myImg} alt="" />
-        </div>
+        <img src={myImg} alt="" />
       </div>
     </div>
   );

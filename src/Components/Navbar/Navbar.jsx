@@ -1,19 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import icon from "/favicon.svg";
 import "./Navbar.css";
 import { useState } from "react";
 
 export default function Navbar(props) {
-  const [scrolled, setScrolled] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
-
-  window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 300) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  });
 
   function toggleNav() {
     if (menuToggle) {
@@ -24,10 +15,12 @@ export default function Navbar(props) {
   }
 
   return (
-    <div className={`Navbar flex ${scrolled ? "stick" : ""}`}>
+    <div className={`Navbar flex`}>
       <div className="logo flex">
         <img src={icon} alt="" className="icon" />
-        Chetan Khulage
+        <Link className="link">
+          <b>{`<`}</b>Chetan Khulage<b>{`/>`}</b>
+        </Link>
       </div>
       <div onClick={toggleNav} className="menuToggle flex">
         {menuToggle ? (
@@ -38,21 +31,56 @@ export default function Navbar(props) {
       </div>
       <div className={`right flex ${menuToggle ? "menuOpen" : "menuClose"}`}>
         <div className="links flex">
-          <Link to="/" className="link">
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
+            className="link"
+          >
             Home
           </Link>
-          <Link to="/" className="link">
-            Skills
-          </Link>
-          <Link to="/" className="link">
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="link"
+          >
             Projects
           </Link>
-          <Link to="/" className="link">
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="link"
+          >
+            Skills
+          </Link>
+
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="link"
+          >
             About
           </Link>
         </div>
         <div className="buttons flex">
-          <Link to="/">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             <div className="button contact-button">Contact</div>
           </Link>
           <div

@@ -1,0 +1,62 @@
+.Contact {
+  text-align: center;
+}
+.Contact .form {
+  flex-direction: column;
+  padding: 3rem 0;
+}
+.Contact .form input,
+.Contact .form textarea {
+  color: var(--light-text-c);
+  width: calc(50vw + 10rem);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  box-shadow: var(--shadow);
+  border: none;
+  background-image: var(--button-gradient);
+  border-radius: 5px;
+  font-family: var(--ff);
+}
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.file-input {
+  position: relative;
+  cursor: pointer;
+}
+.file-input::before {
+  content: "Upload file";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.6rem;
+  top: 0;
+  position: absolute;
+  left: 0;
+  background-image: var(--button-gradient);
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+}
+.Contact .form .contactSubmit {
+  border: none;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  background-image: var(--button-gradient);
+}
+@media screen and (max-width: 400px) {
+  .Contact .form input,
+  .Contact .form textarea {
+    padding: 0.5rem 1rem;
+    width: 80vw;
+  }
+
+  .Contact .form {
+    padding: 1rem 0;
+  }
+  .Contact .form .contactSubmit {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,26 +1,16 @@
 .Navbar {
   justify-content: space-between;
   padding: 1rem calc(5vw + 1rem);
+  background-color: var(--blur-c);
   backdrop-filter: blur(20px);
-}
-.menuToggle {
-  display: none !important;
-}
-.stick {
-  /* background-color: var(--blur-c); */
   z-index: 999;
-  animation: nav 0.4s;
   position: fixed;
+  box-shadow: var(--shadow);
   width: 100vw;
   top: 0;
 }
-@keyframes nav {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.menuToggle {
+  display: none !important;
 }
 .Navbar .logo {
   font-size: 1.3rem;
@@ -59,7 +49,6 @@
     width: 100vw;
     background-color: var(--secondary-color);
     top: 0;
-
     box-shadow: var(--shadow);
     animation: 0s;
     backdrop-filter: none;
@@ -71,7 +60,7 @@
     width: 80vw;
     padding: calc(3rem + 3vw);
     box-shadow: var(--shadow);
-    background-color: var(--blur);
+    background-color: var(--blur-c);
     backdrop-filter: blur(80px);
     top: 0;
     right: 0;
@@ -115,7 +104,7 @@
     padding: 1rem 0.5rem;
   }
   .Navbar .right {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem 2rem 1rem;
     align-items: flex-start;
     gap: 0;
   }
@@ -133,6 +122,6 @@
 
   .Navbar .right .buttons {
     padding-top: 0;
-    height: min-content;
+    margin-top: 2rem;
   }
 }

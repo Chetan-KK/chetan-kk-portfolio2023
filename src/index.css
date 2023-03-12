@@ -42,11 +42,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  box-shadow: 2px solid var(--primary-color);
+  outline: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
 a {
   text-decoration: none;
 }
 body {
-  background-color: var(--secondary-color);
+  background-image: var(--button-gradient);
+  scroll-behavior: smooth;
+}
+.small-loader {
+  margin: 1rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  border-top-color: var(--primary-color);
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
 }
 .hr {
   width: 80vw;
@@ -63,6 +87,7 @@ body {
   font-family: var(--ff);
   color: var(--text-c-link);
   position: relative;
+  cursor: pointer;
 }
 .link::before {
   content: "";
@@ -71,15 +96,18 @@ body {
   left: 0;
   height: 3px;
   border-radius: 100vw;
-  width: 30px;
-  transition: var(--transition);
+  width: 100%;
+  transform: scaleX(0);
+  transition: var(--transition) transform;
+  transform-origin: right;
   background-image: var(--primary-gradient);
 }
 .link:hover {
   color: var(--primary-color);
 }
 .link:hover::before {
-  width: 100%;
+  transform-origin: left;
+  transform: scaleX(1);
 }
 .button {
   margin: 0 1rem;

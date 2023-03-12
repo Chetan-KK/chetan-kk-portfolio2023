@@ -47,7 +47,7 @@ function Projects() {
   ]);
   let key = 0;
   return (
-    <div className="Projects">
+    <div className="Projects" id="projects">
       <div className="main-title">Projects</div>
       <div className="heading">
         <b>Here's some of my projects</b>

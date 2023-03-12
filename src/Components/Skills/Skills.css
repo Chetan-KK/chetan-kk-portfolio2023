@@ -16,6 +16,7 @@
   position: relative;
   margin: 1rem 0;
 }
+
 .all-skills .right {
   width: 45vw;
   flex-wrap: wrap;
@@ -25,7 +26,6 @@
   width: 70px;
   height: 70px;
   margin: 20px;
-  filter: grayscale(1);
   aspect-ratio: 1;
   transition: var(--transition);
   position: relative;
@@ -49,9 +49,6 @@
 .all-skills .right .Skill:hover::before {
   box-shadow: 0 0 70px 20px var(--primary-color);
 }
-.all-skills .skill-img:hover {
-  filter: grayscale(0);
-}
 @media screen and (max-width: 900px) {
   .all-skills {
     flex-direction: column;
@@ -66,6 +63,7 @@
 @media screen and (max-width: 600px) {
   .all-skills .left ul li {
     list-style-type: none;
+    font-size: 0.8rem;
   }
   .all-skills .right {
     width: 90vw;
