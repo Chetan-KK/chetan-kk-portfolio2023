@@ -47,56 +47,67 @@ function Contact() {
       <div className="heading">
         <b>let's talk about something...</b>
       </div>
-      <form
-        encType="multipart/form-data"
-        onSubmit={formSubmit}
-        method="POST"
-        action="https://formsubmit.co/chetankhulage350@gmail.com"
-        className="form flex"
-      >
-        <input
-          className="input"
-          type="email"
-          name="email"
-          placeholder="Enter your Email"
-          required
-        />
-        <textarea
-          className="input "
-          name="massage"
-          cols="30"
-          rows="10"
-          placeholder="👋🏻Say hellooo..."
-          required
-        ></textarea>
-        <input
-          type="file"
-          className="file-input"
-          name="attachment"
-          accept="image/png, image/jpeg, text/txt"
-        />
-        {err ? (
-          <div
-            className="heading"
-            style={{ fontSize: "1.3rem", marginTop: "1rem" }}
-          >
-            <b>Something is wrong try again!</b>
-          </div>
-        ) : send ? (
-          <div
-            className="heading"
-            style={{ fontSize: "1.3rem", marginTop: "1rem" }}
-          >
-            <b>Sent successful !!</b>
-          </div>
-        ) : loading ? (
-          <div className="small-loader"></div>
-        ) : (
-          <button type="submit" className="button contactSubmit" id="button">
-            Send Message <i className="fa-solid fa-arrow-right"></i>
-          </button>
-        )}
-      </form>
+      <div className="middle">
+        <form
+          encType="multipart/form-data"
+          onSubmit={formSubmit}
+          method="POST"
+          action="https://formsubmit.co/chetankhulage350@gmail.com"
+          className="form"
+        >
+          <div className="tip">*required</div>
+          <input
+            className="input"
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <div className="tip">*required</div>
+          <textarea
+            className="input "
+            name="massage"
+            cols="30"
+            rows="10"
+            placeholder="👋🏻Say hellooo..."
+            required
+          ></textarea>
+          <div className="tip">optional</div>
+          <input
+            type="file"
+            className="file-input"
+            name="attachment"
+            accept="image/png, image/jpeg, text/txt"
+          />
+          {err ? (
+            <div
+              className="heading"
+              style={{ fontSize: "1.3rem", marginTop: "1rem" }}
+            >
+              <b>Something is wrong try again!</b>
+            </div>
+          ) : send ? (
+            <div
+              className="heading"
+              style={{ fontSize: "1.3rem", marginTop: "1rem" }}
+            >
+              <b>Sent successful !!</b>
+            </div>
+          ) : loading ? (
+            <div className="small-loader"></div>
+          ) : (
+            <div>
+              <button
+                type="submit"
+                className="button contactSubmit"
+                id="button"
+              >
+                Send Message <i className="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          )}
+        </form>
+      </div>
     </div>
   );
 }

@@ -2,8 +2,21 @@
   text-align: center;
 }
 .Contact .form {
-  flex-direction: column;
+  justify-content: center;
   padding: 3rem 0;
+  text-align: center;
+}
+.Contact .form .tip {
+  color: var(--primary-color);
+  font-family: var(--ff);
+  font-weight: 600;
+  float: right;
+  transform: translate(-10px, 10px);
+  font-size: 0.8rem;
+}
+.middle {
+  width: calc(50vw + 10rem);
+  margin: auto;
 }
 .Contact .form input,
 .Contact .form textarea {
