@@ -26,6 +26,7 @@
 }
 ::-webkit-scrollbar {
   width: 7px;
+  background-color: var(--secondary-color);
 }
 ::-webkit-scrollbar-thumb {
   background-image: var(--primary-gradient);
@@ -39,6 +40,7 @@
 *::before,
 *::after {
   margin: 0;
+  -webkit-tap-highlight-color: transparent;
   padding: 0;
   box-sizing: border-box;
 }
@@ -81,6 +83,7 @@ body {
 .center {
   text-align: center;
 }
+
 .link {
   text-decoration: none;
   padding: 0.2rem 0;

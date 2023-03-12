@@ -37,9 +37,8 @@ function Contact() {
       })
       .catch((error) => {
         setErr(true);
+        console.log(error);
       });
-
-    // console.log(e);
   };
 
   return (
@@ -58,7 +57,7 @@ function Contact() {
         <input
           className="input"
           type="email"
-          name="emailId"
+          name="email"
           placeholder="Enter your Email"
           required
         />
@@ -76,7 +75,6 @@ function Contact() {
           name="attachment"
           accept="image/png, image/jpeg, text/txt"
         />
-        <input type="hidden" name="_template" value="table" />
         {err ? (
           <div
             className="heading"

@@ -13,6 +13,15 @@ function Projects() {
       year: "3-2019",
     },
     {
+      title: "Three js Portfolio",
+      imgSrc: "/threejs-portfolio-project.png",
+      disc: `The project integrates the power of Three.js to bring creative design to life with stunning animations and eye-catching graphics, making it a must-see for anyone interested in cutting-edge technology and creative design.
+      This website features animations, motion design, and user interaction, creating a dynamic and interactive experience for visitors. The website is fully responsive, ensuring optimal viewing on any device, and includes a theme selector that allows you to customize the look and feel of the site.`,
+      link: "https://chetan-kk.github.io/Google-clone-with-API/",
+      gitLink: "https://chetan-kk.github.io/Google-clone-with-API/",
+      year: "5-2021",
+    },
+    {
       title: "Country Founder",
       imgSrc: "/country_founder-project.png",
       disc: "This project is created using REACT JS where user can see details about particular country like it's population, area, spoken languages, regions etc.User can interact with particular country section and see daily news about selected country. ",
@@ -27,14 +36,6 @@ function Projects() {
       link: "https://github.com/Chetan-KK/Covid-India",
       gitLink: "https://github.com/Chetan-KK/Covid-India",
       year: "4-2019",
-    },
-    {
-      title: "Google Clone",
-      imgSrc: "/google_clone-project.png",
-      disc: "This project is copy of google search page where user can search for almost anything, Here user can search for either the details or images. Here user can search for either the details or images.",
-      link: "https://chetan-kk.github.io/Google-clone-with-API/",
-      gitLink: "https://chetan-kk.github.io/Google-clone-with-API/",
-      year: "1-2019",
     },
     {
       title: "Google Clone",
