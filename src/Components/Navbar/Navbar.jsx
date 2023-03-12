@@ -18,7 +18,7 @@ export default function Navbar(props) {
     <div className={`Navbar flex`}>
       <div className="logo flex">
         <img src={icon} alt="" className="icon" />
-        <Link className="link">
+        <Link className="link" to="/">
           <b>{`<`}</b>Chetan Khulage<b>{`/>`}</b>
         </Link>
       </div>
