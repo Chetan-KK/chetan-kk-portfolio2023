@@ -6,7 +6,7 @@
 <br/>
 
 
-- 🔭 I’m currently working on [My Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio)  
+- 🔭 I’m currently working on [My 3D Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio) and [My Professional Portfolio](https://portfolio2023-pi-neon.vercel.app)  
   
 
 - 🌱 I’m currently learning [THREE JS](https://threejs.org/) and [REACT JS](https://reactjs.org/).  
