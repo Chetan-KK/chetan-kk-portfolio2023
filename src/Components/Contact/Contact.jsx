@@ -72,13 +72,13 @@ function Contact() {
             placeholder="👋🏻Say hellooo..."
             required
           ></textarea>
-          <div className="tip">optional</div>
+          {/* <div className="tip">optional</div>
           <input
             type="file"
             className="file-input"
             name="attachment"
             accept="image/png, image/jpeg, text/txt"
-          />
+          /> */}
           {err ? (
             <div
               className="heading"

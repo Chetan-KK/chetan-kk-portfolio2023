@@ -179,6 +179,9 @@ b {
   display: flex;
   align-items: center;
 }
+textarea {
+  resize: none;
+}
 @media screen and (max-width: 600px) {
   .main-title {
     font-size: 7vw;

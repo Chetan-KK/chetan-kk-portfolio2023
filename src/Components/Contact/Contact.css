@@ -58,6 +58,14 @@
   background-image: var(--button-gradient);
 }
 @media screen and (max-width: 400px) {
+  .middle {
+    width: 80vw;
+  }
+  .Contact .form .tip {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+
   .Contact .form input,
   .Contact .form textarea {
     padding: 0.5rem 1rem;
@@ -69,7 +77,7 @@
   }
   .Contact .form .contactSubmit {
     padding: 0.5rem 1rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-size: 0.8rem;
   }
 }

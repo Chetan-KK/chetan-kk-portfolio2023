@@ -139,10 +139,9 @@ function Skills() {
             <li className="button">Web Designer</li>
             <li className="button">UI/UX Developer/Designer</li>
             <li className="button">THREE JS developer</li>
+            <li className="button">React THREE Fiber</li>
             <li className="button">Web Motion Designer</li>
-            <li className="button">GTA SanAndreas Gamer/Lover</li>
-            <li className="button">CS:GO Gamer</li>
-            <li className="button">MINECRAFT Gamer</li>
+            <li className="button">GTA SanAndreas, CS:GO, MINECRAFT</li>
           </ul>
         </div>
         <div className="right flex">
