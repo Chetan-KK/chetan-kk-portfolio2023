@@ -3,45 +3,36 @@ import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
-import { useEffect } from "react";
 import Footer from "../Footer/Footer";
 import Contact from "../Contact/Contact";
 
+import { motion } from "framer-motion";
+import About from "../About/About";
+
 function Home() {
-  const [mode, setMode] = useState("light");
-  useEffect(() => {
-    let startingMode = localStorage.getItem("mode");
-    if (startingMode == "dark") {
-      setMode("dark");
-      toggleMode();
-    }
-  }, []);
-
-  function toggleMode() {
-    if (mode === "light") {
-      setMode("dark");
-      window.document.body.classList.add("dark");
-      window.document.body.classList.remove("light");
-      localStorage.setItem("mode", "dark");
-    } else {
-      setMode("light");
-      window.document.body.classList.add("light");
-      window.document.body.classList.remove("dark");
-      localStorage.setItem("mode", "light");
-    }
-  }
-
   return (
-    <div className="Home">
-      <Navbar modeEvent={toggleMode} mode={mode} />
-      <Hero mode={mode} />
+    <motion.div
+      className="Home"
+      initial={{
+        opacity: 0,
+        transition: { duration: 0.75, ease: "easeOut" },
+      }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 0.5, ease: "easeOut" },
+      }}
+    >
+      <Navbar isNav={true} />
+      <Hero />
       <hr className="hr" />
       <Projects />
       <Skills />
+      <hr className="hr" />
+      <About />
       <Contact />
       <hr className="hr" />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

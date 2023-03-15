@@ -1,0 +1,65 @@
+.MainProject {
+  padding: 7rem 2rem 1rem 2rem;
+}
+.MainProject .button {
+  margin-bottom: 1rem;
+  width: fit-content;
+  padding: 1rem 3rem;
+}
+.MainProject .imgWrapper {
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.MainProject .imgWrapper img {
+  width: 40vw;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  border: 5px solid var(--secondary-color);
+}
+.MainProject .desc {
+  padding: 2rem 3rem;
+  line-height: 2rem;
+  font-weight: 500;
+  font-family: var(--ff);
+  color: var(--light-text-c);
+  text-align: justify;
+}
+.MainProject .sub-title {
+  font-size: 2rem;
+  text-align: center;
+}
+.MainProject .desc::first-letter {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+@media screen and (max-width: 750px) {
+  .MainProject {
+    text-align: center;
+    padding: 6rem 1rem 1rem 1rem;
+  }
+  .MainProject .titles .heading {
+    margin-top: 2rem;
+    font-size: 0.7rem;
+  }
+  .MainProject .imgWrapper {
+    margin-top: 1rem;
+  }
+  .MainProject .imgWrapper img {
+    width: 80vw;
+  }
+  .MainProject .desc {
+    padding: 2rem 1rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
+  .MainProject .sub-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .MainProject .button {
+    width: auto;
+  }
+}

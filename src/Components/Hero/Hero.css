@@ -17,7 +17,28 @@
 .Hero .right img {
   width: 25rem;
   box-shadow: var(--shadow);
-  border-radius: 20px;
+}
+.Hero .right .imgWrapper {
+  position: relative;
+}
+.Hero .right .imgWrapper::before,
+.Hero .right .imgWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -9;
+}
+.Hero .right .imgWrapper::before {
+  border: 10px solid var(--primary-color);
+  transform: translate(30px, 30px);
+}
+.Hero .right .imgWrapper::after {
+  border: 10px solid var(--light-text-c);
+  transform: translate(-30px, -30px);
 }
 @media screen and (max-width: 600px) {
   .Hero .left .sub-heading {

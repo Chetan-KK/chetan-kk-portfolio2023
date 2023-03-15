@@ -1,0 +1,45 @@
+.About {
+  text-align: center;
+  margin-top: 3rem;
+}
+.about-info {
+  text-align: justify;
+  padding: 2rem 5rem;
+  font-size: 1.2rem;
+  font-family: var(--ff);
+}
+.about-info p {
+  text-indent: 3rem;
+  margin-bottom: 1rem;
+  color: var(--light-text-c);
+  line-height: 2.5rem;
+}
+.about-info p::first-letter {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+@media screen and (max-width: 700px) {
+  .about-info {
+    padding: 2rem 3rem;
+    font-size: 1rem;
+    font-family: var(--ff);
+  }
+  .about-info p {
+    line-height: 1.9rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about-info {
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+    font-family: var(--ff);
+  }
+  .about-info p {
+    font-size: 0.8rem;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+  }
+  .about-info p::first-letter {
+    font-size: 1rem;
+  }
+}

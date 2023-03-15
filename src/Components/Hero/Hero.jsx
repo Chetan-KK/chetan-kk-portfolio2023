@@ -3,7 +3,7 @@ import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
 
-function Hero(props) {
+function Hero() {
   return (
     <div className="Hero flex" id="hero">
       <div className="left">
@@ -22,7 +22,9 @@ function Hero(props) {
         <Connect />
       </div>
       <div className="right">
-        <img src={myImg} alt="" />
+        <div className="imgWrapper">
+          <img src={myImg} alt="" />
+        </div>
       </div>
     </div>
   );
