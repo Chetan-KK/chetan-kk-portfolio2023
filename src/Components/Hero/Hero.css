@@ -41,11 +41,14 @@
   transform: translate(-30px, -30px);
 }
 @media screen and (max-width: 600px) {
+  .Hero {
+    margin: 7rem 2rem 5rem 2rem;
+  }
   .Hero .left .sub-heading {
     width: 80vw;
   }
   .Hero .right img {
-    width: 80vw;
+    width: 65vw;
   }
   .Hero .left .connect .buttons {
     justify-content: center;

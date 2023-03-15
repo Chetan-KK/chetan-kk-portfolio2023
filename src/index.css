@@ -1,6 +1,7 @@
 .light {
   --primary-color: #ff014f;
   --secondary-color: #ecf0f3;
+  --secondary-color-b: #d3d3d3;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
   --blur-c: rgba(255, 255, 255, 0.5);
@@ -14,6 +15,7 @@
 .dark {
   --primary-color: #ff014f;
   --secondary-color: #212428;
+  --secondary-color-b: #333333;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #1e2024, #23272b);
   --blur-c: rgba(32, 32, 32, 0.5);
@@ -56,7 +58,15 @@ a {
   text-decoration: none;
 }
 body {
-  background-image: var(--button-gradient);
+  /* background-image: var(--button-gradient); */
+  background: repeating-linear-gradient(
+      45deg,
+      var(--secondary-color-b) 0,
+      var(--secondary-color-b) 5%,
+      var(--secondary-color) 0,
+      var(--secondary-color) 50%
+    )
+    0 / 10px 10px;
   scroll-behavior: smooth;
 }
 .small-loader {

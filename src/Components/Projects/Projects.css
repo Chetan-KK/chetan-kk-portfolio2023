@@ -7,6 +7,7 @@
   justify-content: space-around;
 }
 .projects .Project {
+  background-color: var(--secondary-color);
   min-width: 20rem;
   width: 20rem;
   margin: 2rem;
@@ -58,7 +59,15 @@
 }
 .projects .Project .button {
   padding: 0.7rem 1.4rem;
+  z-index: 1;
 }
 .projects .Project .git {
   padding: 0.7rem 1rem;
+}
+@media screen and (max-width: 400px) {
+  .projects .Project {
+    min-width: 18rem;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+  }
 }

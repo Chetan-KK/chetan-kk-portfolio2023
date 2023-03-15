@@ -58,6 +58,13 @@
     font-size: 1.5rem;
   }
 }
+.MainProject .buttons {
+  margin: 2rem 0;
+  text-align: center;
+}
+.MainProject .button {
+  padding: 0.7rem 1.4rem;
+}
 @media screen and (max-width: 550px) {
   .MainProject .button {
     width: auto;

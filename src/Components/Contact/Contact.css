@@ -59,17 +59,17 @@
 }
 @media screen and (max-width: 400px) {
   .middle {
-    width: 80vw;
+    width: 85vw;
   }
   .Contact .form .tip {
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .Contact .form input,
   .Contact .form textarea {
     padding: 0.5rem 1rem;
-    width: 80vw;
+    width: 85vw;
   }
 
   .Contact .form {
