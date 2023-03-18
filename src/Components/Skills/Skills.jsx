@@ -141,7 +141,6 @@ function Skills() {
             <li className="button">THREE JS developer</li>
             <li className="button">React THREE Fiber</li>
             <li className="button">Web Motion Designer</li>
-            <li className="button">GTA SanAndreas, CS:GO, MINECRAFT</li>
           </ul>
         </div>
         <div className="right flex">

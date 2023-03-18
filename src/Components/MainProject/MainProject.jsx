@@ -29,12 +29,16 @@ function MainProject() {
         opacity: 1,
         transition: { duration: 0.5, ease: "easeOut" },
       }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.75, ease: "easeOut" },
+      }}
     >
       {project && (
         <div>
           <Navbar />
           <div className="MainProject">
-            <Link to="/">
+            <Link to="/home">
               <div className="button">Back</div>
             </Link>
             <div className="titles">

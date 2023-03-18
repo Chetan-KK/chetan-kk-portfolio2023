@@ -1,29 +1,22 @@
-# <div align="center">👋Hello I'm Chetan Khulage!!</div>  
-  
-<br/>  
+# <div align="center">👋Hello I'm Chetan Khulage!!</div>
+
+link to my portfolio : [My Portfolio](https://portfolio2023-pi-neon.vercel.app)
+<br/>
 
 👋🏻Hello everyone, I'm 👱🏻chetan i love to work on front-end and mostly work with THREE js for 3D web development, i have worked on 🌐web development around 3️⃣ years and currently doing my 📚bachelor's of engineering in ADYPU, Pune.
 <br/>
 
+- 🔭 I’m currently working on [My 3D Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio) and [My Professional Portfolio](https://portfolio2023-pi-neon.vercel.app)
 
-- 🔭 I’m currently working on [My 3D Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio) and [My Professional Portfolio](https://portfolio2023-pi-neon.vercel.app)  
-  
+- 🌱 I’m currently learning [THREE JS](https://threejs.org/) and [REACT JS](https://reactjs.org/).
 
-- 🌱 I’m currently learning [THREE JS](https://threejs.org/) and [REACT JS](https://reactjs.org/).  
-  
+- 😃Excited to talk about [THREE JS](https://threejs.org/) and related technologies.
 
-- 😃Excited to talk about [THREE JS](https://threejs.org/) and related technologies.  
-  
+- ⚡ When I'm not playing with web I'm probably playing CS:GO.
 
-- ⚡ When I'm not playing with web I'm probably playing CS:GO.  
-  
-
-<br/>  
-
+<br/>
 
 ## Technologies I often play with 👇
-
-
 
 <div align="center">  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
@@ -53,33 +46,29 @@
 <a href="https://www.java.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/java-original-wordmark.svg" alt="Java" height="50" /></a>  
 </div>
 
-
-
-<br/>  
-
-
-<br/>  
-
-
-## My Github Stats  
-<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chetan-KK&hide_border=true&layout=compact" align="center" /></div>  
+<br/>
 
 <br/>
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=Chetan-KK&show_icons=true&count_private=true&hide_border=true" align="center" /> </div>   
 
-<br/>  
+## My Github Stats
+
+<div align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Chetan-KK&hide_border=true&layout=compact" align="center" /></div>
+
+<br/>
+<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=Chetan-KK&show_icons=true&count_private=true&hide_border=true" align="center" /> </div>
+
+<br/>
 
 <div align="center">
 <img src="https://komarev.com/ghpvc/?username=Chetan-KK&&style=flat-square" align="center" />
-</div>  
-  
+</div>
 
-<br/>  
-
+<br/>
 
 <br />
 
-## Connect with me  
+## Connect with me
+
 <div align="center">
 <a href="https://github.com/Chetan-KK" target="_blank">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
@@ -96,5 +85,4 @@
 <a href="https://codepen.com/Chetan_kk" target="_blank">
 <img src=https://img.shields.io/badge/codepen-%23131417.svg?&style=for-the-badge&logo=codepen&logoColor=white alt=codepen style="margin-bottom: 5px;" />
 </a>  
-</div>  
-  
+</div>

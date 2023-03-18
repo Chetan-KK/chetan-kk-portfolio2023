@@ -15,7 +15,6 @@ function Contact() {
 
     formData.append("email", e.target[0].value);
     formData.append("message", e.target[1].value);
-    formData.append("file", e.target[2].files[0]);
     formData.append("_template", "table");
     formData.append("_captcha", "false");
     formData.append(
@@ -27,7 +26,7 @@ function Contact() {
     axios
       .post("https://formsubmit.co/ajax/chetankhulage350@gmail.com", formData, {
         headers: {
-          "Content-Type": "multipart/form-data",
+          "Content-Type": "application/json",
         },
       })
       .then((response) => {
@@ -49,7 +48,6 @@ function Contact() {
       </div>
       <div className="middle">
         <form
-          encType="multipart/form-data"
           onSubmit={formSubmit}
           method="POST"
           action="https://formsubmit.co/chetankhulage350@gmail.com"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Projects from "../Projects/Projects";
@@ -19,7 +19,11 @@ function Home() {
       }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.5, ease: "easeOut" },
+        transition: { duration: 0.75, ease: "easeOut" },
+      }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.75, ease: "easeOut" },
       }}
     >
       <Navbar isNav={true} />

@@ -1,7 +1,7 @@
 .light {
   --primary-color: #ff014f;
   --secondary-color: #ecf0f3;
-  --secondary-color-b: #d3d3d3;
+  --secondary-color-b: #e4e4e4;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
   --blur-c: rgba(255, 255, 255, 0.5);
@@ -15,7 +15,7 @@
 .dark {
   --primary-color: #ff014f;
   --secondary-color: #212428;
-  --secondary-color-b: #333333;
+  --secondary-color-b: #2e2e2e;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #1e2024, #23272b);
   --blur-c: rgba(32, 32, 32, 0.5);
@@ -46,7 +46,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-a:focus,
 button:focus,
 input:focus,
 textarea:focus {
@@ -70,7 +69,7 @@ body {
   scroll-behavior: smooth;
 }
 .small-loader {
-  margin: 1rem;
+  margin: auto;
   height: 40px;
   width: 40px;
   border-radius: 100%;

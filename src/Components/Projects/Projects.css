@@ -67,7 +67,7 @@
 @media screen and (max-width: 400px) {
   .projects .Project {
     min-width: 18rem;
-    margin: 2rem 0;
+    margin: 2rem;
     padding: 2rem 1rem;
   }
 }
