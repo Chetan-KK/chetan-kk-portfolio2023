@@ -135,7 +135,7 @@ function Skills() {
         <div className="left">
           <ul>
             <li className="button">Full-stack Web Developer</li>
-            <li className="button">MERN Developer</li>
+            <li className="button">MERN-stack Developer</li>
             <li className="button">Web Designer</li>
             <li className="button">UI/UX Developer/Designer</li>
             <li className="button">THREE JS developer</li>

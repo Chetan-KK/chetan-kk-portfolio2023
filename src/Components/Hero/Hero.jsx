@@ -3,6 +3,7 @@ import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
 import Tilt from "react-parallax-tilt";
+import Typed from "react-typed";
 
 function Hero() {
   return (
@@ -13,7 +14,23 @@ function Hero() {
           <div className="main-title">
             Hello, I'm <b>Chetan Khulage</b>
           </div>
-          <div className="main-title">Full-stack Developer</div>
+          <Typed
+            className="main-title"
+            strings={[
+              "Full-stack Developer",
+              "THREE JS developer",
+              "React Developer",
+              "Web Designer",
+              "UI/UX Designer",
+              "UI/UX Developer",
+              "MERN-stack Developer",
+              "React THREE Fiber",
+              "Web Motion Designer",
+            ]}
+            typeSpeed={40}
+            backSpeed={40}
+            loop={true}
+          />
         </div>
         <div className="sub-heading">
           i love to work on front-end of web and i mostly work with THREE js for
