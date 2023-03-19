@@ -55,11 +55,11 @@ function MainProject() {
             <div className="imgWrapper flex">
               <Tilt
                 className="tilt-img"
-                tiltMaxAngleX={10}
-                tiltMaxAngleY={10}
+                tiltMaxAngleX={20}
+                tiltMaxAngleY={20}
                 perspective={900}
-                scale={1.1}
-                transitionSpeed={2000}
+                scale={1}
+                transitionSpeed={1000}
                 gyroscope={true}
               >
                 <img src={project.imgSrc} alt="" />
@@ -68,11 +68,12 @@ function MainProject() {
                 project.imgs.map((img) => (
                   <Tilt
                     className="tilt-img"
-                    tiltMaxAngleX={10}
-                    tiltMaxAngleY={10}
+                    tiltMaxAngleX={20}
+                    tiltMaxAngleY={20}
                     perspective={900}
-                    scale={1.1}
-                    transitionSpeed={2000}
+                    scale={1}
+                    key={img}
+                    transitionSpeed={1000}
                     gyroscope={true}
                   >
                     <img src={img} key={img} alt="" />

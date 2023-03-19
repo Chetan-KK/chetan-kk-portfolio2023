@@ -18,7 +18,6 @@
     "react-parallax-tilt": "^1.7.117",
     "react-router-dom": "^6.8.2",
     "react-scroll": "^1.8.9",
-    "react-typed": "^1.2.0",
     "vercel": "^28.16.15"
   },
   "devDependencies": {
