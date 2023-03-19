@@ -1,23 +1,17 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import "./MainLoading.css";
 
 function MainLoading() {
-  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let startingMode = localStorage.getItem("mode");
-    if (startingMode == "dark") {
-      window.document.body.classList.add("dark");
-      window.document.body.classList.remove("light");
-    }
     setTimeout(() => {
-      navigate("/home");
+      setLoading(false);
     }, 3000);
   }, []);
 
   return (
-    <div className="MainLoading flex">
+    <div className={`MainLoading  flex ${loading ? "" : "none"}`}>
       <div className="loader flex">
         <div className="inner-loader"></div>
       </div>

@@ -15,6 +15,7 @@
     "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.117",
     "react-router-dom": "^6.8.2",
     "react-scroll": "^1.8.9",
     "vercel": "^28.16.15"

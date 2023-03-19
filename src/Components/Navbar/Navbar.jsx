@@ -43,16 +43,9 @@ export default function Navbar(props) {
     <div className={`Navbar flex`}>
       <div className="logo flex">
         <img src={icon} alt="" className="icon" />
-        <Link
-          to="hero"
-          spy={true}
-          smooth={true}
-          offset={-200}
-          duration={500}
-          className="link"
-        >
+        <NormalLink to="/" className="link">
           <b>{`<`}</b>Chetan Khulage<b>{`/>`}</b>
-        </Link>
+        </NormalLink>
       </div>
       <div onClick={toggleNav} className="menuToggle flex">
         {menuToggle ? (

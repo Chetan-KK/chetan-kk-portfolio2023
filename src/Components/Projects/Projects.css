@@ -3,14 +3,15 @@
   text-align: center;
 }
 .projects {
+  margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: space-around;
+  gap: 3rem;
 }
 .projects .Project {
   background-color: var(--secondary-color);
   min-width: 20rem;
   width: 20rem;
-  margin: 2rem;
   box-shadow: var(--shadow);
   border-radius: 10px;
   text-align: center;

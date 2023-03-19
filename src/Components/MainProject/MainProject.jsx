@@ -4,6 +4,7 @@ import "./MainProject.css";
 import projects from "../../assets/projects";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Tilt from "react-parallax-tilt";
 
 import { motion } from "framer-motion";
 
@@ -38,7 +39,7 @@ function MainProject() {
         <div>
           <Navbar />
           <div className="MainProject">
-            <Link to="/home">
+            <Link to="/">
               <div className="button">Back</div>
             </Link>
             <div className="titles">
@@ -52,9 +53,31 @@ function MainProject() {
               <b>Screenshots</b>
             </div>
             <div className="imgWrapper flex">
-              <img src={project.imgSrc} alt="" />
+              <Tilt
+                className="tilt-img"
+                tiltMaxAngleX={10}
+                tiltMaxAngleY={10}
+                perspective={900}
+                scale={1.1}
+                transitionSpeed={2000}
+                gyroscope={true}
+              >
+                <img src={project.imgSrc} alt="" />
+              </Tilt>
               {project.imgs &&
-                project.imgs.map((img) => <img src={img} key={img} alt="" />)}
+                project.imgs.map((img) => (
+                  <Tilt
+                    className="tilt-img"
+                    tiltMaxAngleX={10}
+                    tiltMaxAngleY={10}
+                    perspective={900}
+                    scale={1.1}
+                    transitionSpeed={2000}
+                    gyroscope={true}
+                  >
+                    <img src={img} key={img} alt="" />
+                  </Tilt>
+                ))}
             </div>
             <div className="buttons">
               <a href={project.link} className="button preview-button">

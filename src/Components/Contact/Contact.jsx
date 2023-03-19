@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
+import Tilt from "react-parallax-tilt";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -53,23 +54,43 @@ function Contact() {
           action="https://formsubmit.co/chetankhulage350@gmail.com"
           className="form"
         >
-          <div className="tip">*required</div>
-          <input
-            className="input"
-            type="email"
-            name="email"
-            placeholder="Enter your Email"
-            required
-          />
-          <div className="tip">*required</div>
-          <textarea
-            className="input "
-            name="massage"
-            cols="30"
-            rows="10"
-            placeholder="👋🏻Say hellooo..."
-            required
-          ></textarea>
+          <Tilt
+            className="tilt-img"
+            tiltMaxAngleX={5}
+            tiltMaxAngleY={5}
+            perspective={900}
+            scale={1}
+            transitionSpeed={800}
+            gyroscope={true}
+          >
+            <div className="tip">*required</div>
+            <input
+              className="input"
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </Tilt>
+          <Tilt
+            className="tilt-img"
+            tiltMaxAngleX={5}
+            tiltMaxAngleY={5}
+            perspective={900}
+            scale={1}
+            transitionSpeed={800}
+            gyroscope={true}
+          >
+            <div className="tip">*required</div>
+            <textarea
+              className="input "
+              name="massage"
+              cols="30"
+              rows="10"
+              placeholder="👋🏻Say hellooo..."
+              required
+            ></textarea>
+          </Tilt>
           {/* <div className="tip">optional</div>
           <input
             type="file"

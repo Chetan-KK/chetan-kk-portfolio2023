@@ -2,6 +2,7 @@ import React from "react";
 import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
+import Tilt from "react-parallax-tilt";
 
 function Hero() {
   return (
@@ -22,9 +23,20 @@ function Hero() {
         <Connect />
       </div>
       <div className="right">
-        <div className="imgWrapper">
-          <img src={myImg} alt="" />
-        </div>
+        <Tilt
+          perspective={1000}
+          glareEnable={true}
+          scale={1}
+          gyroscope={true}
+          glarePosition={"all"}
+          glareMaxOpacity={0.05}
+          glareColor="white"
+          glareBorderRadius="10px"
+        >
+          <div className="imgWrapper">
+            <img src={myImg} alt="" />
+          </div>
+        </Tilt>
       </div>
     </div>
   );

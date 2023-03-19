@@ -7,7 +7,11 @@
   flex-direction: column;
   top: 0;
   left: 0;
+  transition: 1s;
   z-index: 9999999999999;
+}
+.none {
+  transform: translateY(-100%);
 }
 .MainLoading .heading {
   margin-top: 0.2rem;
