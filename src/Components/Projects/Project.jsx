@@ -8,14 +8,23 @@ function Project(props) {
       perspective={1000}
       glareEnable={true}
       scale={1}
-      gyroscope={true}
+      gyroscope={false}
       glarePosition={"all"}
       glareMaxOpacity={0.05}
       glareColor="white"
       glareBorderRadius="10px"
     >
       <div className="Project">
-        <Tilt perspective={800} glareEnable={false} scale={1} gyroscope={false}>
+        <Tilt
+          perspective={1000}
+          glareEnable={true}
+          scale={1.1}
+          gyroscope={false}
+          glarePosition={"all"}
+          glareMaxOpacity={0.5}
+          glareColor="white"
+          glareBorderRadius="5px"
+        >
           <Link to={`/${props.id}`} className="imgWrapper">
             <img src={props.imgSrc} alt="" />
           </Link>

@@ -61,7 +61,7 @@ function Contact() {
             perspective={900}
             scale={1}
             transitionSpeed={800}
-            gyroscope={true}
+            gyroscope={false}
           >
             <div className="tip">*required</div>
             <input
@@ -79,7 +79,7 @@ function Contact() {
             perspective={900}
             scale={1}
             transitionSpeed={800}
-            gyroscope={true}
+            gyroscope={false}
           >
             <div className="tip">*required</div>
             <textarea

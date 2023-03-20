@@ -45,7 +45,7 @@ function Hero() {
           perspective={1000}
           glareEnable={true}
           scale={1}
-          gyroscope={true}
+          gyroscope={false}
           glarePosition={"all"}
           glareMaxOpacity={0.05}
           glareColor="white"
