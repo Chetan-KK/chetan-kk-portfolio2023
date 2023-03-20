@@ -27,18 +27,18 @@ function Project(props) {
               glareColor="white"
               glareBorderRadius="5px"
             >
-              <Link to={`/${props.id}`} className="imgWrapper">
+              <Link to={`/Chetan-KK/${props.id}`} className="imgWrapper">
                 <img src={props.imgSrc} alt="" />
               </Link>
             </Tilt>
             <div className="title flex">
-              <Link to={`/${props.id}`} className="link">
+              <Link to={`/Chetan-KK/${props.id}`} className="link">
                 <div className="name">{props.title}</div>
               </Link>
               <div className="year">({props.year})</div>
             </div>
             <div className="desc">
-              <Link to={`/${props.id}`}>
+              <Link to={`/Chetan-KK/${props.id}`}>
                 {props.desc.slice(0, 100)} <b>read more...</b>
               </Link>
             </div>
@@ -56,18 +56,18 @@ function Project(props) {
       ) : (
         <div className="Project">
           <Tilt tiltEnable={false} scale={1.1}>
-            <Link to={`/${props.id}`} className="imgWrapper">
+            <Link to={`/Chetan-KK/${props.id}`} className="imgWrapper">
               <img src={props.imgSrc} alt="" />
             </Link>
           </Tilt>
           <div className="title flex">
-            <Link to={`/${props.id}`} className="link">
+            <Link to={`/Chetan-KK/${props.id}`} className="link">
               <div className="name">{props.title}</div>
             </Link>
             <div className="year">({props.year})</div>
           </div>
           <div className="desc">
-            <Link to={`/${props.id}`}>
+            <Link to={`/Chetan-KK/${props.id}`}>
               {props.desc.slice(0, 100)} <b>read more...</b>
             </Link>
           </div>

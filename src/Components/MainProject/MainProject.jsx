@@ -39,7 +39,7 @@ function MainProject() {
         <div>
           <Navbar />
           <div className="MainProject">
-            <Link to="/">
+            <Link to="/Chetan-KK/">
               <div className="button">Back</div>
             </Link>
             <div className="titles">
