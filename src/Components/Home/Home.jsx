@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Projects from "../Projects/Projects";
@@ -10,6 +10,19 @@ import { motion } from "framer-motion";
 import About from "../About/About";
 
 function Home() {
+  const [tiltYes, setTiltYes] = useState(true);
+
+  useEffect(() => {
+    window.innerWidth <= 600 ? setTiltYes(false) : setTiltYes(true);
+    window.addEventListener("resize", () => {
+      if (window.innerWidth <= 700) {
+        setTiltYes(false);
+      } else {
+        setTiltYes(true);
+      }
+    });
+  }, []);
+
   return (
     <motion.div
       className="Home"
@@ -27,13 +40,13 @@ function Home() {
       }}
     >
       <Navbar isNav={true} />
-      <Hero />
+      <Hero isTilt={tiltYes} />
       <hr className="hr" />
-      <Projects />
+      <Projects isTilt={tiltYes} />
       <Skills />
       <hr className="hr" />
       <About />
-      <Contact />
+      <Contact isTilt={tiltYes} />
       <hr className="hr" />
       <Footer />
     </motion.div>

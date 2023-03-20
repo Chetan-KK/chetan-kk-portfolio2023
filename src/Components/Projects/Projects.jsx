@@ -3,7 +3,7 @@ import Project from "./Project";
 import "./Projects.css";
 import projectsArray from "../../assets/projects";
 
-function Projects() {
+function Projects(props) {
   const [projects, setProjects] = useState(projectsArray);
   return (
     <div className="Projects" id="projects">
@@ -22,6 +22,7 @@ function Projects() {
             link={project.link}
             gitLink={project.gitLink}
             year={project.year}
+            isTilt={props.isTilt}
           />
         ))}
       </div>

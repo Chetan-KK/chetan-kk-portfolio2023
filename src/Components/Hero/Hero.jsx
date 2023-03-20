@@ -5,7 +5,7 @@ import myImg from "/me.png";
 import Tilt from "react-parallax-tilt";
 // import Typed from "react-typed";
 
-function Hero() {
+function Hero(props) {
   return (
     <div className="Hero flex" id="hero">
       <div className="left">
@@ -41,20 +41,26 @@ function Hero() {
         <Connect />
       </div>
       <div className="right">
-        <Tilt
-          perspective={1000}
-          glareEnable={true}
-          scale={1}
-          gyroscope={false}
-          glarePosition={"all"}
-          glareMaxOpacity={0.05}
-          glareColor="white"
-          glareBorderRadius="10px"
-        >
+        {props.isTilt ? (
+          <Tilt
+            perspective={1000}
+            glareEnable={true}
+            scale={1}
+            gyroscope={false}
+            glarePosition={"all"}
+            glareMaxOpacity={0.05}
+            glareColor="white"
+            glareBorderRadius="10px"
+          >
+            <div className="imgWrapper">
+              <img src={myImg} alt="" />
+            </div>
+          </Tilt>
+        ) : (
           <div className="imgWrapper">
             <img src={myImg} alt="" />
           </div>
-        </Tilt>
+        )}
       </div>
     </div>
   );
