@@ -60,6 +60,7 @@ function Contact() {
             tiltMaxAngleY={5}
             perspective={900}
             scale={1}
+            tiltReverse={true}
             transitionSpeed={800}
             gyroscope={false}
           >
@@ -78,6 +79,7 @@ function Contact() {
             tiltMaxAngleY={5}
             perspective={900}
             scale={1}
+            tiltReverse={true}
             transitionSpeed={800}
             gyroscope={false}
           >

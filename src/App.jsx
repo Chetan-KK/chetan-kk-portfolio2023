@@ -11,8 +11,8 @@ function App() {
       <MainLoading />
       <AnimatePresence>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/:id/" element={<MainProject />} />
+          <Route path="/Chetan-KK/" element={<Home />} />
+          <Route path="/Chetan-KK/:id/" element={<MainProject />} />
         </Routes>
       </AnimatePresence>
     </div>
