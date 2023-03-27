@@ -54,6 +54,19 @@ export default [
         year: "12-2019",
     },
     {
+        id: 1,
+        title: "Galaxy genrator",
+        imgSrc: "/Chetan-KK/projects/galaxy-genrator/main.png",
+        imgs: [
+            "/Chetan-KK/projects/galaxy-genrator/2.png",
+        ],
+        stack: ["HTML", "CSS", "JAVASCRIPT", "THREE JS", "OOPS"],
+        desc: `The project is created using Three.js to bring creative Galaxy design to life with multiple tweeks to play with and create many kind of 3D Galaxies`,
+        link: "https://chetan-kk.github.io/THREE-js-Galaxy/",
+        gitLink: "https://github.com/Chetan-KK/THREE-js-Galaxy",
+        year: "3-2023",
+    },
+    {
         id: 3,
         title: "College Management System",
         stack: ["HTML", "CSS", "JAVASCRIPT", "JAVA", "HIBERNET", "MYSQL"],
