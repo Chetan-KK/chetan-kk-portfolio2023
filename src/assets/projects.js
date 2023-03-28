@@ -54,7 +54,7 @@ export default [
         year: "12-2019",
     },
     {
-        id: 1,
+        id: 3,
         title: "Galaxy genrator",
         imgSrc: "/Chetan-KK/projects/galaxy-genrator/main.png",
         imgs: [
@@ -67,7 +67,7 @@ export default [
         year: "3-2023",
     },
     {
-        id: 3,
+        id: 4,
         title: "College Management System",
         stack: ["HTML", "CSS", "JAVASCRIPT", "JAVA", "HIBERNET", "MYSQL"],
         imgSrc: "/Chetan-KK/projects/collegeMS-project/main.png",
@@ -77,7 +77,7 @@ export default [
         year: "4-2019",
     },
     {
-        id: 4,
+        id: 5,
         title: "Chill dark theme",
         stack: ["VSCE", "COLORS", "NPM"],
         imgSrc: "/Chetan-KK/projects/vscode-chill-dark-theme/main.png",
@@ -90,7 +90,7 @@ export default [
         year: "3-2023",
     },
     {
-        id: 5,
+        id: 6,
         title: "Google Clone",
         stack: ["HTML", "CSS", "JAVASCRIPT", "API"],
         imgSrc: "/Chetan-KK/projects/google_clone-project/main.png",
