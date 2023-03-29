@@ -3,7 +3,7 @@ import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
 import Tilt from "react-parallax-tilt";
-// import Typed from "react-typed";
+import Typer from "react-text-typist";
 
 function Hero(props) {
   return (
@@ -14,9 +14,11 @@ function Hero(props) {
           <div className="main-title">
             Hello, I'm <b>Chetan Khulage</b>
           </div>
-          {/* <Typed
+          <Typer
+            cursorClassName="typer-cursor"
             className="main-title"
-            strings={[
+            cursorBlinkSpeed={500}
+            sentences={[
               "Full-stack Developer",
               "THREE JS developer",
               "React Developer",
@@ -27,11 +29,8 @@ function Hero(props) {
               "React THREE Fiber",
               "Web Motion Designer",
             ]}
-            typeSpeed={40}
-            backSpeed={40}
             loop={true}
-          /> */}
-          <div className="main-title">Full-stack Developer</div>
+          />
         </div>
         <div className="sub-heading">
           i love to work on front-end of web and i mostly work with THREE js for
@@ -45,6 +44,9 @@ function Hero(props) {
           <Tilt
             perspective={1000}
             glareEnable={true}
+            tiltReverse={true}
+            tiltMaxAngleX={5}
+            tiltMaxAngleY={5}
             scale={1}
             gyroscope={false}
             glarePosition={"all"}

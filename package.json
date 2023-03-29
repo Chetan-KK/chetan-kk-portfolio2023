@@ -16,7 +16,8 @@
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.117",
     "react-router-dom": "^6.8.2",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "react-text-typist": "^1.1.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
