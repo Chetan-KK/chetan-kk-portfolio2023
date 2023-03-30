@@ -66,4 +66,16 @@
   .Hero .left .connect .buttons {
     justify-content: center;
   }
+  .typer-cursor::before {
+    bottom: 8px;
+    height: 10%;
+    right: -9px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .typer-cursor::before {
+    bottom: 1.5vw;
+    right: -1.5vw;
+  }
 }

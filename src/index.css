@@ -202,3 +202,8 @@ textarea {
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .main-title {
+    font-size: 6vw;
+  }
+}
