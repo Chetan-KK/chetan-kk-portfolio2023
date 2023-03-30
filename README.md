@@ -4,8 +4,6 @@
 
 <br>👋🏻Hello everyone, I'm 👱🏻chetan i love to work on front-end and mostly work with THREE js for 3D web development, i have worked on 🌐web development around 3️⃣ years and currently doing my 📚bachelor's of engineering in ADYPU, Pune.
 
-👋🏻Hello everyone, I'm 👱🏻chetan i love to work on front-end and mostly work with THREE js for 3D web development, i have worked on 🌐web development around 3️⃣ years and currently doing my 📚bachelor's of engineering in ADYPU, Pune.
-
 <br/>
 
 - 🔭 I’m currently working on [My 3D Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio) and [My 2023 Portfolio](https://Chetan-KK.github.com/Chetan-KK)
