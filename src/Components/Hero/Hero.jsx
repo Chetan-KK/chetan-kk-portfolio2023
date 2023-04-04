@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
 import Tilt from "react-parallax-tilt";
 import Typer from "react-text-typist";
+import Lottie from "lottie-react";
+import arrowDarkJson from "../../assets/animLogos/arrowDark.json";
+import arrowLightJson from "../../assets/animLogos/arrowLight.json";
+import { ThemeContext } from "../../Context/ThemeContex";
 
 function Hero(props) {
+  const { mode } = useContext(ThemeContext);
+
   return (
     <div className="Hero flex" id="hero">
       <div className="left">
@@ -13,6 +19,19 @@ function Hero(props) {
         <div className="main-titles">
           <div className="main-title">
             Hello, I'm <b>Chetan Khulage</b>
+            {mode == "dark" ? (
+              <Lottie
+                className="animArrow"
+                animationData={arrowDarkJson}
+                loop={true}
+              />
+            ) : (
+              <Lottie
+                className="animArrow"
+                animationData={arrowLightJson}
+                loop={true}
+              />
+            )}
           </div>
           <Typer
             cursorClassName="typer-cursor"

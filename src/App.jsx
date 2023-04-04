@@ -4,17 +4,20 @@ import Home from "./Components/Home/Home";
 import MainProject from "./Components/MainProject/MainProject";
 import "./App.css";
 import MainLoading from "./Components/MainLoading/MainLoading";
+import { ThemeProvider } from "./Context/ThemeContex";
 
 function App() {
   return (
     <div className="App">
-      <MainLoading />
-      <AnimatePresence>
-        <Routes>
-          <Route path="/Chetan-KK/" element={<Home />} />
-          <Route path="/Chetan-KK/:id/" element={<MainProject />} />
-        </Routes>
-      </AnimatePresence>
+      <ThemeProvider>
+        <MainLoading />
+        <AnimatePresence>
+          <Routes>
+            <Route path="/Chetan-KK/" element={<Home />} />
+            <Route path="/Chetan-KK/:id/" element={<MainProject />} />
+          </Routes>
+        </AnimatePresence>
+      </ThemeProvider>
     </div>
   );
 }

@@ -1,19 +1,13 @@
 import { Link } from "react-scroll";
 import icon from "/favicon.svg";
 import { Link as NormalLink } from "react-router-dom";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import "./Navbar.css";
 import { useState } from "react";
+import { ThemeContext } from "../../Context/ThemeContex";
 
 export default function Navbar(props) {
-  const [mode, setMode] = useState("light");
-  useEffect(() => {
-    let startingMode = localStorage.getItem("mode");
-    if (startingMode == "dark") {
-      setMode("dark");
-      toggleMode();
-    }
-  }, []);
+  const { mode, toggleMode } = useContext(ThemeContext);
 
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -22,20 +16,6 @@ export default function Navbar(props) {
       setMenuToggle(!menuToggle);
     } else {
       setMenuToggle(true);
-    }
-  }
-
-  function toggleMode() {
-    if (mode === "light") {
-      setMode("dark");
-      window.document.body.classList.add("dark");
-      window.document.body.classList.remove("light");
-      localStorage.setItem("mode", "dark");
-    } else {
-      setMode("light");
-      window.document.body.classList.add("light");
-      window.document.body.classList.remove("dark");
-      localStorage.setItem("mode", "light");
     }
   }
 

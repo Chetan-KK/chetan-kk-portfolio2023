@@ -10,6 +10,15 @@
 .Hero .left .main-titles {
   margin: 1.5rem 0;
 }
+.animArrow {
+  position: absolute;
+  height: 60px;
+  top: -2rem;
+  right: -2vw;
+  rotate: -50deg;
+  aspect-ratio: 1;
+}
+
 .typer-cursor {
   position: relative;
 }
@@ -52,6 +61,13 @@
 .Hero .right .imgWrapper::after {
   border: 10px solid var(--light-text-c);
   transform: translate(-30px, -30px);
+}
+@media screen and (max-width: 750px) {
+  .animArrow {
+    height: 40px;
+    right: 0;
+    rotate: -80deg;
+  }
 }
 @media screen and (max-width: 600px) {
   .Hero {

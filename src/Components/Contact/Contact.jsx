@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
 import Tilt from "react-parallax-tilt";
-
 function Contact() {
   const [loading, setLoading] = useState(false);
   const [send, setSend] = useState(false);

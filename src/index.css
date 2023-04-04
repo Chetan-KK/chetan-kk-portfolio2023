@@ -67,6 +67,7 @@ body {
     )
     0 / 10px 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .small-loader {
   margin: auto;
@@ -175,6 +176,7 @@ body {
   color: var(--light-text-c);
   font-family: var(--ff);
   font-size: 3rem;
+  position: relative;
   font-weight: 700;
 }
 b {

@@ -1,5 +1,14 @@
 .Contact {
   text-align: center;
+  overflow: hidden;
+}
+.animNote {
+  position: absolute;
+  height: 790px;
+  top: 0;
+  right: 0;
+  aspect-ratio: 1;
+  opacity: 0.3;
 }
 .Contact .form {
   justify-content: center;
