@@ -12,13 +12,22 @@ import { ThemeContext } from "../../Context/ThemeContex";
 function Hero(props) {
   const { mode } = useContext(ThemeContext);
 
+  const animTitle = "Chetan Khulage";
+
   return (
     <div className="Hero flex" id="hero">
       <div className="left">
-        <div className="heading">Welcome to my 2023 Portfolio </div>
+        <div className="heading">Welcome</div>
         <div className="main-titles">
           <div className="main-title">
-            Hello, I'm <b>Chetan Khulage</b>
+            Hello, I'm{" "}
+            <b>
+              {animTitle.split("").map((char, i) => (
+                <span key={i} className="anim_Title-Char">
+                  {char}
+                </span>
+              ))}
+            </b>
             {mode == "dark" ? (
               <Lottie
                 className="animArrow"

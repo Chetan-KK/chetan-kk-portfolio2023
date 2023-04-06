@@ -10,6 +10,8 @@ function Project(props) {
           perspective={1000}
           glareEnable={true}
           scale={1}
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
           gyroscope={false}
           glarePosition={"all"}
           glareMaxOpacity={0.05}
@@ -22,8 +24,10 @@ function Project(props) {
               glareEnable={true}
               scale={1.1}
               gyroscope={false}
+              tiltMaxAngleX={5}
+              tiltMaxAngleY={5}
               glarePosition={"all"}
-              glareMaxOpacity={0.5}
+              glareMaxOpacity={0.2}
               glareColor="white"
               glareBorderRadius="5px"
             >

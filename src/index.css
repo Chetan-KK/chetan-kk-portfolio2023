@@ -57,7 +57,6 @@ a {
   text-decoration: none;
 }
 body {
-  /* background-image: var(--button-gradient); */
   background: repeating-linear-gradient(
       45deg,
       var(--secondary-color-b) 0,
@@ -181,6 +180,28 @@ body {
 }
 b {
   color: var(--primary-color);
+  cursor: default;
+}
+.anim_Title-Char {
+  position: relative;
+}
+.anim_Title-Char::before {
+  content: "";
+  position: absolute;
+  height: 1%;
+  bottom: 0;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  border-radius: 10px;
+}
+.anim_Title-Char:hover::before {
+  width: 100%;
+}
+
+@keyframes textAnim {
+  from {
+  }
 }
 .sub-heading {
   color: var(--text-c-link);
