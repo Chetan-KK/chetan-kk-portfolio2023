@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Connect from "../Connect/Connect";
 import "./Hero.css";
 import myImg from "/me.png";
@@ -12,7 +12,13 @@ import { ThemeContext } from "../../Context/ThemeContex";
 function Hero(props) {
   const { mode } = useContext(ThemeContext);
 
+  const [imgLoaded, setImgLoaded] = useState(true);
+
   const animTitle = "Chetan Khulage";
+
+  function handleImgLoad() {
+    setImgLoaded(false);
+  }
 
   return (
     <div className="Hero flex" id="hero">
@@ -83,12 +89,14 @@ function Hero(props) {
             glareBorderRadius="10px"
           >
             <div className="imgWrapper">
-              <img src={myImg} alt="" />
+              <div className={imgLoaded ? "placeholder" : ""}></div>
+              <img src={myImg} alt="" onLoad={handleImgLoad} />
             </div>
           </Tilt>
         ) : (
           <div className="imgWrapper">
-            <img src={myImg} alt="" />
+            <div className={imgLoaded ? "placeholder" : ""}></div>
+            <img src={myImg} alt="" onLoad={handleImgLoad} />
           </div>
         )}
       </div>

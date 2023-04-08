@@ -8,6 +8,7 @@
   justify-content: space-around;
   gap: 3rem;
 }
+
 .projects .Project {
   background-color: var(--secondary-color);
   min-width: 20rem;
@@ -20,6 +21,14 @@
 }
 .projects .Project:hover {
   transform: translateY(-5px);
+}
+.projects .Project .placeholder {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
 }
 .projects .Project img {
   width: 15rem;

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 
 function Project(props) {
+  const [imgLoaded, setImgLoaded] = useState(true);
+
+  function handleImgLoad() {
+    setImgLoaded(false);
+  }
+
   return (
     <div>
       {props.isTilt ? (
@@ -32,7 +38,8 @@ function Project(props) {
               glareBorderRadius="5px"
             >
               <Link to={`/Chetan-KK/${props.id}`} className="imgWrapper">
-                <img src={props.imgSrc} alt="" />
+                <div className={imgLoaded ? "placeholder" : ""}></div>
+                <img src={props.imgSrc} onLoad={handleImgLoad} alt="" />
               </Link>
             </Tilt>
             <div className="title flex">
@@ -61,7 +68,8 @@ function Project(props) {
         <div className="Project">
           <Tilt tiltEnable={false} scale={1.1}>
             <Link to={`/Chetan-KK/${props.id}`} className="imgWrapper">
-              <img src={props.imgSrc} alt="" />
+              <div className={imgLoaded ? "placeholder" : ""}></div>
+              <img src={props.imgSrc} onLoad={handleImgLoad} alt="" />{" "}
             </Link>
           </Tilt>
           <div className="title flex">

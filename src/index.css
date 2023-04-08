@@ -2,6 +2,7 @@
   --primary-color: #ff014f;
   --secondary-color: #ecf0f3;
   --secondary-color-b: #e4e4e4;
+  --placeholder: #c0c0c0;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
   --blur-c: rgba(255, 255, 255, 0.5);
@@ -16,6 +17,7 @@
   --primary-color: #ff014f;
   --secondary-color: #212428;
   --secondary-color-b: #2e2e2e;
+  --placeholder: #858585;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #1e2024, #23272b);
   --blur-c: rgba(32, 32, 32, 0.5);
@@ -181,6 +183,28 @@ body {
 b {
   color: var(--primary-color);
   cursor: default;
+}
+
+.placeholder {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color-b),
+    var(--placeholder),
+    var(--secondary-color-b)
+  );
+  animation: placeholder 5s infinite ease-in-out alternate;
+  background-size: 300%;
+}
+@keyframes placeholder {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
 }
 .anim_Title-Char {
   position: relative;

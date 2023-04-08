@@ -43,6 +43,12 @@
 .Hero .right .imgWrapper {
   position: relative;
 }
+.Hero .right .imgWrapper .placeholder {
+  width: 25rem;
+  position: absolute;
+  height: 30rem;
+}
+
 .Hero .right .imgWrapper::before,
 .Hero .right .imgWrapper::after {
   content: "";
@@ -82,6 +88,11 @@
   }
   .Hero .left .sub-heading {
     width: 80vw;
+  }
+  .Hero .right .imgWrapper .placeholder {
+    width: 65vw;
+    position: absolute;
+    height: 79vw;
   }
   .Hero .right img {
     width: 65vw;

@@ -11,13 +11,18 @@ function MainLoading() {
   }, []);
 
   return (
-    <div className={`MainLoading  flex ${loading ? "" : "none"}`}>
-      <div className="loader flex">
-        <div className="inner-loader"></div>
+    <>
+      <div
+        className={`MainLoading loadingBack flex ${loading ? "" : "none"}`}
+      ></div>
+      <div className={`MainLoading flex ${loading ? "" : "none"}`}>
+        <div className="loader flex">
+          <div className="inner-loader"></div>
+        </div>
+        <div className="main-title">loading...</div>
+        <div className="heading">Please wait</div>
       </div>
-      <div className="main-title">loading...</div>
-      <div className="heading">Please wait</div>
-    </div>
+    </>
   );
 }
 
