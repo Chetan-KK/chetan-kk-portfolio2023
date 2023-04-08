@@ -37,6 +37,7 @@
   margin: 1rem 0;
 }
 .Hero .right img {
+  height: 30rem;
   width: 25rem;
   box-shadow: var(--shadow);
 }
@@ -45,6 +46,9 @@
 }
 .Hero .right .imgWrapper .placeholder {
   width: 25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 30rem;
 }
 
@@ -88,12 +92,13 @@
   .Hero .left .sub-heading {
     width: 80vw;
   }
+  .Hero .right img {
+    height: 79vw;
+    width: 65vw;
+  }
   .Hero .right .imgWrapper .placeholder {
     width: 65vw;
     height: 79vw;
-  }
-  .Hero .right img {
-    width: 65vw;
   }
   .Hero .left .connect .buttons {
     justify-content: center;
