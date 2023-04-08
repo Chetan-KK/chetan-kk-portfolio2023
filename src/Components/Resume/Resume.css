@@ -1,0 +1,123 @@
+.downloadButton {
+  position: fixed !important;
+  width: fit-content;
+  padding: 7px 20px !important;
+  z-index: 9999;
+  right: 12vw;
+  top: 1rem;
+}
+#Print {
+  margin-top: 5rem;
+}
+.Resume .header {
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+.Resume .header .main-title {
+  font-size: 2rem;
+}
+.Resume .header .sub-heading {
+  font-size: 0.7rem;
+}
+.Resume .header main .links {
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+.Resume .header main .links .socialLink {
+  gap: 0.3rem;
+}
+.Resume .header main .links .socialLink i {
+  margin-bottom: 0.1rem;
+  font-size: 0.9rem;
+}
+.Resume .header main .links .sub-heading {
+  font-size: 0.7rem;
+}
+.Resume .header .contacts {
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.Resume .header .contacts .contact {
+  justify-content: space-between;
+}
+.Resume .header .contacts .contact .icon {
+  margin-right: 0.5rem;
+  width: 2rem;
+  justify-content: center;
+  color: var(--text-c-link);
+}
+.Resume .header .contacts .contact .icon i {
+  font-size: 0.7rem;
+}
+.Resume .header .contacts .contact .info {
+  width: 12rem;
+}
+/* .main * {
+  box-shadow: 0 0 0 1px red;
+} */
+.main {
+  align-items: flex-start !important;
+  max-width: 70rem;
+  margin: auto;
+  padding: 2rem 0;
+  justify-content: space-around;
+}
+.main .main-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.main .left {
+  max-width: 18rem;
+  border-right: 1px solid var(--text-c-link);
+}
+.main .left section {
+  margin: 0 1rem 3rem 1rem;
+}
+.main .left .desc {
+  margin-bottom: 1rem;
+}
+.main .left .name {
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+.main .left .marks {
+  color: var(--light-text-c);
+  font-size: 0.8rem;
+}
+.main .right {
+  max-width: 50rem;
+}
+.main .right section {
+  margin: 0 1rem 3rem 1rem;
+}
+.main .right section .desc {
+  margin-bottom: 2rem;
+}
+.main .right section .title {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.main .right section .info {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-bottom: 0.5rem;
+}
+.main .right section .links {
+  font-size: 0.8rem;
+}
+.main .right section .links a {
+  color: var(--light-text-c);
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #Print {
+    margin-top: 0;
+  }
+  #Print,
+  #Print * {
+    visibility: visible;
+  }
+}

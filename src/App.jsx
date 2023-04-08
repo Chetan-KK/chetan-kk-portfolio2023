@@ -5,6 +5,7 @@ import MainProject from "./Components/MainProject/MainProject";
 import "./App.css";
 import MainLoading from "./Components/MainLoading/MainLoading";
 import { ThemeProvider } from "./Context/ThemeContex";
+import Resume from "./Components/Resume/Resume";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/Chetan-KK/" element={<Home />} />
             <Route path="/Chetan-KK/:id/" element={<MainProject />} />
+            <Route path="/Chetan-KK/resume/" element={<Resume />} />
           </Routes>
         </AnimatePresence>
       </ThemeProvider>

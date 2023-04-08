@@ -53,6 +53,7 @@
   width: 100%;
   opacity: 0.7;
   z-index: -9;
+  transition: var(--transition);
 }
 .Hero .right .imgWrapper::before {
   border: 10px solid var(--primary-color);
@@ -60,6 +61,12 @@
 }
 .Hero .right .imgWrapper::after {
   border: 10px solid var(--light-text-c);
+  transform: translate(-30px, -30px);
+}
+.Hero .right .imgWrapper:hover:after {
+  transform: translate(30px, 30px);
+}
+.Hero .right .imgWrapper:hover:before {
   transform: translate(-30px, -30px);
 }
 @media screen and (max-width: 750px) {
