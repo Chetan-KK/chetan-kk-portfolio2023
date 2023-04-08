@@ -14,9 +14,9 @@ function App() {
         <MainLoading />
         <AnimatePresence>
           <Routes>
-            <Route path="/Chetan-KK/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Chetan-KK/:id/" element={<MainProject />} />
-            <Route path="/Chetan-KK/resume/" element={<Resume />} />
+            <Route path="/resume/" element={<Resume />} />
           </Routes>
         </AnimatePresence>
       </ThemeProvider>
