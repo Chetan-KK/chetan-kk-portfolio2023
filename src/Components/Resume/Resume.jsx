@@ -35,7 +35,7 @@ function Resume() {
       <div className="Resume">
         <Navbar />
         <div className="button downloadButton" onClick={handleDownload}>
-          <i class="fa-solid fa-download"></i>
+          <i className="fa-solid fa-download"></i>
           {width < 600 ? "" : " Download"}
         </div>
         <div id="Print">
@@ -52,7 +52,7 @@ function Resume() {
                   href="https://github.com/Chetan-KK"
                   className="sub-heading socialLink flex"
                 >
-                  <i class="fa-brands fa-github"></i> Chetan-KK
+                  <i className="fa-brands fa-github"></i> Chetan-KK
                 </a>
                 <a
                   href="https://www.linkedin.com/in/chetan-khulage/"
@@ -84,7 +84,7 @@ function Resume() {
               </div>
               <div className="contact flex">
                 <div className="icon flex">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <i className="fa-solid fa-location-dot"></i>
                 </div>
                 <div className="info flex sub-heading">
                   Pune, Maharashtra, India.
@@ -197,7 +197,7 @@ export default Resume;
                 <a href="tel:+919284276295">+91 92842 76295</a>
               </div>
               <div className="info">
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <span>Pune, Maharashtra, India.</span>
               </div>
             </div> */

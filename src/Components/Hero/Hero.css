@@ -45,7 +45,6 @@
 }
 .Hero .right .imgWrapper .placeholder {
   width: 25rem;
-  position: absolute;
   height: 30rem;
 }
 
@@ -91,7 +90,6 @@
   }
   .Hero .right .imgWrapper .placeholder {
     width: 65vw;
-    position: absolute;
     height: 79vw;
   }
   .Hero .right img {

@@ -100,6 +100,7 @@
 
 .main .right section .info {
   font-size: 0.8rem;
+  text-indent: 2rem;
   text-align: justify;
   margin-bottom: 0.5rem;
 }
@@ -108,6 +109,51 @@
 }
 .main .right section .links a {
   color: var(--light-text-c);
+}
+@media screen and (max-width: 600px) {
+  .downloadButton {
+    padding: 6px 15px !important;
+    right: 3.5rem;
+    top: 1.2rem;
+  }
+  .Resume .header .main-title {
+    font-size: 2rem;
+  }
+  .Resume .header {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .main .main-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .Resume .header .contacts .contact .info {
+    width: 11rem;
+  }
+  .main .left {
+    max-width: 90rem;
+    border-right: 0;
+  }
+  .main {
+    max-width: 70rem;
+    margin: auto;
+    padding: 2rem 0;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .Resume .header main .links {
+    justify-content: center;
+  }
+  .main .right section .desc {
+    padding: 0.2rem;
+  }
+  .main .right section .title .stack {
+    font-size: 0.5rem;
+    width: 40vw;
+    text-align: right;
+  }
 }
 @media print {
   body * {
