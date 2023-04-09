@@ -100,6 +100,7 @@ export default function Navbar(props) {
             width: "40px",
             height: "40px",
           }}
+          title={`Change theme to ${mode == "dark" ? "light" : "dark"}`}
         >
           {mode == "light" ? (
             <i className="fa-solid fa-moon"></i>

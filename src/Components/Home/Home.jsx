@@ -47,6 +47,7 @@ function Home() {
       <hr className="hr" />
       <About />
       <Contact isTilt={tiltYes} />
+
       <hr className="hr" />
       <Footer />
     </motion.div>

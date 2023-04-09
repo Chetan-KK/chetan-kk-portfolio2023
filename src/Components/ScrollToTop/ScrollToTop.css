@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+.upButton {
+  position: fixed !important;
+  bottom: 1.5rem;
+  right: 5px;
+  text-align: center;
+  padding: 0.5rem 1rem !important;
+  z-index: 2;
+}
+@media screen and (max-width: 700px) {
+  .upButton {
+    bottom: 1rem;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .upButton {
+    padding: 0.1rem 0.8rem !important;
+  }
+  .upButton i {
+    font-size: 0.9rem;
+  }
+}

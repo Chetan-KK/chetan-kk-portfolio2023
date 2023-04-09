@@ -206,27 +206,7 @@ b {
     background-position: 0;
   }
 }
-.anim_Title-Char {
-  position: relative;
-}
-.anim_Title-Char::before {
-  content: "";
-  position: absolute;
-  height: 1%;
-  bottom: 0;
-  width: 0;
-  background-color: var(--primary-color);
-  transition: var(--transition);
-  border-radius: 10px;
-}
-.anim_Title-Char:hover::before {
-  width: 100%;
-}
 
-@keyframes textAnim {
-  from {
-  }
-}
 .sub-heading {
   color: var(--text-c-link);
   font-family: var(--ff);

@@ -2,7 +2,7 @@
   justify-content: space-between;
   padding: 1rem calc(5vw + 1rem);
   background-color: var(--blur-c);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(7px);
   z-index: 999;
   position: fixed;
   box-shadow: var(--shadow);
@@ -65,7 +65,6 @@
     top: 0;
     right: 0;
     z-index: 99;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
   .menuOpen {
@@ -86,10 +85,16 @@
   .Navbar .links {
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
   }
   .Navbar .links .link {
     margin: 1rem;
+  }
+  .Navbar .links .link::before {
+    transform: scaleX(0.3);
+    transform-origin: left;
+  }
+  .link:hover::before {
+    transform: scaleX(1) !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -123,5 +128,11 @@
   .Navbar .right .buttons {
     padding-top: 0;
     margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Navbar .right {
+    flex-direction: column;
+    gap: 2rem;
   }
 }

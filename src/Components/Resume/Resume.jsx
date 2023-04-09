@@ -35,7 +35,7 @@ function Resume() {
       <div className="Resume">
         <Navbar />
         <div className="button downloadButton" onClick={handleDownload}>
-          <i className="fa-solid fa-download"></i>
+          <i class="fa-regular fa-floppy-disk"></i>{" "}
           {width < 600 ? "" : " Download"}
         </div>
         <div id="Print">
@@ -95,6 +95,7 @@ function Resume() {
           <hr className="hr" />
           <main className="main flex sub-heading">
             <div className="left">
+              {/* Education section */}
               <section>
                 <div className="main-title">Education</div>
                 <div className="desc">
@@ -126,7 +127,7 @@ function Resume() {
                   <div className="marks">Marks: 68.20%</div>
                 </div>
               </section>
-
+              {/* Courses section */}
               <section>
                 <div className="main-title">Cources</div>
                 <div className="desc">
@@ -158,7 +159,25 @@ function Resume() {
                   <div className="marks">PYTHON, OOPS.</div>
                 </div>
               </section>
+              <section>
+                <div className="main-title">Technologies</div>
+                <div className="techs flex">
+                  <div className="side1">
+                    <div className="tech">HTML</div>
+                    <div className="tech">CSS</div>
+                    <div className="tech">Javascript</div>
+                  </div>
+                  <div className="side2">
+                    <div className="tech">React Js</div>
+                    <div className="tech">Three Js</div>
+                    <div className="tech">Gsap</div>
+                  </div>
+                </div>
+              </section>
             </div>
+            {/**
+             * right section
+             */}
             <div className="right">
               <section>
                 <div className="main-title">Projects</div>

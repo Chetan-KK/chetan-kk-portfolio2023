@@ -10,6 +10,13 @@
 .Hero .left .main-titles {
   margin: 1.5rem 0;
 }
+.anim_Title-Char {
+  position: relative;
+}
+.main-titles .main-title {
+  gap: 1vw;
+  width: max-content;
+}
 .animArrow {
   position: absolute;
   height: 60px;

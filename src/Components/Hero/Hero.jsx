@@ -8,6 +8,7 @@ import Lottie from "lottie-react";
 import arrowDarkJson from "../../assets/animLogos/arrowDark.json";
 import arrowLightJson from "../../assets/animLogos/arrowLight.json";
 import { ThemeContext } from "../../Context/ThemeContex";
+import gsap from "gsap";
 
 function Hero(props) {
   const { mode } = useContext(ThemeContext);
@@ -20,18 +21,44 @@ function Hero(props) {
     setImgLoaded(false);
   }
 
+  const handleHoverText = (e) => {
+    let tl = gsap.timeline();
+    tl.fromTo(
+      e.target,
+      {
+        ease: "elastic.out(1, 0.3)",
+        rotateY: 0,
+        scaleY: 1.5,
+        rotateZ: 0,
+        duration: 1,
+      },
+      {
+        ease: "elastic.out(1, 0.3)",
+        rotateY: 360,
+        rotateZ: 360,
+        scaleY: 1,
+        duration: 1,
+      }
+    );
+  };
+
   return (
     <div className="Hero flex" id="hero">
       <div className="left">
         <div className="heading">Welcome</div>
         <div className="main-titles">
-          <div className="main-title">
-            Hello, I'm{" "}
-            <b>
+          <div className="main-title flex">
+            Hello, I'm
+            <b className="flex">
               {animTitle.split("").map((char, i) => (
-                <span key={i} className="anim_Title-Char">
+                <div
+                  key={i}
+                  onMouseOver={handleHoverText}
+                  className="anim_Title-Char"
+                  title="Isn't it cool 😃"
+                >
                   {char}
-                </span>
+                </div>
               ))}
             </b>
             {mode == "dark" ? (

@@ -6,12 +6,14 @@ import "./App.css";
 import MainLoading from "./Components/MainLoading/MainLoading";
 import { ThemeProvider } from "./Context/ThemeContex";
 import Resume from "./Components/Resume/Resume";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <ThemeProvider>
         <MainLoading />
+        <ScrollToTop />
         <AnimatePresence>
           <Routes>
             <Route path="/" element={<Home />} />

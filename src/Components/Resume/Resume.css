@@ -10,8 +10,10 @@
   margin-top: 5rem;
 }
 .Resume .header {
-  justify-content: space-around;
-  padding: 2rem 0;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 65rem;
+  margin: auto;
 }
 .Resume .header .main-title {
   font-size: 2rem;
@@ -110,6 +112,13 @@
 .main .right section .links a {
   color: var(--light-text-c);
 }
+.main .left section .techs {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* .main .left section .techs .side2 {
+  margin-right: 3rem;
+} */
 @media screen and (max-width: 600px) {
   .downloadButton {
     padding: 6px 15px !important;
