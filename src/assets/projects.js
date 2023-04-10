@@ -61,7 +61,7 @@ export default [
             "/Chetan-KK/projects/galaxy-genrator/2.png",
         ],
         stack: ["HTML", "CSS", "JAVASCRIPT", "THREE JS", "OOPS"],
-        desc: `The project is created using Three.js to bring creative Galaxy design to life with multiple tweeks to play with and create many kind of 3D Galaxies`,
+        desc: `The project is created using Three.js to bring creative Galaxy design to life with multiple tweeks to play with and create many kind of 3D Galaxies to use tweeks put #debug after the url ex: https://chetan-kk.github.io/THREE-js-Galaxy/#debug`,
         link: "https://chetan-kk.github.io/THREE-js-Galaxy/",
         gitLink: "https://github.com/Chetan-KK/THREE-js-Galaxy",
         year: "3-2023",

@@ -35,7 +35,7 @@ function Resume() {
       <div className="Resume">
         <Navbar />
         <div className="button downloadButton" onClick={handleDownload}>
-          <i class="fa-regular fa-floppy-disk"></i>{" "}
+          <i className="fa-regular fa-floppy-disk"></i>{" "}
           {width < 600 ? "" : " Download"}
         </div>
         <div id="Print">

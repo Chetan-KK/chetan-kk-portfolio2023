@@ -13,6 +13,17 @@ function MainProject() {
 
   const [project, setProject] = useState(null);
 
+  const [ImgLoaded, setImgLoaded] = useState(true);
+  const [mainImgLoaded, setMainImgLoaded] = useState(true);
+
+  function handleImgLoad() {
+    setImgLoaded(false);
+  }
+
+  function handleMainImgLoad() {
+    setMainImgLoaded(false);
+  }
+
   useEffect(() => {
     projects.map((p) => {
       if (p.id == ProjectId.id) {
@@ -66,7 +77,8 @@ function MainProject() {
                 transitionSpeed={1000}
                 gyroscope={false}
               >
-                <img src={project.imgSrc} alt="" />
+                <div className={mainImgLoaded ? "placeholder" : ""}></div>
+                <img src={project.imgSrc} onLoad={handleMainImgLoad} alt="" />
               </Tilt>
               {project.imgs &&
                 project.imgs.map((img) => (
@@ -84,7 +96,8 @@ function MainProject() {
                     transitionSpeed={1000}
                     gyroscope={false}
                   >
-                    <img src={img} key={img} alt="" />
+                    <div className={ImgLoaded ? "placeholder" : ""}></div>
+                    <img src={img} onLoad={handleImgLoad} key={img} alt="" />
                   </Tilt>
                 ))}
             </div>
