@@ -6,6 +6,12 @@
   right: 12vw;
   top: 1rem;
 }
+.backButton {
+  position: absolute;
+  top: 6rem;
+  width: fit-content;
+  padding: 0.8rem 1.5rem !important;
+}
 #Print {
   margin-top: 5rem;
 }
@@ -120,6 +126,13 @@
   margin-right: 3rem;
 } */
 @media screen and (max-width: 600px) {
+  .backButton {
+    position: absolute;
+    top: 5.5rem;
+    width: auto;
+    text-align: center;
+    padding: 0.8rem 1.5rem !important;
+  }
   .downloadButton {
     padding: 6px 15px !important;
     right: 3.5rem;

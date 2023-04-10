@@ -4,6 +4,7 @@ import "./Resume.css";
 import Navbar from "../Navbar/Navbar";
 import Project from "./Project";
 import projectsArray from "../../assets/projects";
+import { Link } from "react-router-dom";
 
 function Resume() {
   const handleDownload = (e) => {
@@ -34,6 +35,9 @@ function Resume() {
     >
       <div className="Resume">
         <Navbar />
+        <Link to="/">
+          <div className="button backButton">Back</div>
+        </Link>
         <div className="button downloadButton" onClick={handleDownload}>
           <i className="fa-regular fa-floppy-disk"></i>{" "}
           {width < 600 ? "" : " Download"}

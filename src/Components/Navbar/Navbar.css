@@ -27,7 +27,7 @@
 .Navbar .contact-button {
   padding: 0.5rem 1.5rem;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1160px) {
   .menuToggle {
     display: flex !important;
     color: var(--primary-color);
@@ -107,6 +107,11 @@
   }
   .Navbar {
     padding: 1rem 0.5rem;
+  }
+
+  .Navbar .container {
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
   .Navbar .right {
     padding: 4rem 1rem 2rem 1rem;

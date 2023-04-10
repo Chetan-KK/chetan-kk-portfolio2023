@@ -80,15 +80,20 @@ export default function Navbar(props) {
                 About
               </Link>
             </div>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-            >
-              <div className="button contact-button">Contact</div>
-            </Link>
+            <div className="container flex">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                <div className="button contact-button">Contact</div>
+              </Link>
+              <NormalLink to={"resume"}>
+                <div className="button contact-button">Resume</div>
+              </NormalLink>
+            </div>
           </>
         )}
 
