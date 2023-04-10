@@ -91,6 +91,21 @@ export default [
     },
     {
         id: 6,
+        title: "Age calculator",
+        stack: ['HTML', "CSS", "JAVASCRIPT", "REACT", "ANIMATED NUMBERS"],
+        imgSrc: "/Chetan-KK/projects/age-calculator/main.png",
+        imgs: [
+            "/Chetan-KK/projects/age-calculator/2.png",
+            "/Chetan-KK/projects/age-calculator/3.png",
+            "/Chetan-KK/projects/age-calculator/4.png",
+        ],
+        desc: "The challenge on FrontendMentor presented a unique opportunity to showcase my skills in web development by creating an age calculator using React and an animated numbers library. I began by carefully studying the requirements of the project and planning out my approach to ensure that the end result would meet all the necessary criteria. With a clear strategy in place, I proceeded to develop the calculator with precision and attention to detail The end product was not only functional, but also aesthetically pleasing, with smooth animations that add a touch of elegance to the user experience. The use of React allowed for efficient management of state, while the animated numbers library made it possible to create dynamic and engaging animations that capture the user's attention. Overall, completing this challenge was a fulfilling experience that allowed me to sharpen my skills and showcase my abilities in web development.",
+        link: "https://chetan-kk.github.io/age-calculator-solution/",
+        gitLink: "https://github.com/Chetan-KK/age-calculator-solution",
+        year: "4-2023",
+    },
+    {
+        id: 7,
         title: "Google Clone",
         stack: ["HTML", "CSS", "JAVASCRIPT", "API"],
         imgSrc: "/Chetan-KK/projects/google_clone-project/main.png",
