@@ -9,12 +9,10 @@ function ThemeProvider(props) {
     if (startingMode == "dark") {
       setMode("dark");
       toggleMode();
-      toggleMetaTheme();
     }
   }, []);
 
   const metaTag = document.querySelector("meta[name='theme-color']");
-
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
@@ -30,8 +28,6 @@ function ThemeProvider(props) {
       localStorage.setItem("mode", "light");
     }
   };
-
-  const toggleMetaTheme = () => {};
 
   return (
     <div>
