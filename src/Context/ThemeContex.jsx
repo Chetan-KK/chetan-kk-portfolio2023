@@ -9,22 +9,29 @@ function ThemeProvider(props) {
     if (startingMode == "dark") {
       setMode("dark");
       toggleMode();
+      toggleMetaTheme();
     }
   }, []);
+
+  const metaTag = document.querySelector("meta[name='theme-color']");
 
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
       window.document.body.classList.add("dark");
       window.document.body.classList.remove("light");
+      metaTag.setAttribute("content", "#212428");
       localStorage.setItem("mode", "dark");
     } else {
       setMode("light");
       window.document.body.classList.add("light");
       window.document.body.classList.remove("dark");
+      metaTag.setAttribute("content", "#ecf0f3");
       localStorage.setItem("mode", "light");
     }
   };
+
+  const toggleMetaTheme = () => {};
 
   return (
     <div>
