@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: "/Chetan-KK/",
-  server: {
-    origin: 'http://localhost:3000',
-    host: '0.0.0.0',
-    fs: {
-      strict: true,
-    }
-  }
+  // server: {
+  //   origin: 'http://localhost:3000',
+  //   host: '0.0.0.0',
+  //   fs: {
+  //     strict: true,
+  //   }
+  // }
 });

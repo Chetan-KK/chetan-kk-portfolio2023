@@ -21,25 +21,21 @@ function Hero(props) {
     setImgLoaded(false);
   }
 
-  const handleHoverText = (e) => {
-    let tl = gsap.timeline();
-    tl.fromTo(
-      e.target,
-      {
-        ease: "elastic.out(1, 0.3)",
-        rotateY: 0,
-        scaleY: 1.5,
-        rotateZ: 0,
-        duration: 1,
-      },
-      {
-        ease: "elastic.out(1, 0.3)",
-        rotateY: 360,
-        rotateZ: 360,
-        scaleY: 1,
-        duration: 1,
-      }
-    );
+  const handleHoverTextEnter = (e) => {
+    gsap.to(e.target, 0.3, {
+      y: -25,
+      rotate: -50,
+      repeat: 0,
+    });
+  };
+
+  const handleHoverTextLeave = (e) => {
+    gsap.to(e.target, 1, {
+      rotate: 0,
+      y: 0,
+      ease: "elastic.out(1, 0.3)",
+      repeat: 0,
+    });
   };
 
   return (
@@ -53,7 +49,8 @@ function Hero(props) {
               {animTitle.split("").map((char, i) => (
                 <div
                   key={i}
-                  onMouseOver={handleHoverText}
+                  onMouseEnter={handleHoverTextEnter}
+                  onMouseLeave={handleHoverTextLeave}
                   className="anim_Title-Char"
                   title="Isn't it cool 😃"
                 >

@@ -107,12 +107,6 @@ function Skills() {
         "https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg",
     },
     {
-      name: "Bash",
-      link: "https://www.gnu.org/software/bash/",
-      imgLink:
-        "https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg",
-    },
-    {
       name: "XAMPP",
       link: "https://www.apachefriends.org/",
       imgLink: "https://profilinator.rishav.dev/skills-assets/xampp.png",
@@ -154,6 +148,16 @@ function Skills() {
           ))}
         </div>
       </div>
+      {/* <div className="skills-row flex">
+        {skills.map((skill) => (
+          <Skill
+            key={skill.name}
+            link={skill.link}
+            imgLink={skill.imgLink}
+            name={skill.name}
+          />
+        ))}
+      </div> */}
     </div>
   );
 }
