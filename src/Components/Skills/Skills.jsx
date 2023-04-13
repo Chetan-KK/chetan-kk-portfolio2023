@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Skill from "./Skill";
 import "./Skills.css";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 function Skills() {
   const [skills, setSkills] = useState([
@@ -119,6 +121,31 @@ function Skills() {
     },
   ]);
 
+  // const row1 = useRef(null);
+  // const row2 = useRef(null);
+
+  // useEffect(() => {
+  //   console.log(row1.current.style.transform);
+  //   tick();
+  // }, []);
+
+  // let time = 0;
+  // const tick = () => {
+  //   time++;
+  //   let val = time;
+  //   row1.current.style.transform = `translateX(-${val}px)`;
+  //   row2.current.style.transform = `translateX(-${val}px)`;
+
+  //   // console.log(val);
+  //   if (val == 2300) {
+  //     val = -2300;
+  //   }
+
+  //   window.requestAnimationFrame(() => {
+  //     tick();
+  //   });
+  // };
+
   return (
     <div className="Skills" id="skills">
       <div className="main-title">Skills</div>
@@ -149,14 +176,26 @@ function Skills() {
         </div>
       </div>
       {/* <div className="skills-row flex">
-        {skills.map((skill) => (
-          <Skill
-            key={skill.name}
-            link={skill.link}
-            imgLink={skill.imgLink}
-            name={skill.name}
-          />
-        ))}
+        <div className="row-1 flex" ref={row1}>
+          {skills.map((skill) => (
+            <Skill
+              key={skill.name}
+              link={skill.link}
+              imgLink={skill.imgLink}
+              name={skill.name}
+            />
+          ))}
+        </div>
+        <div className="row-2 flex" ref={row2}>
+          {skills.map((skill) => (
+            <Skill
+              key={skill.name}
+              link={skill.link}
+              imgLink={skill.imgLink}
+              name={skill.name}
+            />
+          ))}
+        </div>
       </div> */}
     </div>
   );

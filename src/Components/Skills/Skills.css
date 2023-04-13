@@ -49,6 +49,13 @@
 .all-skills .right .Skill:hover::before {
   box-shadow: 0 0 70px 20px var(--primary-color);
 }
+.Skills .skills-row {
+  gap: 4rem;
+}
+.Skills .skills-row .row-1,
+.Skills .skills-row .row-2 {
+  gap: 4rem;
+}
 @media screen and (max-width: 900px) {
   .all-skills {
     flex-direction: column;
