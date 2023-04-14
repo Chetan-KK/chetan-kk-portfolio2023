@@ -11,6 +11,7 @@ function Connect() {
           target="_blank"
           href="https://github.com/Chetan-KK"
           className="button"
+          title="follow me on github"
         >
           <i className="fa-brands fa-github"></i>
         </a>
@@ -18,6 +19,7 @@ function Connect() {
           target="_blank"
           href="https://www.linkedin.com/in/chetan-khulage/"
           className="button"
+          title="follow me on linkdin"
         >
           <i className="fa-brands fa-linkedin"></i>
         </a>
@@ -25,6 +27,7 @@ function Connect() {
           target="_blank"
           href="https://www.instagram.com/c_h_e_t_a_n__k/"
           className="button"
+          title="follow me on instagram"
         >
           <i className="fa-brands fa-instagram"></i>
         </a>
@@ -32,10 +35,11 @@ function Connect() {
           target="_blank"
           href="https://www.youtube.com/@chetankhulage"
           className="button"
+          title="subscribe me on youtube"
         >
           <i className="fa-brands fa-youtube"></i>
         </a>
-        <Link to={"resume"}>
+        <Link to={"resume"} title="see resume">
           <div className="button resume-button">Resume</div>
         </Link>
       </div>

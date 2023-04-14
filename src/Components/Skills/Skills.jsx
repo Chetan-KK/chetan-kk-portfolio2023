@@ -155,13 +155,27 @@ function Skills() {
       <div className="all-skills flex">
         <div className="left">
           <ul>
-            <li className="button">Full-stack Web Developer</li>
-            <li className="button">MERN-stack Developer</li>
-            <li className="button">Web Designer</li>
-            <li className="button">UI/UX Developer/Designer</li>
-            <li className="button">THREE JS developer</li>
-            <li className="button">React THREE Fiber</li>
-            <li className="button">Web Motion Designer</li>
+            <li className="button" title="it's not a button">
+              Full-stack Web Developer
+            </li>
+            <li className="button" title="it's not a button">
+              MERN-stack Developer
+            </li>
+            <li className="button" title="it's not a button">
+              Web Designer
+            </li>
+            <li className="button" title="it's not a button">
+              UI/UX Developer/Designer
+            </li>
+            <li className="button" title="it's not a button">
+              THREE JS developer
+            </li>
+            <li className="button" title="it's not a button">
+              React THREE Fiber
+            </li>
+            <li className="button" title="it's not a button">
+              Web Motion Designer
+            </li>
           </ul>
         </div>
         <div className="right flex">

@@ -6,6 +6,7 @@
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
   --blur-c: rgba(255, 255, 255, 0.5);
+  --border-c: rgba(128, 128, 128, 0.5);
   --text-c-link: #646c77;
   --text-c-hover: #f8f9fa;
   --light-text-c: #3c3e41;
@@ -21,6 +22,7 @@
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #1e2024, #23272b);
   --blur-c: rgba(32, 32, 32, 0.5);
+  --border-c: rgba(128, 128, 128, 0.5);
   --text-c-link: #96a3b6;
   --text-c-hover: #f8f9fa;
   --light-text-c: #e1e6ee;
@@ -106,7 +108,7 @@ body {
   width: 80vw;
   margin: auto;
   border: none;
-  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 1px solid var(--border-c);
 }
 .center {
   text-align: center;

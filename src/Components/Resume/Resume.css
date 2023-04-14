@@ -76,7 +76,6 @@
 }
 .main .left {
   max-width: 18rem;
-  border-right: 1px solid var(--text-c-link);
 }
 .main .left section {
   margin: 0 1rem 3rem 1rem;
@@ -94,6 +93,7 @@
 }
 .main .right {
   max-width: 50rem;
+  border-left: 1px solid var(--border-c);
 }
 .main .right section {
   margin: 0 1rem 3rem 1rem;

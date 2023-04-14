@@ -114,13 +114,13 @@ function Hero(props) {
           >
             <div className="imgWrapper">
               <div className={imgLoaded ? "placeholder" : ""}></div>
-              <img src={myImg} alt="" onLoad={handleImgLoad} />
+              <img src={myImg} alt="" onLoad={handleImgLoad} title="It's me" />
             </div>
           </Tilt>
         ) : (
           <div className="imgWrapper">
             <div className={imgLoaded ? "placeholder" : ""}></div>
-            <img src={myImg} alt="" onLoad={handleImgLoad} />
+            <img src={myImg} alt="" onLoad={handleImgLoad} title="It's me" />
           </div>
         )}
       </div>

@@ -78,16 +78,24 @@ function Project(props) {
             </Link>
             <div className="year">({props.year})</div>
           </div>
-          <div className="desc">
+          <div className="desc" title="read more">
             <Link to={`/Chetan-KK/${props.id}`}>
               {props.desc.slice(0, 100)} <b>read more...</b>
             </Link>
           </div>
           <div className="buttons">
-            <a href={props.link} className="button preview-button">
+            <a
+              href={props.link}
+              className="button preview-button"
+              title="see preview"
+            >
               Preview <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
-            <a href={props.gitLink} className="button preview-button git">
+            <a
+              href={props.gitLink}
+              className="button preview-button git"
+              title="see code"
+            >
               <i className="fa-brands fa-github"></i>
             </a>
           </div>

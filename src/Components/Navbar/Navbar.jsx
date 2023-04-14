@@ -22,8 +22,8 @@ export default function Navbar(props) {
   return (
     <div className={`Navbar flex`}>
       <div className="logo flex">
-        <img src={icon} alt="" className="icon" />
-        <NormalLink to="/" className="link">
+        <img src={icon} alt="" className="icon" title="👋🏼😃" />
+        <NormalLink to="/" className="link" title="refresh">
           <b>{`<`}</b>Chetan Khulage<b>{`/>`}</b>
         </NormalLink>
       </div>
@@ -49,6 +49,7 @@ export default function Navbar(props) {
                 offset={-200}
                 duration={500}
                 className="link"
+                title="go to home section"
               >
                 Home
               </Link>
@@ -59,6 +60,7 @@ export default function Navbar(props) {
                 offset={-100}
                 duration={500}
                 className="link"
+                title="go to projects section"
               >
                 Projects
               </Link>
@@ -69,6 +71,7 @@ export default function Navbar(props) {
                 offset={-100}
                 duration={500}
                 className="link"
+                title="go to skills section"
               >
                 Skills
               </Link>
@@ -80,6 +83,7 @@ export default function Navbar(props) {
                 offset={-180}
                 duration={500}
                 className="link"
+                title="go to about section"
               >
                 About
               </Link>
@@ -91,10 +95,11 @@ export default function Navbar(props) {
                 smooth={true}
                 offset={-100}
                 duration={500}
+                title="go to contact section"
               >
                 <div className="button contact-button">Contact</div>
               </Link>
-              <NormalLink to={"resume"}>
+              <NormalLink to={"resume"} title="see resume">
                 <div className="button contact-button">Resume</div>
               </NormalLink>
             </div>
