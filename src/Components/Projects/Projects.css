@@ -21,6 +21,8 @@
 }
 .projects .Project:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 0 2px var(--primary-color),
+    0 0 130px -50px var(--primary-color);
 }
 .projects .Project .placeholder {
   height: 100%;

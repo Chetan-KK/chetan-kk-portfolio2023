@@ -121,30 +121,34 @@ function Skills() {
     },
   ]);
 
-  // const row1 = useRef(null);
-  // const row2 = useRef(null);
+  const [row1Pos, setRow1Pos] = useState(0);
+  const [row2Pos, setRow2Pos] = useState(0);
 
-  // useEffect(() => {
-  //   console.log(row1.current.style.transform);
-  //   tick();
-  // }, []);
+  useEffect(() => {
+    tick();
+  }, []);
 
-  // let time = 0;
-  // const tick = () => {
-  //   time++;
-  //   let val = time;
-  //   row1.current.style.transform = `translateX(-${val}px)`;
-  //   row2.current.style.transform = `translateX(-${val}px)`;
+  const devider = 50;
 
-  //   // console.log(val);
-  //   if (val == 2300) {
-  //     val = -2300;
-  //   }
+  const tick = () => {
+    setRow1Pos((prev) => {
+      if (prev / devider == -100) {
+        return Math.abs(prev);
+      }
+      return --prev;
+    });
 
-  //   window.requestAnimationFrame(() => {
-  //     tick();
-  //   });
-  // };
+    setRow2Pos((prev) => {
+      if (prev / devider == -200) {
+        return 0;
+      }
+      return --prev;
+    });
+
+    window.requestAnimationFrame(() => {
+      tick();
+    });
+  };
 
   return (
     <div className="Skills" id="skills">
@@ -153,7 +157,7 @@ function Skills() {
         <b>Technologies I often play with</b>
       </div>
       <div className="all-skills flex">
-        <div className="left">
+        <div className="section">
           <ul>
             <li className="button" title="it's not a button">
               Full-stack Web Developer
@@ -164,6 +168,10 @@ function Skills() {
             <li className="button" title="it's not a button">
               Web Designer
             </li>
+          </ul>
+        </div>
+        <div className="section">
+          <ul>
             <li className="button" title="it's not a button">
               UI/UX Developer/Designer
             </li>
@@ -173,12 +181,27 @@ function Skills() {
             <li className="button" title="it's not a button">
               React THREE Fiber
             </li>
-            <li className="button" title="it's not a button">
-              Web Motion Designer
-            </li>
           </ul>
         </div>
-        <div className="right flex">
+      </div>
+      <div className="skills-row flex">
+        <div
+          className="row-1 flex"
+          style={{ transform: `translateX(${row1Pos / devider}%)` }}
+        >
+          {skills.map((skill) => (
+            <Skill
+              key={skill.name}
+              link={skill.link}
+              imgLink={skill.imgLink}
+              name={skill.name}
+            />
+          ))}
+        </div>
+        <div
+          className="row-2 flex"
+          style={{ transform: `translateX(${row2Pos / devider}%)` }}
+        >
           {skills.map((skill) => (
             <Skill
               key={skill.name}
@@ -189,28 +212,6 @@ function Skills() {
           ))}
         </div>
       </div>
-      {/* <div className="skills-row flex">
-        <div className="row-1 flex" ref={row1}>
-          {skills.map((skill) => (
-            <Skill
-              key={skill.name}
-              link={skill.link}
-              imgLink={skill.imgLink}
-              name={skill.name}
-            />
-          ))}
-        </div>
-        <div className="row-2 flex" ref={row2}>
-          {skills.map((skill) => (
-            <Skill
-              key={skill.name}
-              link={skill.link}
-              imgLink={skill.imgLink}
-              name={skill.name}
-            />
-          ))}
-        </div>
-      </div> */}
     </div>
   );
 }
