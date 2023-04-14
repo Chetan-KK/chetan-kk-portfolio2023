@@ -18,3 +18,8 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 325px) {
+  .connect .resume-button {
+    width: 60vw;
+  }
+}

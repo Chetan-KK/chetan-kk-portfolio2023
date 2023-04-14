@@ -32,9 +32,4 @@
     gap: 0.3rem;
     margin-bottom: 1rem;
   }
-  .connect .button {
-    padding: 0.5rem 1rem;
-    margin: 1rem 0.1rem;
-    z-index: 1;
-  }
 }

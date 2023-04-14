@@ -86,6 +86,9 @@
   transform: translate(-30px, -30px);
 }
 @media screen and (max-width: 750px) {
+  .main-titles .main-title {
+    font-size: 6vw;
+  }
   .animArrow {
     height: 40px;
     right: 0;
