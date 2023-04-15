@@ -12,8 +12,6 @@ function Contact() {
 
     setLoading(true);
 
-    console.log(e.target.email.value, e.target.email.value);
-
     const res = await fetch(
       "https://chetan-kk-portfolio-default-rtdb.firebaseio.com/feedbacks.json",
       {
@@ -29,10 +27,8 @@ function Contact() {
     );
 
     if (res.ok) {
-      console.log(res);
       setSend(true);
     } else {
-      console.log(res);
       setErr(true);
     }
   };
