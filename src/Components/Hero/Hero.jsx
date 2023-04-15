@@ -91,7 +91,7 @@ function Hero(props) {
           />
         </div>
         <div className="sub-heading">
-          i love to work on front-end of web and i mostly work with THREE js for
+          I love to work on front-end of web and i mostly work with THREE js for
           3D web development, i have worked on web development from around 3
           years
         </div>

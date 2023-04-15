@@ -6,6 +6,7 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   const [send, setSend] = useState(false);
   const [err, setErr] = useState(false);
+  const [validEmail, setValidEmail] = useState(true);
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -36,8 +37,16 @@ function Contact() {
       })
       .catch((error) => {
         setErr(true);
-        console.log(error);
       });
+  };
+
+  const handleEmailCheck = (e) => {
+    if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(e.target.value)) {
+      setValidEmail(false);
+    } else {
+      setValidEmail(true);
+      console.log("n");
+    }
   };
 
   return (
@@ -65,9 +74,10 @@ function Contact() {
           >
             <div className="tip">*required</div>
             <input
-              className="input"
+              className={validEmail ? "input " : "input valid"}
               type="email"
               name="email"
+              onChange={handleEmailCheck}
               placeholder="Enter your Email"
               required
             />
@@ -88,7 +98,7 @@ function Contact() {
               name="massage"
               cols="30"
               rows="10"
-              placeholder="👋🏻Say hellooo..."
+              placeholder="👋🏻 Say hellooo..."
               required
             ></textarea>
           </Tilt>
@@ -104,7 +114,7 @@ function Contact() {
               className="heading"
               style={{ fontSize: "1.3rem", marginTop: "1rem" }}
             >
-              <b>Something is wrong try again!</b>
+              <b>Something is wrong, try again!</b>
             </div>
           ) : send ? (
             <div

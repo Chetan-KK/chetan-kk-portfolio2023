@@ -119,12 +119,16 @@
   color: var(--light-text-c);
 }
 .main .left section .techs {
-  justify-content: space-around;
-  flex-wrap: wrap;
+  padding-left: 1.5rem;
 }
-/* .main .left section .techs .side2 {
-  margin-right: 3rem;
-} */
+.main .left section .techs .tech {
+  margin: 0.5rem 0;
+}
+.main .left section .techs .techImg {
+  float: right;
+  width: 15px;
+  margin-left: 5px;
+}
 @media screen and (max-width: 600px) {
   .backButton {
     position: absolute;

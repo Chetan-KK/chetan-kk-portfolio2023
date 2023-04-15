@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import "./Resume.css";
 import Navbar from "../Navbar/Navbar";
 import Project from "./Project";
-import projectsArray from "../../assets/projects";
+import projectsData from "../../assets/projects";
 import { Link } from "react-router-dom";
+import skillsData from "../../assets/skills";
 
 function Resume() {
   const handleDownload = (e) => {
@@ -13,7 +14,7 @@ function Resume() {
 
   const [width, setWidth] = useState(window.innerWidth);
 
-  const [projects, setProjects] = useState(projectsArray);
+  const [projects, setProjects] = useState(projectsData);
 
   window.addEventListener("resize", () => {
     setWidth(window.innerWidth);
@@ -165,18 +166,18 @@ function Resume() {
               </section>
               <section>
                 <div className="main-title">Technologies</div>
-                <div className="techs flex">
-                  <div className="side1">
-                    <div className="tech">HTML</div>
-                    <div className="tech">CSS</div>
-                    <div className="tech">Javascript</div>
-                  </div>
-                  <div className="side2">
-                    <div className="tech">React Js</div>
-                    <div className="tech">Three Js</div>
-                    <div className="tech">Gsap</div>
-                  </div>
-                </div>
+                <ul className="techs">
+                  {skillsData.map((tech) => (
+                    <li className="tech" key={tech.name}>
+                      {tech.name}
+                      <img
+                        src={tech.imgLink}
+                        alt={tech.name}
+                        className="techImg"
+                      />
+                    </li>
+                  ))}
+                </ul>
               </section>
             </div>
             {/**

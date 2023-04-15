@@ -38,26 +38,6 @@
 .Skills .skills-row .skill-img:hover {
   filter: grayscale(0%);
 }
-.Skills .skills-row .Skill {
-  position: relative;
-}
-.Skills .skills-row .Skill::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  border-radius: 100vw;
-  width: 100%;
-  transform: scaleX(0);
-  transition: var(--transition) transform;
-  transform-origin: right;
-  background-image: var(--primary-gradient);
-}
-.Skills .skills-row .Skill:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
 @media screen and (max-width: 900px) {
   .all-skills {
     flex-direction: column;

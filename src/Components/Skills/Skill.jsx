@@ -2,7 +2,7 @@ import React from "react";
 
 function Skill(props) {
   return (
-    <div className="Skill">
+    <div className="Skill link">
       <a href={props.link} target="_blank">
         <img
           className="skill-img"
