@@ -71,7 +71,10 @@ body::before {
 } */
 button:focus,
 input:focus,
-textarea:focus {
+textarea:focus,
+button:hover,
+input:hover,
+textarea:hover {
   outline: 2px solid var(--primary-color);
   border-radius: 5px;
 }
@@ -142,7 +145,7 @@ body {
 }
 .link:hover {
   color: var(--primary-color);
-  text-shadow: 0 0 5px var(--primary-color);
+  text-shadow: 0 0 3px var(--primary-color);
 }
 .link:hover::before {
   transform-origin: left;

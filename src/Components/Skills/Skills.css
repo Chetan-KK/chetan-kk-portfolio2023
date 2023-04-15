@@ -28,7 +28,7 @@
 }
 .Skills .skills-row .skill-img {
   width: 70px;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
   height: 70px;
   margin: 20px;
   aspect-ratio: 1;
@@ -69,6 +69,10 @@
   }
   .Skills .skills-row {
     margin: 1rem 0;
+  }
+
+  .Skills .skills-row .skill-img {
+    filter: grayscale(0%);
   }
 }
 @media screen and (max-width: 400px) {

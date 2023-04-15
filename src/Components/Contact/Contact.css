@@ -38,7 +38,13 @@
   background-image: var(--button-gradient);
   border-radius: 5px;
   font-family: var(--ff);
+  transition: var(--transition);
 }
+.Contact .form input:hover,
+.Contact .form textarea:hover {
+  box-shadow: 0 0 50px -10px var(--primary-color);
+}
+
 .file-input::-webkit-file-upload-button {
   visibility: hidden;
 }

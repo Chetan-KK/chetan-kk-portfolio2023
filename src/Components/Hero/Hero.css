@@ -35,7 +35,7 @@
   background-color: var(--primary-color);
   bottom: 10px;
   right: -15px;
-  height: 15%;
+  height: 14%;
   border-radius: 100%;
   aspect-ratio: 1;
 }
@@ -50,6 +50,9 @@
 }
 .Hero .right .imgWrapper {
   position: relative;
+}
+.Hero .right .imgWrapper:hover {
+  box-shadow: 0 0 150px -50px var(--primary-color);
 }
 .Hero .right .imgWrapper .placeholder {
   width: 25rem;

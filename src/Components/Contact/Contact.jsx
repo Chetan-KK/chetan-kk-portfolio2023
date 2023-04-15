@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./Contact.css";
 import Tilt from "react-parallax-tilt";
 function Contact() {
@@ -8,36 +7,34 @@ function Contact() {
   const [err, setErr] = useState(false);
   const [validEmail, setValidEmail] = useState(true);
 
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
+
     setLoading(true);
 
-    const formData = new FormData();
+    console.log(e.target.email.value, e.target.email.value);
 
-    formData.append("email", e.target[0].value);
-    formData.append("message", e.target[1].value);
-    formData.append("_template", "table");
-    formData.append("_captcha", "false");
-    formData.append(
-      "_autoresponse",
-      "thank you for reaching out to chetan through website."
-    );
-    formData.append("_subject", "New submission on Portfolio!");
-
-    axios
-      .post("https://formsubmit.co/ajax/chetankhulage350@gmail.com", formData, {
+    const res = await fetch(
+      "https://chetan-kk-portfolio-default-rtdb.firebaseio.com/feedbacks.json",
+      {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-      })
-      .then((response) => {
-        if (response.data.success == "true") {
-          setSend(true);
-        }
-      })
-      .catch((error) => {
-        setErr(true);
-      });
+        body: JSON.stringify({
+          email: e.target.email.value,
+          message: e.target.massage.value,
+        }),
+      }
+    );
+
+    if (res.ok) {
+      console.log(res);
+      setSend(true);
+    } else {
+      console.log(res);
+      setErr(true);
+    }
   };
 
   const handleEmailCheck = (e) => {
@@ -45,7 +42,6 @@ function Contact() {
       setValidEmail(false);
     } else {
       setValidEmail(true);
-      console.log("n");
     }
   };
 
@@ -56,12 +52,7 @@ function Contact() {
         <b>let's talk about something...</b>
       </div>
       <div className="middle">
-        <form
-          onSubmit={formSubmit}
-          method="POST"
-          action="https://formsubmit.co/chetankhulage350@gmail.com"
-          className="form"
-        >
+        <form onSubmit={formSubmit} method="POST" className="form">
           <Tilt
             className="tilt-img"
             tiltMaxAngleX={5}
