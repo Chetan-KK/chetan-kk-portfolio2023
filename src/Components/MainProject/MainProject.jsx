@@ -102,11 +102,19 @@ function MainProject() {
                 ))}
             </div>
             <div className="buttons">
-              <a href={project.link} className="button preview-button">
+              <a
+                href={project.link}
+                target="_blank"
+                className="button preview-button"
+              >
                 Preview{" "}
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
-              <a href={project.gitLink} className="button preview-button git">
+              <a
+                href={project.gitLink}
+                target="_blank"
+                className="button preview-button git"
+              >
                 <i className="fa-brands fa-github"></i>
               </a>
             </div>
