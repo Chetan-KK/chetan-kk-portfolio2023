@@ -17,7 +17,7 @@ function App() {
         <AnimatePresence>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Chetan-KK/:id/" element={<MainProject />} />
+            <Route path="/:id/" element={<MainProject />} />
             <Route path="/resume/" element={<Resume />} />
           </Routes>
         </AnimatePresence>

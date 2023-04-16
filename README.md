@@ -1,12 +1,12 @@
 # 💫 About Me:
 
-## link to my portfolio : [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139)](https://Chetan-KK.github.com/Chetan-KK)
+## link to my portfolio : [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139)](https://chetan-kk-portfolio2023.vercel.app/)
 
 <br>👋🏻Hello everyone, I'm 👱🏻chetan i love to work on front-end and mostly work with THREE js for 3D web development, i have worked on 🌐web development around 3️⃣ years and currently doing my 📚bachelor's of engineering in ADYPU, Pune.
 
 <br/>
 
-- 🔭 I’m currently working on [My 3D Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio) and [My 2023 Portfolio](https://Chetan-KK.github.com/Chetan-KK)
+- 🔭 I’m currently working on [My 3D Portfolio](https://github.com/Chetan-KK/ChetanK-Portfolio) and [My 2023 Portfolio](https://chetan-kk-portfolio2023.vercel.app/)
 
 - 🌱 I’m currently learning [THREE JS](https://threejs.org/) and [NEXT JS](https://nextjs.org/).
 
@@ -65,7 +65,7 @@
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=plastic&logo=figma&logoColor=white)
 ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139)](https://Chetan-KK.github.com/Chetan-KK)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139)](https://chetan-kk-portfolio2023.vercel.app/)
 
 <br/>
 <br/>

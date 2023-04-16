@@ -37,19 +37,19 @@ function Project(props) {
               glareColor="white"
               glareBorderRadius="5px"
             >
-              <Link to={`/Chetan-KK/${props.id}`} className="imgWrapper">
+              <Link to={`/${props.id}`} className="imgWrapper">
                 <div className={imgLoaded ? "placeholder" : ""}></div>
                 <img src={props.imgSrc} onLoad={handleImgLoad} alt="" />
               </Link>
             </Tilt>
             <div className="title flex">
-              <Link to={`/Chetan-KK/${props.id}`} className="link">
+              <Link to={`/${props.id}`} className="link">
                 <div className="name">{props.title}</div>
               </Link>
               <div className="year">({props.year})</div>
             </div>
             <div className="desc">
-              <Link to={`/Chetan-KK/${props.id}`}>
+              <Link to={`/${props.id}`}>
                 {props.desc.slice(0, 100)} <b>read more...</b>
               </Link>
             </div>
@@ -67,19 +67,19 @@ function Project(props) {
       ) : (
         <div className="Project">
           <Tilt tiltEnable={false} scale={1.1}>
-            <Link to={`/Chetan-KK/${props.id}`} className="imgWrapper">
+            <Link to={`/${props.id}`} className="imgWrapper">
               <div className={imgLoaded ? "placeholder" : ""}></div>
               <img src={props.imgSrc} onLoad={handleImgLoad} alt="" />{" "}
             </Link>
           </Tilt>
           <div className="title flex">
-            <Link to={`/Chetan-KK/${props.id}`} className="link">
+            <Link to={`/${props.id}`} className="link">
               <div className="name">{props.title}</div>
             </Link>
             <div className="year">({props.year})</div>
           </div>
           <div className="desc" title="read more">
-            <Link to={`/Chetan-KK/${props.id}`}>
+            <Link to={`/${props.id}`}>
               {props.desc.slice(0, 100)} <b>read more...</b>
             </Link>
           </div>

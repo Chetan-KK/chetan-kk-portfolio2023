@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Tilt from "react-parallax-tilt";
+
 function Contact() {
   const [loading, setLoading] = useState(false);
   const [send, setSend] = useState(false);
@@ -12,19 +13,16 @@ function Contact() {
 
     setLoading(true);
 
-    const res = await fetch(
-      "https://chetan-kk-portfolio-default-rtdb.firebaseio.com/feedbacks.json",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: e.target.email.value,
-          message: e.target.massage.value,
-        }),
-      }
-    );
+    const res = await fetch(import.meta.env.VITE_FIREBASE_DB_LINK, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: e.target.email.value,
+        message: e.target.massage.value,
+      }),
+    });
 
     if (res.ok) {
       setSend(true);
