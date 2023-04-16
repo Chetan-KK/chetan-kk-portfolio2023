@@ -91,6 +91,13 @@
   padding: 0.7rem 1rem;
 }
 @media screen and (max-width: 400px) {
+  .projects .Project:hover .starIcon {
+    width: 3rem;
+    rotate: 10deg;
+    right: -10% !important;
+    top: -50% !important;
+    animation: floating 3s infinite ease-in-out;
+  }
   .projects .Project {
     min-width: 18rem;
     margin: 2rem 0;

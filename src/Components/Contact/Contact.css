@@ -106,7 +106,12 @@
     padding: 0.5rem 1rem;
     width: 85vw;
   }
-
+  .Contact .helloIcon {
+    height: 5rem;
+  }
+  .Contact .form .textarea-container textarea:hover ~ .helloIcon {
+    top: -10%;
+  }
   .Contact .form {
     padding: 1rem 0;
   }
