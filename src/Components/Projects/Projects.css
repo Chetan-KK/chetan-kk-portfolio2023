@@ -16,8 +16,23 @@
   box-shadow: var(--shadow);
   border-radius: 10px;
   text-align: center;
+  position: relative;
   padding: 2rem;
   transition: var(--transition);
+}
+.projects .Project .starIcon {
+  width: 5rem;
+  right: 0;
+  z-index: -99;
+  top: 0;
+  transition: var(--transition);
+}
+.projects .Project:hover .starIcon {
+  width: 5rem;
+  rotate: 10deg;
+  right: -30%;
+  top: -30%;
+  animation: floating 3s infinite ease-in-out;
 }
 .projects .Project:hover {
   transform: translateY(-5px);
@@ -32,13 +47,13 @@
   width: 100%;
   border-radius: 10px;
 }
-.projects .Project img {
+.projects .Project .projectImg {
   width: 15rem;
   height: 9rem;
   border-radius: 5px;
   transition: var(--transition);
 }
-.projects .Project img:hover {
+.projects .Project .projectImg:hover {
   box-shadow: 0 0 130px -50px var(--primary-color);
 }
 .projects .Project .title {
@@ -80,6 +95,13 @@
     min-width: 18rem;
     margin: 2rem 0;
     padding: 2rem 1rem;
+  }
+  .projects .Project .starIcon {
+    right: 10%;
+  }
+  .projects .Project:hover .starIcon {
+    right: -20%;
+    top: -20%;
   }
 }
 @media screen and (max-width: 330px) {

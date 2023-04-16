@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
+import starIcon from "/iconsImg/stars.png";
 
 function Project(props) {
   const [imgLoaded, setImgLoaded] = useState(true);
@@ -37,9 +38,15 @@ function Project(props) {
               glareColor="white"
               glareBorderRadius="5px"
             >
+              <img src={starIcon} alt="" className="imgIcon starIcon" />
               <Link to={`/${props.id}`} className="imgWrapper">
                 <div className={imgLoaded ? "placeholder" : ""}></div>
-                <img src={props.imgSrc} onLoad={handleImgLoad} alt="" />
+                <img
+                  src={props.imgSrc}
+                  onLoad={handleImgLoad}
+                  className="projectImg"
+                  alt=""
+                />
               </Link>
             </Tilt>
             <div className="title flex">
@@ -75,11 +82,18 @@ function Project(props) {
       ) : (
         <div className="Project">
           <Tilt tiltEnable={false} scale={1.1}>
+            <img src={starIcon} alt="" className="imgIcon starIcon" />
             <Link to={`/${props.id}`} className="imgWrapper">
               <div className={imgLoaded ? "placeholder" : ""}></div>
-              <img src={props.imgSrc} onLoad={handleImgLoad} alt="" />{" "}
+              <img
+                src={props.imgSrc}
+                onLoad={handleImgLoad}
+                className="projectImg"
+                alt=""
+              />{" "}
             </Link>
           </Tilt>
+
           <div className="title flex">
             <Link to={`/${props.id}`} className="link">
               <div className="name">{props.title}</div>

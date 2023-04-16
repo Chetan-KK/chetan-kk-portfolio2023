@@ -4,6 +4,12 @@
   text-align: center;
   z-index: 9;
   justify-content: space-between;
+  position: relative;
+}
+.Footer .heartIcon {
+  width: 5rem;
+  right: 2%;
+  bottom: 80%;
 }
 .Footer .logo img {
   width: 50px;

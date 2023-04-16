@@ -6,6 +6,7 @@ import Project from "./Project";
 import projectsData from "../../assets/projects";
 import { Link } from "react-router-dom";
 import skillsData from "../../assets/skills";
+import resumeIcon from "/iconsImg/resume.png";
 
 function Resume() {
   const handleDownload = (e) => {
@@ -36,9 +37,12 @@ function Resume() {
     >
       <div className="Resume">
         <Navbar />
+
         <Link to="/">
           <div className="button backButton">Back</div>
         </Link>
+        <img src={resumeIcon} alt="" className="imgIcon resumeIcon" />
+
         <div className="button downloadButton" onClick={handleDownload}>
           <i className="fa-regular fa-floppy-disk"></i>{" "}
           {width < 600 ? "" : " Download"}

@@ -1,6 +1,5 @@
 .Contact {
   text-align: center;
-  overflow: hidden;
 }
 .animNote {
   position: absolute;
@@ -22,6 +21,11 @@
   float: right;
   transform: translate(-10px, 10px);
   font-size: 0.8rem;
+  transition: var(--transition);
+}
+.Contact .form .hide {
+  transform: translate(-50px, 50px);
+  opacity: 0;
 }
 .middle {
   width: calc(50vw + 10rem);
@@ -30,6 +34,7 @@
 .Contact .form input,
 .Contact .form textarea {
   color: var(--light-text-c);
+  z-index: 1;
   width: calc(50vw + 10rem);
   padding: 1rem 2rem;
   margin: 1rem 0;
@@ -39,6 +44,21 @@
   border-radius: 5px;
   font-family: var(--ff);
   transition: var(--transition);
+}
+.Contact .form .textarea-container {
+  position: relative;
+}
+.Contact .helloIcon {
+  height: 8rem;
+  z-index: -1;
+  left: 0;
+  top: 20%;
+  rotate: 2deg;
+  position: absolute;
+  transition: var(--transition);
+}
+.Contact .form .textarea-container textarea:hover ~ .helloIcon {
+  top: -20%;
 }
 .Contact .form input:hover,
 .Contact .form textarea:hover {

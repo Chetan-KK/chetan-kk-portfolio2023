@@ -1,10 +1,14 @@
 import React from "react";
 import "./About.css";
+import boyIcon from "/iconsImg/boy.png";
 
 function About() {
   return (
     <div className="About">
-      <div className="main-title">About Me</div>
+      <div className="main-title">
+        <img src={boyIcon} alt="" className="imgIcon boyIcon" />
+        About Me
+      </div>
       <div className="heading">
         <b>here are some things about me...</b>
       </div>

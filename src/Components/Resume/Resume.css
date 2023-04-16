@@ -6,6 +6,12 @@
   right: 12vw;
   top: 1rem;
 }
+.resumeIcon {
+  width: 10vw;
+  top: 5rem;
+  right: 0;
+  animation: floating 3s infinite ease-in-out;
+}
 .backButton {
   position: absolute;
   top: 6rem;
@@ -130,6 +136,12 @@
   margin-left: 5px;
 }
 @media screen and (max-width: 600px) {
+  .resumeIcon {
+    width: 15vw;
+    top: 50vw;
+    right: 0;
+    animation: floating 3s infinite ease-in-out;
+  }
   .backButton {
     position: absolute;
     top: 5.5rem;

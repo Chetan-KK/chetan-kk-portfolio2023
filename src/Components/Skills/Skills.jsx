@@ -4,6 +4,7 @@ import "./Skills.css";
 import { useRef } from "react";
 import { useEffect } from "react";
 import skillsData from "../../assets/skills";
+import trophyIcon from "/iconsImg/trophy.png";
 
 function Skills() {
   const [skills, setSkills] = useState(skillsData);
@@ -39,7 +40,10 @@ function Skills() {
 
   return (
     <div className="Skills" id="skills">
-      <div className="main-title">Skills</div>
+      <div className="main-title">
+        <img src={trophyIcon} alt="" className="imgIcon trophyIcon" />
+        Skills
+      </div>
       <div className="heading">
         <b>Technologies I often play with</b>
       </div>

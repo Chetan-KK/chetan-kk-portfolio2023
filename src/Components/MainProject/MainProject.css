@@ -1,6 +1,15 @@
 .MainProject {
   padding: 7rem 2rem 1rem 2rem;
 }
+.MainProject .main-title {
+  position: relative;
+}
+.MainProject .main-title .penIcon {
+  width: 8rem;
+  right: 0;
+  top: -40%;
+  position: absolute;
+}
 .MainProject .button {
   margin-bottom: 1rem;
   width: fit-content;
@@ -53,6 +62,12 @@
   padding: 0.7rem 1.4rem;
 }
 @media screen and (max-width: 750px) {
+  .MainProject .main-title .penIcon {
+    width: 5rem;
+    right: -5%;
+    top: -40%;
+    position: absolute;
+  }
   .MainProject {
     text-align: center;
     padding: 6rem 1rem 1rem 1rem;

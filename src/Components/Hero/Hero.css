@@ -43,14 +43,22 @@
   width: 27rem;
   margin: 1rem 0;
 }
-.Hero .right img {
+.Hero .right .imgWrapper {
+  position: relative;
+}
+.Hero .right .myImg {
   height: 30rem;
   width: 25rem;
   box-shadow: var(--shadow);
 }
-.Hero .right .imgWrapper {
-  position: relative;
+.Hero .right .fireIcon {
+  height: 8rem;
+  left: -15%;
+  bottom: 5%;
+  position: absolute;
+  animation: floating 3s infinite ease-in-out;
 }
+
 .Hero .right .imgWrapper:hover {
   box-shadow: 0 0 150px -50px var(--primary-color);
 }
@@ -105,9 +113,14 @@
   .Hero .left .sub-heading {
     width: 80vw;
   }
-  .Hero .right img {
-    height: 79vw;
+  .Hero .right .myImg {
     width: 65vw;
+    height: 79vw;
+  }
+  .Hero .right .fireIcon {
+    height: 4rem;
+    left: -15%;
+    bottom: 10%;
   }
   .Hero .right .imgWrapper .placeholder {
     width: 65vw;

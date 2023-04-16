@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./MainProject.css";
 import projects from "../../assets/projects";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Tilt from "react-parallax-tilt";
-
-import { motion } from "framer-motion";
+import penIcon from "/iconsImg/pen.png";
 
 function MainProject() {
   const ProjectId = useParams();
@@ -54,7 +54,10 @@ function MainProject() {
               <div className="button">Back</div>
             </Link>
             <div className="titles">
-              <div className="main-title"># {project.title}</div>
+              <div className="main-title">
+                # {project.title}
+                <img src={penIcon} alt="" className="imgIcon penIcon" />
+              </div>
               <div className="heading">
                 <b>{project.stack.join(", ")}.</b>
               </div>

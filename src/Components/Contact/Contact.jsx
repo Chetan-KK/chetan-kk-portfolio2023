@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import Tilt from "react-parallax-tilt";
+import helloIcon from "/iconsImg/hello.png";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
   const [send, setSend] = useState(false);
   const [err, setErr] = useState(false);
   const [validEmail, setValidEmail] = useState(true);
+  const [isEmailRequired, setIsEmailRequired] = useState(true);
+  const [isMessageRequired, setIsMessageRequired] = useState(true);
 
   const formSubmit = async (e) => {
     e.preventDefault();
@@ -32,10 +35,24 @@ function Contact() {
   };
 
   const handleEmailCheck = (e) => {
+    if (e.target.value !== "") {
+      setIsEmailRequired(false);
+    } else {
+      setIsEmailRequired(true);
+    }
+
     if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(e.target.value)) {
       setValidEmail(false);
     } else {
       setValidEmail(true);
+    }
+  };
+
+  const handleMessageCheck = (e) => {
+    if (e.target.value !== "") {
+      setIsMessageRequired(false);
+    } else {
+      setIsMessageRequired(true);
     }
   };
 
@@ -57,7 +74,9 @@ function Contact() {
             transitionSpeed={800}
             gyroscope={false}
           >
-            <div className="tip">*required</div>
+            <div className={isEmailRequired ? "tip" : "tip hide"}>
+              *required
+            </div>
             <input
               className={validEmail ? "input " : "input valid"}
               type="email"
@@ -77,15 +96,21 @@ function Contact() {
             transitionSpeed={800}
             gyroscope={false}
           >
-            <div className="tip">*required</div>
-            <textarea
-              className="input "
-              name="massage"
-              cols="30"
-              rows="10"
-              placeholder="👋🏻 Say hellooo..."
-              required
-            ></textarea>
+            <div className={isMessageRequired ? "tip" : "tip hide"}>
+              *required
+            </div>
+            <div className="textarea-container">
+              <textarea
+                className="input "
+                name="massage"
+                cols="30"
+                rows="10"
+                placeholder="👋🏻 Say hellooo..."
+                onChange={handleMessageCheck}
+                required
+              ></textarea>
+              <img src={helloIcon} alt="" className="imgIcon helloIcon" />
+            </div>
           </Tilt>
           {/* <div className="tip">optional</div>
           <input

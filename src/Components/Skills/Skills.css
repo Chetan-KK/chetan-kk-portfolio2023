@@ -5,6 +5,16 @@
   margin: 2rem;
   justify-content: space-around;
 }
+.Skills .main-title {
+  position: relative;
+}
+.Skills .trophyIcon {
+  height: 10rem;
+  left: 10%;
+  top: -60%;
+  position: absolute;
+  animation: floating 3s infinite ease-in-out;
+}
 .all-skills .section {
   width: 40vw;
   text-align: left;
@@ -56,6 +66,11 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .Skills .trophyIcon {
+    height: 6rem;
+    left: 0%;
+    top: -30%;
+  }
   .all-skills .section ul li {
     list-style-type: none;
     font-size: 0.8rem;
@@ -76,6 +91,9 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .Skills .trophyIcon {
+    left: -10vw;
+  }
   .Skills .skills-row .skill-img {
     width: 40px;
     height: 40px;

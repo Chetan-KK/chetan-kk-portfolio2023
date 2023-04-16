@@ -8,6 +8,8 @@ import Lottie from "lottie-react";
 import arrowDarkJson from "../../assets/animLogos/arrowDark.json";
 import arrowLightJson from "../../assets/animLogos/arrowLight.json";
 import { ThemeContext } from "../../Context/ThemeContex";
+import fireIcon from "/iconsImg/fire.png";
+import starIcon from "/iconsImg/stars.png";
 import gsap from "gsap";
 
 function Hero(props) {
@@ -113,14 +115,28 @@ function Hero(props) {
             glareBorderRadius="10px"
           >
             <div className="imgWrapper">
+              <img src={fireIcon} alt="" className="imgIcon fireIcon" />
               <div className={imgLoaded ? "placeholder" : ""}></div>
-              <img src={myImg} alt="" onLoad={handleImgLoad} title="It's me" />
+              <img
+                src={myImg}
+                alt=""
+                onLoad={handleImgLoad}
+                className="myImg"
+                title="It's me"
+              />
             </div>
           </Tilt>
         ) : (
           <div className="imgWrapper">
+            <img src={fireIcon} alt="" className="imgIcon fireIcon" />
             <div className={imgLoaded ? "placeholder" : ""}></div>
-            <img src={myImg} alt="" onLoad={handleImgLoad} title="It's me" />
+            <img
+              src={myImg}
+              alt=""
+              className="myImg"
+              onLoad={handleImgLoad}
+              title="It's me"
+            />
           </div>
         )}
       </div>

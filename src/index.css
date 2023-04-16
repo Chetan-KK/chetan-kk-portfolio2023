@@ -78,11 +78,23 @@ textarea:hover {
   outline: 2px solid var(--primary-color);
   border-radius: 5px;
 }
-input.valid:focus {
+input.valid:focus,
+input.valid:hover {
   outline: 2px solid var(--valid-c);
 }
 a {
   text-decoration: none;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 body {
   background: repeating-linear-gradient(
@@ -110,6 +122,14 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.imgIcon {
+  position: absolute;
+  transition: var(--transition);
+}
+.imgIcon:hover {
+  rotate: 10deg;
 }
 .hr {
   width: 80vw;

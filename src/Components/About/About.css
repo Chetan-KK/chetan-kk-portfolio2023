@@ -2,6 +2,16 @@
   text-align: center;
   margin-top: 3rem;
 }
+.About .main-title {
+  position: relative;
+}
+.About .main-title .boyIcon {
+  height: 10rem;
+  right: 10%;
+  top: -60%;
+  rotate: 5deg;
+  animation: floating 10s infinite ease-in-out;
+}
 .about-info {
   text-align: justify;
   padding: 2rem 5rem;
@@ -19,6 +29,11 @@
   color: var(--primary-color);
 }
 @media screen and (max-width: 700px) {
+  .About .main-title .boyIcon {
+    height: 8rem;
+    right: -0%;
+    top: -60%;
+  }
   .about-info {
     padding: 2rem 3rem;
     font-size: 1rem;
@@ -29,6 +44,11 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .About .main-title .boyIcon {
+    height: 30vw;
+    left: -6%;
+    top: -150%;
+  }
   .about-info {
     padding: 2rem 1.5rem;
     font-size: 1rem;
