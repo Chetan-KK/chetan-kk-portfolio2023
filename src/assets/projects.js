@@ -115,4 +115,18 @@ export default [
         gitLink: "https://github.com/Chetan-KK/Google-clone-with-API",
         year: "1-2019",
     },
+    {
+        id: 8,
+        title: "Three js Physics",
+        imgSrc: "/projects/three-js-physics/main.webp",
+        imgs: [
+            "/projects/three-js-physics/2.webp",
+            "/projects/three-js-physics/3.webp",
+        ],
+        stack: ["JAVASCRIPT", "THREE JS", "CANNON JS"],
+        desc: `A 3D website with physics allows users to create and manipulate virtual objects in a simulated three-dimensional environment. With this website, users can create cubes and spheres of various sizes and colors using intuitive tools and controls. One of the most exciting features of this website is the ability to see the cubes and spheres collide with each other. Users can watch as objects bounce, roll, and slide off each other, creating an immersive and interactive experience.`,
+        link: "https://physics-practice.vercel.app/",
+        gitLink: "https://github.com/Chetan-KK/physics-practice",
+        year: "4-2023",
+    },
 ];
