@@ -20,6 +20,7 @@
   width: 5rem;
   right: 2%;
   bottom: 80%;
+  animation: floating 6s infinite ease-in-out;
 }
 .Footer .logo img {
   width: 50px;
