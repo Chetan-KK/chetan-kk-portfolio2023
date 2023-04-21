@@ -12,7 +12,7 @@
 }
 .loadingBack {
   background-color: var(--primary-color);
-  transition: 2s;
+  transition: transform 2s;
 }
 .none {
   transform: translateY(-100%);
