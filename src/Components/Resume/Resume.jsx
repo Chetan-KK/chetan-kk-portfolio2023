@@ -190,7 +190,11 @@ function Resume() {
                     <b>{key}</b>
                     {certificatesData[key].map((certificate, i) => (
                       <li key={i}>
-                        <a className="link" href={certificate.credLink}>
+                        <a
+                          className="link"
+                          target="_blank"
+                          href={certificate.credLink}
+                        >
                           {certificate.name}
                         </a>
                       </li>
