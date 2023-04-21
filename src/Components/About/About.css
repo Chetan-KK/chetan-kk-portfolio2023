@@ -31,7 +31,7 @@
 @media screen and (max-width: 700px) {
   .About .main-title .boyIcon {
     height: 8rem;
-    right: -0%;
+    right: 10%;
     top: -60%;
   }
   .about-info {

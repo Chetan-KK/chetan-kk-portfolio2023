@@ -58,17 +58,14 @@ export default {
         {
             name: "Anveshan",
             imgSrc: '/certificates/anveshan.webp',
-            credLink: '/',
         },
         {
             name: "GDSC Javascript and React",
             imgSrc: '/certificates/devtown-javascript-and-react.webp',
-            credLink: '/',
         },
         {
             name: "Devtown Comunity",
             imgSrc: '/certificates/devtown-comunity.webp',
-            credLink: '/',
         },
     ]
 };

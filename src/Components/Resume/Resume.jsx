@@ -7,7 +7,7 @@ import projectsData from "../../assets/projects";
 import { Link } from "react-router-dom";
 import skillsData from "../../assets/skills";
 import resumeIcon from "/iconsImg/resume.png";
-
+import certificatesData from "../../assets/certificates";
 function Resume() {
   const handleDownload = (e) => {
     window.print();
@@ -182,6 +182,21 @@ function Resume() {
                     </li>
                   ))}
                 </ul>
+              </section>
+              <section>
+                <div className="main-title">Certifications</div>
+                {Object.keys(certificatesData).map((key, i) => (
+                  <ul key={i} className="certificateList">
+                    <b>{key}</b>
+                    {certificatesData[key].map((certificate, i) => (
+                      <li key={i}>
+                        <a className="link" href={certificate.credLink}>
+                          {certificate.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ))}
               </section>
             </div>
             {/**

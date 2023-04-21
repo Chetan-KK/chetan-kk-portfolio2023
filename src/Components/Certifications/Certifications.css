@@ -52,6 +52,13 @@
   width: 100%;
   background-image: var(--overlay-gradient);
   z-index: 1;
+  background-size: 100%;
+  transition: var(--transition);
+}
+.Certifications .Certificate:hover::before {
+  background-image: var(--overlay-gradient);
+  background-size: 500%;
+  background-position: top left;
 }
 .Certifications .Certificate .heading {
   z-index: 1;

@@ -124,8 +124,9 @@
 .main .right section .links a {
   color: var(--light-text-c);
 }
-.main .left section .techs {
-  padding-left: 1.5rem;
+.main .left section .techs,
+.main .left section .certificateList {
+  padding-left: 1rem;
 }
 .main .left section .techs .tech {
   margin: 0.5rem 0;
@@ -134,6 +135,9 @@
   float: right;
   width: 15px;
   margin-left: 5px;
+}
+.main .left section .certificateList li {
+  margin: 0.5rem 0;
 }
 @media screen and (max-width: 600px) {
   .resumeIcon {

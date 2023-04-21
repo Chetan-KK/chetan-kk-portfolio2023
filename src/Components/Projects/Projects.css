@@ -11,7 +11,7 @@
 
 .projects .Project {
   background-color: var(--secondary-color);
-  min-width: 20rem;
+  min-width: 18rem;
   width: 20rem;
   box-shadow: var(--shadow);
   border-radius: 10px;
@@ -90,30 +90,30 @@
 .projects .Project .git {
   padding: 0.7rem 1rem;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .projects .Project:hover .starIcon {
     width: 3rem;
     rotate: 10deg;
-    right: -10% !important;
+    right: 10% !important;
     top: -50% !important;
     animation: floating 3s infinite ease-in-out;
   }
   .projects .Project {
-    min-width: 18rem;
-    margin: 0;
+    width: 90vw;
     padding: 2rem 1rem;
+    margin: 0;
   }
+  .projects .Project .projectImg {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 400px) {
   .projects .Project .starIcon {
     right: 10%;
   }
   .projects .Project:hover .starIcon {
-    right: -20%;
+    right: 10%;
     top: -20%;
-  }
-}
-@media screen and (max-width: 330px) {
-  .projects .Project {
-    width: 10rem;
-    padding: 2rem 1rem;
   }
 }

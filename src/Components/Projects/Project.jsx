@@ -29,7 +29,7 @@ function Project(props) {
           <Tilt
             perspective={1000}
             glareEnable={true}
-            scale={1.1}
+            scale={1}
             gyroscope={false}
             tiltEnable={props.isTilt}
             tiltMaxAngleX={5}
