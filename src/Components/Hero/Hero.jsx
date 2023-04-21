@@ -100,45 +100,32 @@ function Hero(props) {
         <Connect />
       </div>
       <div className="right">
-        {props.isTilt ? (
-          <Tilt
-            perspective={1000}
-            glareEnable={true}
-            tiltReverse={true}
-            tiltMaxAngleX={5}
-            tiltMaxAngleY={5}
-            scale={1}
-            gyroscope={false}
-            glarePosition={"all"}
-            glareMaxOpacity={0.05}
-            glareColor="white"
-            glareBorderRadius="10px"
-          >
-            <div className="imgWrapper">
-              <img src={fireIcon} alt="" className="imgIcon fireIcon" />
-              <div className={imgLoaded ? "placeholder" : ""}></div>
-              <img
-                src={myImg}
-                alt=""
-                onLoad={handleImgLoad}
-                className="myImg"
-                title="It's me"
-              />
-            </div>
-          </Tilt>
-        ) : (
+        <Tilt
+          perspective={1000}
+          glareEnable={true}
+          tiltReverse={true}
+          tiltMaxAngleX={5}
+          tiltMaxAngleY={5}
+          scale={1}
+          tiltEnable={props.isTilt}
+          gyroscope={false}
+          glarePosition={"all"}
+          glareMaxOpacity={0.05}
+          glareColor="white"
+          glareBorderRadius="10px"
+        >
           <div className="imgWrapper">
             <img src={fireIcon} alt="" className="imgIcon fireIcon" />
             <div className={imgLoaded ? "placeholder" : ""}></div>
             <img
               src={myImg}
               alt=""
-              className="myImg"
               onLoad={handleImgLoad}
+              className="myImg"
               title="It's me"
             />
           </div>
-        )}
+        </Tilt>
       </div>
     </div>
   );

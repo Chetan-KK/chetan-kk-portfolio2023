@@ -5,6 +5,7 @@
   --placeholder: #c0c0c0;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
+  --overlay-gradient: linear-gradient(160deg, #e2e8ec6e, #ffffff93);
   --blur-c: rgba(255, 255, 255, 0.5);
   --border-c: rgba(128, 128, 128, 0.5);
   --text-c-link: #646c77;
@@ -22,6 +23,7 @@
   --placeholder: #858585;
   --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #1e2024, #23272b);
+  --overlay-gradient: linear-gradient(160deg, #1e202493, #23272b);
   --blur-c: rgba(32, 32, 32, 0.5);
   --border-c: rgba(128, 128, 128, 0.5);
   --text-c-link: #96a3b6;
@@ -174,6 +176,7 @@ body {
 .button {
   margin: 0 1rem;
   padding: 1rem;
+  width: fit-content;
   font-family: var(--ff);
   border-radius: 6px;
   transition: var(--transition);

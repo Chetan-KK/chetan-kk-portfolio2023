@@ -8,6 +8,7 @@ import Contact from "../Contact/Contact";
 
 import { motion } from "framer-motion";
 import About from "../About/About";
+import Certifications from "../Certifications/Certifications";
 
 function Home() {
   const [tiltYes, setTiltYes] = useState(true);
@@ -44,9 +45,12 @@ function Home() {
       <hr className="hr" />
       <Projects isTilt={tiltYes} />
       <Skills />
+
+      <Certifications isTilt={tiltYes} />
+
       <hr className="hr" />
       <About />
-      <Contact isTilt={tiltYes} />
+      <Contact />
 
       <hr className="hr" />
       <Footer />

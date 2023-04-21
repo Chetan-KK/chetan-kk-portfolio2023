@@ -1,0 +1,87 @@
+.Certifications {
+  text-align: center;
+}
+.Certifications .loadButton {
+  margin: 0 auto 2rem auto;
+}
+.Certifications .buttons {
+  justify-content: center;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+.Certifications .all-certificates,
+.Certifications .all-certificates .container {
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.Certifications .all-certificates {
+  overflow: hidden;
+  height: auto;
+  padding: 1.5rem 0;
+}
+.Certifications .all-certificates-open {
+  height: 75vh;
+}
+.Certifications .Certificate {
+  position: relative;
+  width: 35rem;
+  height: 25rem;
+  border-radius: 10px;
+  transition: var(--transition);
+  overflow: hidden;
+}
+.Certifications .Certificate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+.Certifications .Certificate .img {
+  width: 100%;
+  top: 0;
+  object-fit: cover;
+  border-radius: 10px;
+  left: 0;
+}
+.Certifications .Certificate::before {
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: var(--overlay-gradient);
+  z-index: 1;
+}
+.Certifications .Certificate .heading {
+  z-index: 1;
+  position: absolute;
+  top: 15px;
+  color: var(--light-text-c);
+  left: 23px;
+}
+.Certifications .Certificate .button {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+@media screen and (max-width: 720px) {
+  .Certifications .buttons .button {
+    width: 40vw;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+  }
+  .Certifications .Certificate {
+    width: 80vw;
+    height: 60vw;
+  }
+  .Certifications .Certificate .button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  .Certifications .loadButton {
+    margin: 1.5rem auto;
+    width: 80vw;
+  }
+}

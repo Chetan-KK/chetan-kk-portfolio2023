@@ -1,6 +1,9 @@
 .Skills {
   text-align: center;
 }
+.Skills .button {
+  width: 100%;
+}
 .all-skills {
   margin: 2rem;
   justify-content: space-around;
