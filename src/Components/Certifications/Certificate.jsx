@@ -23,8 +23,8 @@ function Certificate(props) {
       glareBorderRadius="10px"
     >
       <div className="Certificate">
-        <img src={props.imgSrc} onLoad={handleImgLoad} className="img" alt="" />
         <div className="heading">{props.name}</div>
+        <img src={props.imgSrc} onLoad={handleImgLoad} className="img" alt="" />
         <a href={props.credLink} className="button" target="_blank">
           credentials <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
