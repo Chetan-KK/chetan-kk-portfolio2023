@@ -53,7 +53,7 @@ export default [
         ],
         stack: ["HTML", "CSS", "JAVASCRIPT", "THREE JS", "OOPS"],
         desc: `The project is created using Three.js to bring creative Galaxy design to life with multiple tweeks to play with and create many kind of 3D Galaxies to use tweeks put #debug after the url ex: https://chetan-kk.github.io/THREE-js-Galaxy/#debug`,
-        link: "https://chetan-kk.github.io/THREE-js-Galaxy/",
+        link: "https://chetan-kk.github.io/THREE-js-Galaxy/#debug",
         gitLink: "https://github.com/Chetan-KK/THREE-js-Galaxy",
         year: "3-2023",
     },
@@ -118,7 +118,6 @@ export default [
         imgSrc: "/projects/zedge/main.webp",
         desc: "150000+ downloads on Zedge, Zedge is a website where we can download free wallpapers ringtones, notification tones and live wallpapers, here i've uploaded many images which i captured by my phone or some of them are created in photoshop, illustrator and picsart.",
         link: "https://www.zedge.net/profile/1685a153-68b7-4e02-a628-8285ecf8499a",
-        gitLink: "https://www.zedge.net/profile/1685a153-68b7-4e02-a628-8285ecf8499a",
         year: "5-2018",
     },
     {
@@ -139,7 +138,6 @@ export default [
         imgSrc: "/projects/collegeMS-project/main.webp",
         desc: "The Project developed for Ashok Polytechnic College is a comprehensive management system designed to handle the needs of both students and staff across all departments. With this system, managing student and staff data has never been easier. The system provides a user-friendly interface for students and staff to access and update their personal information, academic progress, attendance, and much more. The platform is tailored to meet the unique needs of the college, providing an intuitive and efficient management solution that ensures streamlined operations. With the system in place, staff can easily manage various administrative tasks, such as scheduling, resource allocation, report generation, and other important tasks with ease. Whether you're a student or a staff member, this project will help you stay organized and on top of your academic and administrative tasks.",
         link: "/",
-        gitLink: "/",
         year: "4-2019",
     },
 ];

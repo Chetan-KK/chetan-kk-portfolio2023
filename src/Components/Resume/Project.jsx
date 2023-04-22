@@ -14,12 +14,14 @@ function Project(props) {
           {props.link}
         </a>
       </div>
-      <div className="links">
-        Github Link:{" "}
-        <a href={props.gitLink} className="links">
-          {props.gitLink}
-        </a>
-      </div>
+      {props.gitLink ? (
+        <div className="links">
+          Github Link:{" "}
+          <a href={props.gitLink} className="links">
+            {props.gitLink}
+          </a>
+        </div>
+      ) : undefined}
     </div>
   );
 }

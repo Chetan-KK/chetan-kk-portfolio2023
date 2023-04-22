@@ -9,7 +9,7 @@
 .resumeIcon {
   width: 10vw;
   top: 5rem;
-  right: 0;
+  right: 1rem;
   animation: floating 3s infinite ease-in-out;
 }
 .backButton {
@@ -138,12 +138,13 @@
 }
 .main .left section .certificateList li {
   margin: 0.5rem 0;
+  font-size: 0.8rem;
 }
 @media screen and (max-width: 600px) {
   .resumeIcon {
     width: 15vw;
     top: 50vw;
-    right: 0;
+    right: 1rem;
     animation: floating 3s infinite ease-in-out;
   }
   .backButton {

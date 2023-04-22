@@ -69,13 +69,15 @@ function Project(props) {
             >
               Preview <i className="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
-            <a
-              href={props.gitLink}
-              target="_blank"
-              className="button preview-button git"
-            >
-              <i className="fa-brands fa-github"></i>
-            </a>
+            {props.gitLink ? (
+              <a
+                href={props.gitLink}
+                target="_blank"
+                className="button preview-button git"
+              >
+                <i className="fa-brands fa-github"></i>
+              </a>
+            ) : undefined}
           </div>
         </div>
       </Tilt>

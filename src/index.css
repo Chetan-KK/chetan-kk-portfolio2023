@@ -1,3 +1,7 @@
+/* .blueTheme {
+  --primary-color: #0167ff;
+  --primary-gradient: linear-gradient(145deg, #01ccff, #0167ff);
+} */
 .light {
   --primary-color: #ff014f;
   --secondary-color: #ecf0f3;

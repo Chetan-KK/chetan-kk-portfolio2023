@@ -230,22 +230,3 @@ function Resume() {
 }
 
 export default Resume;
-
-{
-  /* <div className="sub-heading contact">
-              <div className="info">
-                <i className="fa-solid fa-envelope"></i>
-                <a href="mailto:chetankhulage350@gmail.com">
-                  chetankhulage350@gmail.com
-                </a>
-              </div>
-              <div className="info">
-                <i className="fa-solid fa-phone"></i>
-                <a href="tel:+919284276295">+91 92842 76295</a>
-              </div>
-              <div className="info">
-                <i className="fa-solid fa-location-dot"></i>
-                <span>Pune, Maharashtra, India.</span>
-              </div>
-            </div> */
-}

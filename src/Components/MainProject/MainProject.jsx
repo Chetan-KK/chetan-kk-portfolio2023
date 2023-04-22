@@ -113,13 +113,15 @@ function MainProject() {
                 Preview{" "}
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
-              <a
-                href={project.gitLink}
-                target="_blank"
-                className="button preview-button git"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
+              {project.gitLink ? (
+                <a
+                  href={project.gitLink}
+                  target="_blank"
+                  className="button preview-button git"
+                >
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              ) : undefined}
             </div>
           </div>
         </div>
