@@ -91,6 +91,9 @@
   padding: 0.7rem 1rem;
 }
 @media screen and (max-width: 500px) {
+  .projects .Project .starIcon {
+    right: 40%;
+  }
   .projects .Project:hover .starIcon {
     width: 3rem;
     rotate: 10deg;
@@ -104,7 +107,7 @@
     margin: 0;
   }
   .projects .Project .projectImg {
-    width: 100%;
+    width: 85%;
     height: auto;
   }
 }
