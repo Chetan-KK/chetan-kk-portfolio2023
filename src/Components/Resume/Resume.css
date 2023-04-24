@@ -15,11 +15,13 @@
 .backButton {
   position: absolute;
   top: 6rem;
+}
+.backButton .button {
   width: fit-content;
   padding: 0.8rem 1.5rem !important;
 }
 #Print {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 .Resume .header {
   justify-content: space-between;
@@ -78,13 +80,18 @@
 }
 .main .main-title {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
 }
 .main .left {
   max-width: 18rem;
 }
 .main .left section {
-  margin: 0 1rem 3rem 1rem;
+  margin: 0 1rem 1rem 1rem;
+  border-bottom: 1px solid var(--border-c);
+}
+.main .right section .desc {
+  border-bottom: 1px solid var(--border-c);
+  padding-bottom: 0.3rem;
 }
 .main .left .desc {
   margin-bottom: 1rem;
@@ -98,7 +105,7 @@
   font-size: 0.8rem;
 }
 .main .right {
-  max-width: 50rem;
+  width: 50rem;
   border-left: 1px solid var(--border-c);
 }
 .main .right section {
@@ -147,10 +154,7 @@
     right: 1rem;
     animation: floating 3s infinite ease-in-out;
   }
-  .backButton {
-    position: absolute;
-    top: 5.5rem;
-    width: auto;
+  .backButton .button {
     text-align: center;
     padding: 0.8rem 1.5rem !important;
   }
@@ -176,7 +180,10 @@
   }
   .main .left {
     max-width: 90rem;
-    border-right: 0;
+  }
+  .main .right {
+    width: auto;
+    border-left: 0;
   }
   .main {
     max-width: 70rem;
@@ -198,15 +205,43 @@
     text-align: right;
   }
 }
+@media screen and (max-width: 400px) {
+  .backButton .button {
+    width: 80vw;
+    margin: 0 9vw;
+  }
+}
 @media print {
   body * {
     visibility: hidden;
   }
+
   #Print {
     margin-top: 0;
+  }
+  .main .left {
+    width: 18rem;
+  }
+  .main .main-title {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .main .title {
+    font-size: 0.8rem;
+  }
+  .main .name {
+    font-size: 0.7rem !important;
+  }
+  .main .right .desc .info {
+    font-size: 0.7rem !important;
   }
   #Print,
   #Print * {
     visibility: visible;
   }
+}
+@page {
+  size: A4;
+  margin: 0;
+  padding: 1rem 0;
 }

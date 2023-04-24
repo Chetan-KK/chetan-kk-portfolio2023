@@ -38,8 +38,8 @@ function Resume() {
       <div className="Resume">
         <Navbar />
 
-        <Link to="/">
-          <div className="button backButton">Back</div>
+        <Link to="/" className="backButton">
+          <div className="button">Back</div>
         </Link>
         <img src={resumeIcon} alt="" className="imgIcon resumeIcon" />
 
