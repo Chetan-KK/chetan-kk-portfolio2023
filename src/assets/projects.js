@@ -99,6 +99,20 @@ export default [
     },
     {
         id: 6,
+        title: "Shader sea",
+        stack: ["JAVASCRIPT", "THREE JS", "GLSL"],
+        imgSrc: "/projects/shader-sea/main.webp",
+        imgs: [
+            "/projects/shader-sea/2.webp",
+            "/projects/shader-sea/3.webp",
+        ],
+        desc: "The 3D website is a unique online platform that enables users to create their own personalized sea environment using glsl shaders. With this website, you can experience an interactive and visually stunning sea that you can tweak to your liking.",
+        link: "https://threejs-shader-sea.vercel.app/",
+        gitLink: "https://github.com/Chetan-KK/shader-sea",
+        year: "4-2023",
+    },
+    {
+        id: 7,
         title: "Age calculator",
         stack: ['HTML', "CSS", "JAVASCRIPT", "REACT", "ANIMATED NUMBERS"],
         imgSrc: "/projects/age-calculator/main.webp",
@@ -113,7 +127,7 @@ export default [
         year: "4-2023",
     },
     {
-        id: 7,
+        id: 8,
         title: "150000+ downloads",
         stack: ["PHOTOSHOP", "ILLUSTRATOR", "CAMERA", "PICSART"],
         imgSrc: "/projects/zedge/main.webp",
@@ -122,7 +136,7 @@ export default [
         year: "5-2018",
     },
     {
-        id: 8,
+        id: 9,
         title: "Google Clone",
         stack: ["HTML", "CSS", "JAVASCRIPT", "API"],
         imgSrc: "/projects/google_clone-project/main.webp",
@@ -133,7 +147,7 @@ export default [
     },
 
     {
-        id: 9,
+        id: 10,
         title: "College Management System",
         stack: ["HTML", "CSS", "JAVASCRIPT", "JAVA", "HIBERNET", "MYSQL"],
         imgSrc: "/projects/collegeMS-project/main.webp",
