@@ -7,7 +7,7 @@
   flex-direction: column;
   top: 0;
   left: 0;
-  transition: 1s;
+  transition: transform 1s;
   z-index: 9999999999999;
 }
 .loadingBack {
