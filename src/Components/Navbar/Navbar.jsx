@@ -18,6 +18,10 @@ export default function Navbar(props) {
     }
   }
 
+  function sideClick() {
+    setMenuToggle(false);
+  }
+
   return (
     <div className={`Navbar flex`}>
       <div className="logo flex">
@@ -55,6 +59,10 @@ export default function Navbar(props) {
           </svg>
         </div>
       </div>
+      <div
+        className={menuToggle ? "overlay" : "overlay overlayClose"}
+        onClick={sideClick}
+      ></div>
       <div className={`right flex ${menuToggle ? "menuOpen" : "menuClose"}`}>
         {props.isNav && (
           <>

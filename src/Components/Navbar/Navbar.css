@@ -101,6 +101,20 @@
     z-index: 99;
     flex-wrap: wrap;
   }
+  .Navbar .overlay {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -9;
+    background-color: rgba(0, 0, 0, 0.466);
+    transition: var(--transition);
+  }
+  .Navbar .overlayClose {
+    pointer-events: none;
+    background-color: transparent;
+  }
   .menuOpen {
     right: 0;
   }

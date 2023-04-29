@@ -112,7 +112,7 @@ function Certifications(props) {
           : undefined}
       </div>
       <div className="button loadButton" onClick={handleLoadAll}>
-        {loadAll ? "Hide some Certificates" : "Show All Certificates"}
+        {loadAll ? "Show less" : "Show more"}
       </div>
     </div>
   );
