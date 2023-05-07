@@ -7,7 +7,7 @@ html {
   right: 5px;
   text-align: center;
   padding: 0.5rem 1rem !important;
-  z-index: 2;
+  z-index: 3;
 }
 @media screen and (max-width: 700px) {
   .upButton {

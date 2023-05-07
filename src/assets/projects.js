@@ -145,9 +145,23 @@ export default [
         gitLink: "https://github.com/Chetan-KK/Google-clone-with-API",
         year: "1-2019",
     },
-
     {
         id: 10,
+        title: "Three js Portal scene",
+        stack: ["JAVASCRIPT", "THREE JS", "GLSL", "BLENDER", 'UV UNWRAPPING'],
+        imgSrc: "/projects/portal-scene/main.webp",
+        imgs: [
+            "/projects/portal-scene/2.webp",
+            "/projects/portal-scene/3.webp",
+            "/projects/portal-scene/4.webp",
+        ],
+        desc: "This project is a showcase of three js portal scene which is created with blender and UV unwrapping, i've learned this with bruno simon's three js journey course.",
+        link: "https://three-js-portal-scene-azure.vercel.app/#debug",
+        gitLink: "https://github.com/Chetan-KK/final-threejs-portal.git",
+        year: "5-2023",
+    },
+    {
+        id: 11,
         title: "College Management System",
         stack: ["HTML", "CSS", "JAVASCRIPT", "JAVA", "HIBERNET", "MYSQL"],
         imgSrc: "/projects/collegeMS-project/main.webp",
