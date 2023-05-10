@@ -1,6 +1,5 @@
 export default [
     {
-        id: 0,
         title: "COVID-India Tracker",
         imgSrc: "/projects/covid-project/main.webp",
         imgs: [
@@ -27,7 +26,6 @@ export default [
         year: "3-2019",
     },
     {
-        id: 1,
         title: "Three js Portfolio",
         imgSrc: "/projects/threejs-portfolio-project/main.webp",
         imgs: [
@@ -45,7 +43,6 @@ export default [
     },
 
     {
-        id: 2,
         title: "Galaxy genrator",
         imgSrc: "/projects/galaxy-genrator/main.webp",
         imgs: [
@@ -58,7 +55,6 @@ export default [
         year: "3-2023",
     },
     {
-        id: 3,
         title: "Country Founder",
         stack: ["HTML", "CSS", "JAVASCRIPT", "REACT", "REACT-ROUTER", "API"],
         imgSrc: "/projects/country_founder-project/main.webp",
@@ -69,7 +65,6 @@ export default [
     },
 
     {
-        id: 4,
         title: "Chill dark theme",
         stack: ["VSCE", "COLORS", "NPM"],
         imgSrc: "/projects/vscode-chill-dark-theme/main.webp",
@@ -83,7 +78,6 @@ export default [
         year: "3-2023",
     },
     {
-        id: 5,
         title: "Three js Physics",
         imgSrc: "/projects/three-js-physics/main.webp",
         imgs: [
@@ -98,7 +92,6 @@ export default [
         year: "4-2023",
     },
     {
-        id: 6,
         title: "Shader sea",
         stack: ["JAVASCRIPT", "THREE JS", "GLSL"],
         imgSrc: "/projects/shader-sea/main.webp",
@@ -112,7 +105,6 @@ export default [
         year: "4-2023",
     },
     {
-        id: 7,
         title: "Age calculator",
         stack: ['HTML', "CSS", "JAVASCRIPT", "REACT", "ANIMATED NUMBERS"],
         imgSrc: "/projects/age-calculator/main.webp",
@@ -127,7 +119,6 @@ export default [
         year: "4-2023",
     },
     {
-        id: 8,
         title: "150000+ downloads",
         stack: ["PHOTOSHOP", "ILLUSTRATOR", "CAMERA", "PICSART"],
         imgSrc: "/projects/zedge/main.webp",
@@ -136,7 +127,6 @@ export default [
         year: "5-2018",
     },
     {
-        id: 9,
         title: "Google Clone",
         stack: ["HTML", "CSS", "JAVASCRIPT", "API"],
         imgSrc: "/projects/google_clone-project/main.webp",
@@ -146,7 +136,6 @@ export default [
         year: "1-2019",
     },
     {
-        id: 10,
         title: "Three js Portal scene",
         stack: ["JAVASCRIPT", "THREE JS", "GLSL", "BLENDER", 'UV UNWRAPPING'],
         imgSrc: "/projects/portal-scene/main.webp",
@@ -161,7 +150,6 @@ export default [
         year: "5-2023",
     },
     {
-        id: 11,
         title: "College Management System",
         stack: ["HTML", "CSS", "JAVASCRIPT", "JAVA", "HIBERNET", "MYSQL"],
         imgSrc: "/projects/collegeMS-project/main.webp",

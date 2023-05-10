@@ -25,12 +25,9 @@ function MainProject() {
   }
 
   useEffect(() => {
-    projects.map((p) => {
-      if (p.id == ProjectId.id) {
-        setProject(p);
-      }
-    });
+    setProject(projects[ProjectId.id]);
   }, []);
+
   return (
     <motion.div
       initial={{

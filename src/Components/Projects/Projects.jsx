@@ -11,11 +11,11 @@ function Projects(props) {
       <div className="heading">
         <b>Here's some of my projects</b>
       </div>
-      <div className="projects  flex">
-        {projects.map((project) => (
+      <div className="projects flex">
+        {projects.map((project, i) => (
           <Project
-            key={project.id}
-            id={project.id}
+            key={i}
+            id={i}
             imgSrc={project.imgSrc}
             title={project.title}
             desc={project.desc}
