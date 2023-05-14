@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import axios from "axios";
 import Tilt from "react-parallax-tilt";
 import helloIcon from "/iconsImg/hello.png";
 
@@ -16,22 +17,32 @@ function Contact() {
 
     setLoading(true);
 
-    const res = await fetch(import.meta.env.VITE_FIREBASE_DB_LINK, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: e.target.email.value,
-        message: e.target.massage.value,
-      }),
-    });
+    const formData = new FormData();
 
-    if (res.ok) {
-      setSend(true);
-    } else {
-      setErr(true);
-    }
+    formData.append("email", e.target[0].value);
+    formData.append("message", e.target[1].value);
+    formData.append("_template", "table");
+    formData.append("_captcha", "false");
+    formData.append(
+      "_autoresponse",
+      "thank you for reaching out to chetan through website."
+    );
+    formData.append("_subject", "New submission on Portfolio!");
+
+    axios
+      .post(import.meta.env.VITE_FORM_SUBMIT_LINK, formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        if (response.data.success == "true") {
+          setSend(true);
+        }
+      })
+      .catch((error) => {
+        setErr(true);
+      });
   };
 
   const handleEmailCheck = (e) => {
