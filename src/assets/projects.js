@@ -63,7 +63,23 @@ export default [
         gitLink: "https://github.com/Chetan-KK/Country-Founder-React",
         year: "12-2019",
     },
-
+    {
+        title: "Macbook 3D portfolio",
+        stack: ["REACT", "REACT THREE FIBER", "DREI"],
+        imgSrc: "/projects/Macbook-3D-portfolio/main.webp",
+        imgs: [
+            "/projects/Macbook-3D-portfolio/2.webp",
+            "/projects/Macbook-3D-portfolio/3.webp",
+            "/projects/Macbook-3D-portfolio/4.webp",
+            "/projects/Macbook-3D-portfolio/5.webp",
+            "/projects/Macbook-3D-portfolio/6.webp",
+            "/projects/Macbook-3D-portfolio/7.webp",
+        ],
+        desc: "This website is created with React and React Three Fiber. In this users can access website in 3D laptop in webpage. i've created this with Three.js Journey course by Bruno Simon. macbook model is from Poimandres market place.",
+        link: "https://laptop-portfolio-phi.vercel.app/",
+        gitLink: "https://github.com/Chetan-KK/macbook-laptop-portfolio",
+        year: "5-2023",
+    },
     {
         title: "Chill dark theme",
         stack: ["VSCE", "COLORS", "NPM"],
