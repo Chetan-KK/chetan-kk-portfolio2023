@@ -56,6 +56,11 @@ export default {
     ],
     others: [
         {
+            name: "JavaScript Algorithms and Data Structures",
+            imgSrc: '/certificates/JavaScript-Algorithms-and-Data-Structures.webp',
+            credLink: 'https://freecodecamp.org/certification/Chetan-KK/javascript-algorithms-and-data-structures',
+        },
+        {
             name: "Anveshan",
             imgSrc: '/certificates/anveshan.webp',
         },
