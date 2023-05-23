@@ -75,6 +75,17 @@
   bottom: 20px;
   right: 10px;
 }
+.threeJsCertificate {
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+.threeJsCertificate .Certificate {
+  width: 90vw;
+  height: auto;
+}
+.threeJsCertificate .Certificate::before {
+  display: none;
+}
 @media screen and (max-width: 720px) {
   .Certifications .buttons .button {
     width: 43vw;

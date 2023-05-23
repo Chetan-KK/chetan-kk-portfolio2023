@@ -40,7 +40,6 @@ function Certifications(props) {
       <div className="heading">
         <b>here are some of my Certificates</b>
       </div>
-
       <div className="buttons flex">
         <div className="button" onClick={handleCertificates}>
           All
@@ -113,6 +112,17 @@ function Certifications(props) {
       </div>
       <div className="button loadButton" onClick={handleLoadAll}>
         {loadAll ? "Show less" : "Show more"}
+      </div>
+      <h1 className="heading">
+        <b>THREE JS JOURNEY CERTIFICATE</b>
+      </h1>
+      <div className="threeJsCertificate flex">
+        <Certificate
+          isTilt={props.isTilt}
+          name={"THREE JS Journey by Bruno Simon"}
+          credLink={"https://threejs-journey.com/certificate/view/20439"}
+          imgSrc={"/certificates/three-js-journey.webp"}
+        />
       </div>
     </div>
   );
