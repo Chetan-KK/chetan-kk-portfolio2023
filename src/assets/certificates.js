@@ -40,6 +40,11 @@ export default {
             imgSrc: '/certificates/udemy-building-android-widgets.webp',
             credLink: 'https://ude.my/UC-ac0dfef8-2599-40bc-a694-afc27567c59a/',
         },
+        {
+            name: "Python Complete Course",
+            imgSrc: '/certificates/python-complete-course.webp',
+            credLink: 'https://ude.my/UC-2a1cc380-2d13-4ab9-b35b-644c53fecf7d/',
+        },
     ],
     greatLearning: [
         {
