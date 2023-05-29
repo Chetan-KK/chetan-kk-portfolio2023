@@ -17,9 +17,9 @@
 <br/>
 <br/>
 
-<center>
-
 ## 🌐 Socials:
+
+<p align="center">
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://instagram.com/c_h_e_t_a_n__k)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/chetan-khulage)
@@ -27,6 +27,8 @@
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?logo=Twitter&logoColor=white)](https://twitter.com/https://twitter.com/chetan_khulage)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@https://www.youtube.com/@chetankhulage)
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/https://www.facebook.com/chetan.khulage.7/)
+
+</p>
 
 <br/>
 <br/>
@@ -103,5 +105,3 @@
 ---
 
 [![](https://visitcount.itsvg.in/api?id=Chetan-KK&icon=6&color=6)](https://visitcount.itsvg.in)
-
-</center>
