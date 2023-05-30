@@ -66,6 +66,11 @@ export default {
             credLink: 'https://freecodecamp.org/certification/Chetan-KK/javascript-algorithms-and-data-structures',
         },
         {
+            name: "Web-Internet fundamentals",
+            imgSrc: '/certificates/internet-fundamentals.webp',
+            credLink: 'https://codedamn.com/certificate/verify/01073640fd22067b34038d70f7e84fe599eb54fc',
+        },
+        {
             name: "Anveshan",
             imgSrc: '/certificates/anveshan.webp',
         },
