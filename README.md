@@ -100,4 +100,8 @@
 
 ---
 
-[![](https://visitcount.itsvg.in/api?id=Chetan-KK&icon=6&color=6)](https://visitcount.itsvg.in)
+<br>
+
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=Chetan-KK&&style=flat-square" align="center" />
+</div>
