@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Connect from "../Connect/Connect";
 import "./Hero.css";
-import myImg from "/me.png";
+import myImg from "/chetan-khulage.png";
 import Tilt from "react-parallax-tilt";
 import Typer from "react-text-typist";
 import Lottie from "lottie-react";
@@ -119,7 +119,7 @@ function Hero(props) {
             <div className={imgLoaded ? "placeholder" : ""}></div>
             <img
               src={myImg}
-              alt=""
+              alt="chetan khulage"
               onLoad={handleImgLoad}
               className="myImg"
               title="It's me"
