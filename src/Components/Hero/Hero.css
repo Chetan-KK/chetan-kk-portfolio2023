@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   margin: 9rem 2rem 5rem 2rem;
 }
+.bgAnimation-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .Hero .left {
   width: 40rem;
   margin-bottom: 3rem;

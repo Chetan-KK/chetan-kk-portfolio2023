@@ -10,6 +10,7 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "axios": "^1.3.4",
     "framer-motion": "^10.2.5",
     "gsap": "^3.11.4",
