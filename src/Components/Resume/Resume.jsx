@@ -209,9 +209,9 @@ function Resume() {
             <div className="right">
               <section>
                 <div className="main-title">Projects</div>
-                {projects.map((project) => (
+                {projects.map((project, i) => (
                   <Project
-                    key={project.id}
+                    key={i}
                     title={project.title}
                     desc={project.desc}
                     stack={project.stack}
