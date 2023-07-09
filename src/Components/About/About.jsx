@@ -1,5 +1,7 @@
 import React from "react";
+
 import "./About.css";
+
 import boyIcon from "/iconsImg/boy.png";
 
 function About() {

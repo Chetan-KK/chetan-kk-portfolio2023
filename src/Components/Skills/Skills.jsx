@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import Skill from "./Skill";
-import "./Skills.css";
-import { useRef } from "react";
 import { useEffect } from "react";
+import React, { useState } from "react";
+
+import "./Skills.css";
+
+import Skill from "./Skill";
 import skillsData from "../../assets/skills";
 import trophyIcon from "/iconsImg/trophy.png";
 

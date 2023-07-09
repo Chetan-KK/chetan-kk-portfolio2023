@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+
 import "./Certifications.css";
+
 import certificatesData from "../../assets/certificates";
 import Certificate from "./Certificate";
 

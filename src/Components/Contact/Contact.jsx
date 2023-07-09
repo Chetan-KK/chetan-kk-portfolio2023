@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./Contact.css";
 import axios from "axios";
 import Tilt from "react-parallax-tilt";
+
+import "./Contact.css";
+
 import helloIcon from "/iconsImg/hello.png";
 
 function Contact() {

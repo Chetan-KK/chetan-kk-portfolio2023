@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import Project from "./Project";
+
 import "./Projects.css";
+
+import Project from "./Project";
 import projectsArray from "../../assets/projects";
 
 function Projects(props) {

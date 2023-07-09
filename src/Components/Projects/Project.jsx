@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
+
 import starIcon from "/iconsImg/stars.png";
 
 function Project(props) {

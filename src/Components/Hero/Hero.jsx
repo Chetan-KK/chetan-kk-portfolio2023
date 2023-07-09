@@ -1,16 +1,18 @@
 import React, { useContext, useState } from "react";
-import Connect from "../Connect/Connect";
-import "./Hero.css";
-import myImg from "/chetan-khulage.png";
 import Tilt from "react-parallax-tilt";
 import Typer from "react-text-typist";
 import Lottie from "lottie-react";
+import gsap from "gsap";
+
+import "./Hero.css";
+
+import Connect from "../Connect/Connect";
+import myImg from "/chetan-khulage.png";
 import arrowDarkJson from "../../assets/animLogos/arrowDark.json";
 import arrowLightJson from "../../assets/animLogos/arrowLight.json";
 import { ThemeContext } from "../../Context/ThemeContex";
 import fireIcon from "/iconsImg/fire.png";
 import starIcon from "/iconsImg/stars.png";
-import gsap from "gsap";
 
 function Hero(props) {
   const { mode } = useContext(ThemeContext);

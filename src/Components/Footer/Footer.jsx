@@ -1,6 +1,8 @@
-import React, { useContext } from "react";
-import Connect from "../Connect/Connect";
+import React from "react";
+
 import "./Footer.css";
+
+import Connect from "../Connect/Connect";
 import heartIcon from "/iconsImg/heart.png";
 
 function Footer() {

@@ -1,13 +1,16 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
 import "./Resume.css";
+
 import Navbar from "../Navbar/Navbar";
 import Project from "./Project";
 import projectsData from "../../assets/projects";
-import { Link } from "react-router-dom";
 import skillsData from "../../assets/skills";
 import resumeIcon from "/iconsImg/resume.png";
 import certificatesData from "../../assets/certificates";
+
 function Resume() {
   const handleDownload = (e) => {
     window.print();

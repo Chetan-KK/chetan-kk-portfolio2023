@@ -1,8 +1,10 @@
 import { Link } from "react-scroll";
 import { Link as NormalLink } from "react-router-dom";
 import { useContext, useEffect } from "react";
-import "./Navbar.css";
 import { useState } from "react";
+
+import "./Navbar.css";
+
 import { ThemeContext } from "../../Context/ThemeContex";
 
 export default function Navbar(props) {

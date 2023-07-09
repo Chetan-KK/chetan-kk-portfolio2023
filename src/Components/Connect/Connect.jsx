@@ -1,6 +1,7 @@
 import React from "react";
-import "./connect.css";
 import { Link } from "react-router-dom";
+
+import "./connect.css";
 
 function Connect() {
   return (

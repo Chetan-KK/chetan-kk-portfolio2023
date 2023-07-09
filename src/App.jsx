@@ -1,14 +1,17 @@
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import anime from "animejs";
+
+import "./App.css";
+
 import Home from "./Components/Home/Home";
 import MainProject from "./Components/MainProject/MainProject";
-import "./App.css";
 import MainLoading from "./Components/MainLoading/MainLoading";
-import { ThemeProvider } from "./Context/ThemeContex";
 import Resume from "./Components/Resume/Resume";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
-import { useEffect } from "react";
-import anime from "animejs";
+
+import { ThemeProvider } from "./Context/ThemeContex";
 
 function App() {
   useEffect(() => {

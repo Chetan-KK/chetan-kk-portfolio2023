@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
+
 import "./MainProject.css";
+
 import projects from "../../assets/projects";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
-import Tilt from "react-parallax-tilt";
 import penIcon from "/iconsImg/pen.png";
 
 function MainProject() {

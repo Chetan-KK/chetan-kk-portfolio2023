@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Footer from "../Footer/Footer";
 import Contact from "../Contact/Contact";
-
-import { motion } from "framer-motion";
 import About from "../About/About";
 import Certifications from "../Certifications/Certifications";
 
