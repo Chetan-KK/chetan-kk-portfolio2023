@@ -87,6 +87,20 @@ export default [
         year: "3-2019",
     },
     {
+        title: "Youtube Clone",
+        stack: ['HTML', "CSS", "REACT", "GOOGLEAPIS"],
+        imgSrc: "/projects/youtube-clone/main.webp",
+        imgs: [
+            "/projects/youtube-clone/2.webp",
+            "/projects/youtube-clone/3.webp",
+            // "/projects/youtube-clone/4.webp",
+        ],
+        desc: "The YouTube Clone project aims to replicate the core functionality and features of the YouTube using React. This project serves as a learning exercise and an opportunity to practice building a complex web application with React components and external API integration. With this clone project, I aimed to replicate the core functionalities of YouTube, one of the world's most popular video-sharing platforms. By leveraging React's component-based architecture and the YouTube Data API, I successfully recreated features such as video playback, search functionality, recommended videos, etc.",
+        link: "https://youtube-clone-one-jet.vercel.app/",
+        gitLink: "https://github.com/Chetan-KK/youtube-clone",
+        year: "6-2023",
+    },
+    {
         title: "Chill dark theme",
         stack: ["VSCE", "COLORS", "NPM"],
         imgSrc: "/projects/vscode-chill-dark-theme/main.webp",
