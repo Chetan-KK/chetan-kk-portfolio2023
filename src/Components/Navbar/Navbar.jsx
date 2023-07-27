@@ -72,7 +72,6 @@ export default function Navbar(props) {
               <Link
                 to="hero"
                 spy={true}
-                smooth={true}
                 offset={-200}
                 duration={500}
                 className="link"
@@ -83,7 +82,6 @@ export default function Navbar(props) {
               <Link
                 to="projects"
                 spy={true}
-                smooth={true}
                 offset={-100}
                 duration={500}
                 className="link"
@@ -94,7 +92,6 @@ export default function Navbar(props) {
               <Link
                 to="skills"
                 spy={true}
-                smooth={true}
                 offset={-100}
                 duration={500}
                 className="link"
@@ -106,7 +103,6 @@ export default function Navbar(props) {
               <Link
                 to="about"
                 spy={true}
-                smooth={true}
                 offset={-180}
                 duration={500}
                 className="link"
@@ -119,7 +115,6 @@ export default function Navbar(props) {
               <Link
                 to="contact"
                 spy={true}
-                smooth={true}
                 offset={-100}
                 duration={500}
                 title="go to contact section"
