@@ -66,6 +66,16 @@ export default {
             credLink: 'https://freecodecamp.org/certification/Chetan-KK/javascript-algorithms-and-data-structures',
         },
         {
+            name: "Typing.com",
+            imgSrc: '/certificates/typing.webp',
+            credLink: "https://www.typing.com/apiv1/student/tests/261976084/151158733/certificate?language=en"
+        },
+        {
+            name: "IIT Kanpur - Cyber Security(Web Hacking)",
+            imgSrc: '/certificates/IFACETIITK.webp',
+            credLink: "https://verify.ifacet.digitalcredentials.in/3fd9816f-c5ea-4af0-bc9f-84944585baf6"
+        },
+        {
             name: "Web-Internet fundamentals",
             imgSrc: '/certificates/internet-fundamentals.webp',
             credLink: 'https://codedamn.com/certificate/verify/01073640fd22067b34038d70f7e84fe599eb54fc',
@@ -82,5 +92,6 @@ export default {
             name: "Devtown Comunity",
             imgSrc: '/certificates/devtown-comunity.webp',
         },
+
     ]
 };

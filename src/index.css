@@ -110,7 +110,7 @@ body {
     )
     0 / 10px 10px;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 .small-loader {
   margin: auto;
