@@ -15,6 +15,10 @@
 - ⚡ When I'm not playing with web I'm probably playing CS:GO.
 
 <br/>
+
+## holopin badges
+
+[![An image of @chetankk's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/chetankk)](https://holopin.io/@chetankk)
 <br/>
 
 ## 🌐 Socials:
