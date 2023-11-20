@@ -4,15 +4,12 @@
 
 <h3 align="center">I am</h3>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Full-stack%20Web%20Developer;THREE JS%20developer;React%20Developer;Web%20Designer;UI/UX%20Designer;UI/UX%20Developer;MERN-stack%20Developer;React THREE%20Fiber;Web Motion%20Designer&center=true&width=380&height=45">
-</p>
+<h3 align="center">
+MENR stack / THREE JS Developer and UI/UX Designer
+</h3>
 <p align="center">
 from <b>India</b>, I love to build new things on the internet
 </p>
-
-<br/>
-
 <p align="center"> 
   <samp>
     <a href="https://www.google.com/search?q=chetan+khulage">「 Google Me 」</a>
