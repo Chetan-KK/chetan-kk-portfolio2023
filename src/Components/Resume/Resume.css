@@ -1,10 +1,14 @@
-.downloadButton {
+.downloadButtons {
   position: fixed !important;
-  width: fit-content;
-  padding: 7px 20px !important;
   z-index: 9999;
-  right: 12vw;
+  right: calc(9vw + 2rem);
   top: 1rem;
+  gap: 1rem;
+}
+.downloadButtons .button {
+  width: fit-content;
+  margin: 0;
+  padding: 7px 20px !important;
 }
 .resumeIcon {
   width: 10vw;

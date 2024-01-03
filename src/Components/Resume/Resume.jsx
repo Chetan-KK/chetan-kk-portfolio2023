@@ -10,6 +10,9 @@ import projectsData from "../../assets/projects";
 import skillsData from "../../assets/skills";
 import resumeIcon from "/iconsImg/resume.png";
 import certificatesData from "../../assets/certificates";
+import resumePdf from "/chetan_yogesh_khulage_resume.pdf";
+
+console.log(resumePdf);
 
 function Resume() {
   const handleDownload = (e) => {
@@ -46,9 +49,20 @@ function Resume() {
         </Link>
         <img src={resumeIcon} alt="" className="imgIcon resumeIcon" />
 
-        <div className="button downloadButton" onClick={handleDownload}>
-          <i className="fa-regular fa-floppy-disk"></i>{" "}
-          {width < 600 ? "" : " Download"}
+        <div className="downloadButtons flex">
+          <div className="button" onClick={handleDownload}>
+            <i className="fa-regular fa-floppy-disk"></i>{" "}
+            {width < 750 ? "" : " Download"}
+          </div>
+          <a
+            href={resumePdf}
+            download
+            className="button"
+            title="download my original resume"
+          >
+            <i className="fa-solid fa-download"></i>{" "}
+            {width < 750 ? "" : "Original"}
+          </a>
         </div>
         <div id="Print">
           <header className="flex header">
