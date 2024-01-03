@@ -162,10 +162,11 @@
     text-align: center;
     padding: 0.8rem 1.5rem !important;
   }
-  .downloadButton {
-    padding: 6px 15px !important;
-    right: 3.5rem;
-    top: 1rem;
+  .downloadButtons {
+    gap: 0.5rem;
+  }
+  .downloadButtons .button {
+    padding: 6px 14px !important;
   }
   .Resume .header .main-title {
     font-size: 2rem;
@@ -211,8 +212,16 @@
 }
 @media screen and (max-width: 400px) {
   .backButton .button {
-    width: 80vw;
-    margin: 0 9vw;
+    margin: 0 5vw;
+  }
+  .downloadButtons {
+    gap: 0.5rem;
+    flex-direction: column;
+    top: 5rem;
+    right: 1rem;
+  }
+  .downloadButtons .button {
+    padding: 6px 14px !important;
   }
 }
 @media print {
