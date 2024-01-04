@@ -12,7 +12,7 @@ export default [
         stack: ["HTML", "CSS", "JAVASCRIPT", "THREE JS", "GSAP", "SCROLL MAGIC", "TILT JS"],
         desc: `The project integrates the power of Three.js to bring creative design to life with stunning animations and eye-catching graphics, making it a must-see for anyone interested in cutting-edge technology and creative design.
       This website features animations, motion design, and user interaction, creating a dynamic and interactive experience for visitors. The website is fully responsive, ensuring optimal viewing on any device, and includes a theme selector that allows you to customize the look and feel of the site.`,
-        link: "https://chetan-kk.github.io/ChetanK-Portfolio/",
+        link: "https://chetan-k-portfolio.vercel.app",
         gitLink: "https://github.com/Chetan-KK/ChetanK-Portfolio",
         year: "5-2021",
     },
