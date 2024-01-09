@@ -24,12 +24,7 @@ function Certificate(props) {
     >
       <div className="Certificate">
         <div className="heading">{props.name}</div>
-        <img
-          src={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main${props.imgSrc}`}
-          onLoad={handleImgLoad}
-          className="img"
-          alt=""
-        />
+        <img src={props.imgSrc} onLoad={handleImgLoad} className="img" alt="" />
         {props.credLink ? (
           <a href={props.credLink} className="button" target="_blank">
             credentials{" "}

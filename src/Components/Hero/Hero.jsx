@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Tilt from "react-parallax-tilt";
 import Typer from "react-text-typist";
 import Lottie from "lottie-react";
@@ -13,13 +13,24 @@ import arrowLightJson from "../../assets/animLogos/arrowLight.json";
 import { ThemeContext } from "../../Context/ThemeContex";
 import fireIcon from "/iconsImg/fire.png";
 import starIcon from "/iconsImg/stars.png";
+import fetchInfo from "../../Utils/GetInfo";
 
 function Hero(props) {
   const { mode } = useContext(ThemeContext);
 
+  const [infoData, setInfoData] = useState();
+  const [animTitle, setAnimTitle] = useState();
   const [imgLoaded, setImgLoaded] = useState(true);
 
-  const animTitle = "Chetan Khulage";
+  const getInfo = async () => {
+    const info = await fetchInfo();
+    setInfoData(info);
+    setAnimTitle(info.name);
+  };
+
+  useEffect(() => {
+    getInfo();
+  }, []);
 
   function handleImgLoad() {
     setImgLoaded(false);
@@ -50,17 +61,23 @@ function Hero(props) {
           <div className="main-title flex">
             Hello, I'm
             <b className="flex">
-              {animTitle.split("").map((char, i) => (
-                <div
-                  key={i}
-                  onMouseEnter={handleHoverTextEnter}
-                  onMouseLeave={handleHoverTextLeave}
-                  className="anim_Title-Char"
-                  title="Isn't it cool 😃"
-                >
-                  {char}
-                </div>
-              ))}
+              {animTitle ? (
+                <>
+                  {animTitle.split("").map((char, i) => (
+                    <div
+                      key={i}
+                      onMouseEnter={handleHoverTextEnter}
+                      onMouseLeave={handleHoverTextLeave}
+                      className="anim_Title-Char"
+                      title="Isn't it cool 😃"
+                    >
+                      {char}
+                    </div>
+                  ))}
+                </>
+              ) : (
+                <div className="small-loader"></div>
+              )}
             </b>
             {mode == "dark" ? (
               <Lottie
@@ -117,15 +134,21 @@ function Hero(props) {
           glareBorderRadius="10px"
         >
           <div className="imgWrapper">
-            <img src={fireIcon} alt="" className="imgIcon fireIcon" />
-            <div className={imgLoaded ? "placeholder" : ""}></div>
-            <img
-              src={myImg}
-              alt="chetan khulage"
-              onLoad={handleImgLoad}
-              className="myImg"
-              title="It's me"
-            />
+            {infoData ? (
+              <>
+                <img src={fireIcon} alt="" className="imgIcon fireIcon" />
+                <div className={imgLoaded ? "placeholder" : ""}></div>
+                <img
+                  src={infoData.profileImg}
+                  alt="chetan khulage"
+                  onLoad={handleImgLoad}
+                  className="myImg"
+                  title="It's me"
+                />
+              </>
+            ) : (
+              <div className="small-loader"></div>
+            )}
           </div>
         </Tilt>
       </div>

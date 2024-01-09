@@ -85,11 +85,7 @@ function MainProject() {
                 gyroscope={false}
               >
                 <div className={mainImgLoaded ? "placeholder" : ""}></div>
-                <img
-                  src={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main${project.imgSrc}`}
-                  onLoad={handleMainImgLoad}
-                  alt=""
-                />
+                <img src={project.imgSrc} onLoad={handleMainImgLoad} alt="" />
               </Tilt>
               {project.imgs &&
                 project.imgs.map((img) => (
@@ -108,12 +104,7 @@ function MainProject() {
                     gyroscope={false}
                   >
                     <div className={ImgLoaded ? "placeholder" : ""}></div>
-                    <img
-                      src={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main${img}`}
-                      onLoad={handleImgLoad}
-                      key={img}
-                      alt=""
-                    />
+                    <img src={img} onLoad={handleImgLoad} key={img} alt="" />
                   </Tilt>
                 ))}
             </div>

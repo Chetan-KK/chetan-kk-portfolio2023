@@ -4,16 +4,21 @@ import React, { useState } from "react";
 import "./Skills.css";
 
 import Skill from "./Skill";
-import skillsData from "../../assets/skills";
 import trophyIcon from "/iconsImg/trophy.png";
+import fetchSkills from "../../Utils/GetSkills";
 
 function Skills() {
-  const [skills, setSkills] = useState(skillsData);
+  const [skills, setSkills] = useState();
 
   const [row1Pos, setRow1Pos] = useState(0);
   const [row2Pos, setRow2Pos] = useState(0);
 
+  const getSkills = async () => {
+    setSkills(await fetchSkills());
+  };
+
   useEffect(() => {
+    getSkills();
     tick();
   }, []);
 
@@ -77,32 +82,39 @@ function Skills() {
         </div>
       </div>
       <div className="skills-row flex">
-        <div
-          className="row-1 flex"
-          style={{ transform: `translateX(${row1Pos / devider}%)` }}
-        >
-          {skills.map((skill) => (
-            <Skill
-              key={skill.name}
-              link={skill.link}
-              imgLink={skill.imgLink}
-              name={skill.name}
-            />
-          ))}
-        </div>
-        <div
-          className="row-2 flex"
-          style={{ transform: `translateX(${row2Pos / devider}%)` }}
-        >
-          {skills.map((skill) => (
-            <Skill
-              key={skill.name}
-              link={skill.link}
-              imgLink={skill.imgLink}
-              name={skill.name}
-            />
-          ))}
-        </div>
+        {skills ? (
+          <>
+            {" "}
+            <div
+              className="row-1 flex"
+              style={{ transform: `translateX(${row1Pos / devider}%)` }}
+            >
+              {skills.map((skill) => (
+                <Skill
+                  key={skill.name}
+                  link={skill.link}
+                  imgLink={skill.imgLink}
+                  name={skill.name}
+                />
+              ))}
+            </div>
+            <div
+              className="row-2 flex"
+              style={{ transform: `translateX(${row2Pos / devider}%)` }}
+            >
+              {skills.map((skill) => (
+                <Skill
+                  key={skill.name}
+                  link={skill.link}
+                  imgLink={skill.imgLink}
+                  name={skill.name}
+                />
+              ))}
+            </div>{" "}
+          </>
+        ) : (
+          <div className="small-loader"></div>
+        )}
       </div>
     </div>
   );

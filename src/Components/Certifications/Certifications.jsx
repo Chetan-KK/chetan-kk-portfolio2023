@@ -10,12 +10,12 @@ function Certifications(props) {
   const [activeType, setActiveType] = useState("all");
   const [loadAll, setLoadAll] = useState(false);
 
-  const getProjects = async () => {
+  const getCertificates = async () => {
     setCertificatesData(await fetchCertificates());
   };
 
   useEffect(() => {
-    getProjects();
+    getCertificates();
   }, []);
 
   const handleCertificates = (e) => {

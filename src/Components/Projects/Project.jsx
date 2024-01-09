@@ -44,7 +44,7 @@ function Project(props) {
             <Link to={`/${props.id}`} className="imgWrapper">
               <div className={imgLoaded ? "placeholder" : ""}></div>
               <img
-                src={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main${props.imgSrc}`}
+                src={props.imgSrc}
                 onLoad={handleImgLoad}
                 className="projectImg"
                 alt=""
