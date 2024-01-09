@@ -7,7 +7,6 @@ import "./Resume.css";
 import Navbar from "../Navbar/Navbar";
 import Project from "./Project";
 import resumeIcon from "/iconsImg/resume.png";
-import resumePdf from "/chetan_yogesh_khulage_resume.pdf";
 import fetchCertificates from "../../Utils/GetCertificates";
 import fetchProjects from "../../Utils/GetProjects";
 import fetchSkills from "../../Utils/GetSkills";
@@ -110,18 +109,24 @@ function Resume() {
                 Full-stack, MERN-stack, Three JS Developer
               </div>
               <div className="links flex">
-                <a
-                  href="https://github.com/Chetan-KK"
-                  className="sub-heading socialLink flex"
-                >
-                  <i className="fa-brands fa-github"></i> Chetan-KK
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/chetan-khulage/"
-                  className="sub-heading socialLink flex"
-                >
-                  <i className="fa-brands fa-linkedin"></i> chetan-khulage
-                </a>
+                {infoData ? (
+                  <>
+                    <a
+                      href={infoData.links.github}
+                      className="sub-heading socialLink flex"
+                    >
+                      <i className="fa-brands fa-github"></i> Chetan-KK
+                    </a>
+                    <a
+                      href={infoData.links.linkedin}
+                      className="sub-heading socialLink flex"
+                    >
+                      <i className="fa-brands fa-linkedin"></i> {infoData.name}
+                    </a>
+                  </>
+                ) : (
+                  <div className="small-loader"></div>
+                )}
               </div>
             </main>
             <div className="contacts flex">
@@ -129,12 +134,16 @@ function Resume() {
                 <div className="icon flex">
                   <i className="fa-solid fa-envelope"></i>
                 </div>
-                <a
-                  className="info flex sub-heading"
-                  href="mailto:chetankhulage350@gmail.com"
-                >
-                  chetankhulage350@gmail.com
-                </a>
+                {infoData ? (
+                  <a
+                    className="info flex sub-heading"
+                    href={`mailto:${infoData.emailId}`}
+                  >
+                    {infoData.emailId}
+                  </a>
+                ) : (
+                  <div className="small-loader"></div>
+                )}
               </div>
               <div className="contact flex">
                 <div className="icon flex">

@@ -7,12 +7,10 @@ import gsap from "gsap";
 import "./Hero.css";
 
 import Connect from "../Connect/Connect";
-import myImg from "/chetan-khulage.png";
 import arrowDarkJson from "../../assets/animLogos/arrowDark.json";
 import arrowLightJson from "../../assets/animLogos/arrowLight.json";
 import { ThemeContext } from "../../Context/ThemeContex";
 import fireIcon from "/iconsImg/fire.png";
-import starIcon from "/iconsImg/stars.png";
 import fetchInfo from "../../Utils/GetInfo";
 
 function Hero(props) {

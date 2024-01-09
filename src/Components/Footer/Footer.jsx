@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Footer.css";
 
 import Connect from "../Connect/Connect";
 import heartIcon from "/iconsImg/heart.png";
+import fetchInfo from "../../Utils/GetInfo";
 
 function Footer() {
+  const [infoData, setInfoData] = useState();
+
+  const getInfo = async () => {
+    const info = await fetchInfo();
+    setInfoData(info);
+  };
+
+  useEffect(() => {
+    getInfo();
+  }, []);
+
   return (
     <div className="Footer flex">
       <img src={heartIcon} alt="" className="imgIcon heartIcon" />
@@ -30,12 +42,13 @@ function Footer() {
           </g>
         </svg>
         &copy; 2023. All rights reserved by
-        <a
-          href="https://www.linkedin.com/in/chetan-khulage/"
-          className="link sign"
-        >
-          Chetan Khulage
-        </a>
+        {infoData ? (
+          <a href={infoData.links.linkedin} className="link sign">
+            Chetan Khulage
+          </a>
+        ) : (
+          <div className="small-loader"></div>
+        )}
       </div>
       <Connect />
     </div>
