@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Projects.css";
 
 import Project from "./Project";
-import projectsArray from "../../assets/projects";
+
+import fetchProjects from "../../Utils/GetProjects";
 
 function Projects(props) {
-  const [projects, setProjects] = useState(projectsArray);
+  const [projects, setProjects] = useState();
+
+  const getProjects = async () => {
+    setProjects(await fetchProjects());
+  };
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
   return (
     <div className="Projects" id="projects">
       <div className="main-title">Projects</div>
@@ -14,19 +24,23 @@ function Projects(props) {
         <b>Here's some of my projects</b>
       </div>
       <div className="projects flex">
-        {projects.map((project, i) => (
-          <Project
-            key={i}
-            id={i}
-            imgSrc={project.imgSrc}
-            title={project.title}
-            desc={project.desc}
-            link={project.link}
-            gitLink={project.gitLink}
-            year={project.year}
-            isTilt={props.isTilt}
-          />
-        ))}
+        {projects ? (
+          projects.map((project, i) => (
+            <Project
+              key={i}
+              id={i}
+              imgSrc={project.imgSrc}
+              title={project.title}
+              desc={project.desc}
+              link={project.link}
+              gitLink={project.gitLink}
+              year={project.year}
+              isTilt={props.isTilt}
+            />
+          ))
+        ) : (
+          <div className="small-loader"></div>
+        )}
       </div>
     </div>
   );

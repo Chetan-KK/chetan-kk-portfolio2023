@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Certifications.css";
 
-import certificatesData from "../../assets/certificates";
 import Certificate from "./Certificate";
+import fetchCertificates from "../../Utils/GetCertificates";
 
 function Certifications(props) {
-  const [data, setData] = useState(certificatesData);
+  const [certificatesData, setCertificatesData] = useState();
   const [activeType, setActiveType] = useState("all");
   const [loadAll, setLoadAll] = useState(false);
+
+  const getProjects = async () => {
+    setCertificatesData(await fetchCertificates());
+  };
+
+  useEffect(() => {
+    getProjects();
+  }, []);
 
   const handleCertificates = (e) => {
     switch (e.target.innerText) {
@@ -63,10 +71,25 @@ function Certifications(props) {
             : "all-certificates all-certificates-open flex"
         }
       >
-        {activeType == "all"
-          ? Object.keys(certificatesData).map((key, i) => (
-              <div key={i} className="container flex">
-                {certificatesData[key].map((certificate, i) => (
+        {certificatesData ? (
+          <>
+            {activeType == "all"
+              ? Object.keys(certificatesData).map((key, i) => (
+                  <div key={i} className="container flex">
+                    {certificatesData[key].map((certificate, i) => (
+                      <Certificate
+                        key={i}
+                        isTilt={props.isTilt}
+                        name={certificate.name}
+                        credLink={certificate.credLink}
+                        imgSrc={certificate.imgSrc}
+                      />
+                    ))}
+                  </div>
+                ))
+              : undefined}
+            {activeType == "udemy"
+              ? certificatesData[activeType].map((certificate, i) => (
                   <Certificate
                     key={i}
                     isTilt={props.isTilt}
@@ -74,43 +97,34 @@ function Certifications(props) {
                     credLink={certificate.credLink}
                     imgSrc={certificate.imgSrc}
                   />
-                ))}
-              </div>
-            ))
-          : undefined}
-        {activeType == "udemy"
-          ? certificatesData[activeType].map((certificate, i) => (
-              <Certificate
-                key={i}
-                isTilt={props.isTilt}
-                name={certificate.name}
-                credLink={certificate.credLink}
-                imgSrc={certificate.imgSrc}
-              />
-            ))
-          : undefined}
-        {activeType == "greatLearning"
-          ? certificatesData[activeType].map((certificate, i) => (
-              <Certificate
-                key={i}
-                isTilt={props.isTilt}
-                name={certificate.name}
-                credLink={certificate.credLink}
-                imgSrc={certificate.imgSrc}
-              />
-            ))
-          : undefined}
-        {activeType == "others"
-          ? certificatesData[activeType].map((certificate, i) => (
-              <Certificate
-                key={i}
-                isTilt={props.isTilt}
-                name={certificate.name}
-                credLink={certificate.credLink}
-                imgSrc={certificate.imgSrc}
-              />
-            ))
-          : undefined}
+                ))
+              : undefined}
+            {activeType == "greatLearning"
+              ? certificatesData[activeType].map((certificate, i) => (
+                  <Certificate
+                    key={i}
+                    isTilt={props.isTilt}
+                    name={certificate.name}
+                    credLink={certificate.credLink}
+                    imgSrc={certificate.imgSrc}
+                  />
+                ))
+              : undefined}
+            {activeType == "others"
+              ? certificatesData[activeType].map((certificate, i) => (
+                  <Certificate
+                    key={i}
+                    isTilt={props.isTilt}
+                    name={certificate.name}
+                    credLink={certificate.credLink}
+                    imgSrc={certificate.imgSrc}
+                  />
+                ))
+              : undefined}
+          </>
+        ) : (
+          <div className="small-loader"></div>
+        )}
       </div>
       <div className="button loadButton" onClick={handleLoadAll}>
         {loadAll ? "Show less" : "Show more"}
@@ -123,7 +137,7 @@ function Certifications(props) {
           isTilt={props.isTilt}
           name={"THREE JS Journey by Bruno Simon"}
           credLink={"https://threejs-journey.com/certificate/view/20439"}
-          imgSrc={"/certificates/three-js-journey.webp"}
+          imgSrc={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main/certificates/three-js-journey.webp`}
         />
       </div>
     </div>

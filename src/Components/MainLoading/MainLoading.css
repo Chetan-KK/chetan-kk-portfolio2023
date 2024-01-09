@@ -34,7 +34,7 @@
   animation: loading 1s infinite linear;
   justify-content: center;
 }
-.MainLoading .loader .inner-loader {
+.inner-loader {
   height: 40px;
   width: 40px;
   border-radius: 100%;

@@ -5,10 +5,10 @@ import Tilt from "react-parallax-tilt";
 
 import "./MainProject.css";
 
-import projects from "../../assets/projects";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import penIcon from "/iconsImg/pen.png";
+import fetchProjects from "../../Utils/GetProjects";
 
 function MainProject() {
   const ProjectId = useParams();
@@ -26,8 +26,13 @@ function MainProject() {
     setMainImgLoaded(false);
   }
 
+  const getProjects = async () => {
+    const allProjects = await fetchProjects();
+    setProject(allProjects[ProjectId.id]);
+  };
+
   useEffect(() => {
-    setProject(projects[ProjectId.id]);
+    getProjects();
   }, []);
 
   return (
@@ -80,7 +85,11 @@ function MainProject() {
                 gyroscope={false}
               >
                 <div className={mainImgLoaded ? "placeholder" : ""}></div>
-                <img src={project.imgSrc} onLoad={handleMainImgLoad} alt="" />
+                <img
+                  src={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main${project.imgSrc}`}
+                  onLoad={handleMainImgLoad}
+                  alt=""
+                />
               </Tilt>
               {project.imgs &&
                 project.imgs.map((img) => (
@@ -99,7 +108,12 @@ function MainProject() {
                     gyroscope={false}
                   >
                     <div className={ImgLoaded ? "placeholder" : ""}></div>
-                    <img src={img} onLoad={handleImgLoad} key={img} alt="" />
+                    <img
+                      src={`https://raw.githubusercontent.com/chetan-kk/chetan-kk/main${img}`}
+                      onLoad={handleImgLoad}
+                      key={img}
+                      alt=""
+                    />
                   </Tilt>
                 ))}
             </div>
