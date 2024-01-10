@@ -9,22 +9,12 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import penIcon from "/iconsImg/pen.png";
 import fetchProjects from "../../Utils/GetProjects";
+import Img from "../Img/Img";
 
 function MainProject() {
   const ProjectId = useParams();
 
   const [project, setProject] = useState(null);
-
-  const [ImgLoaded, setImgLoaded] = useState(true);
-  const [mainImgLoaded, setMainImgLoaded] = useState(true);
-
-  function handleImgLoad() {
-    setImgLoaded(false);
-  }
-
-  function handleMainImgLoad() {
-    setMainImgLoaded(false);
-  }
 
   const getProjects = async () => {
     const allProjects = await fetchProjects();
@@ -84,8 +74,7 @@ function MainProject() {
                 transitionSpeed={1000}
                 gyroscope={false}
               >
-                <div className={mainImgLoaded ? "placeholder" : ""}></div>
-                <img src={project.imgSrc} onLoad={handleMainImgLoad} alt="" />
+                <Img src={project.imgSrc} />
               </Tilt>
               {project.imgs &&
                 project.imgs.map((img) => (
@@ -103,8 +92,7 @@ function MainProject() {
                     transitionSpeed={1000}
                     gyroscope={false}
                   >
-                    <div className={ImgLoaded ? "placeholder" : ""}></div>
-                    <img src={img} onLoad={handleImgLoad} key={img} alt="" />
+                    <Img src={img} />
                   </Tilt>
                 ))}
             </div>

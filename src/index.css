@@ -276,6 +276,9 @@ b {
   display: flex;
   align-items: center;
 }
+.none {
+  display: none;
+}
 textarea {
   resize: none;
 }
