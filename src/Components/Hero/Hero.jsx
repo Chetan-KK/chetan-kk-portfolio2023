@@ -12,13 +12,13 @@ import arrowLightJson from "../../assets/animLogos/arrowLight.json";
 import { ThemeContext } from "../../Context/ThemeContex";
 import fireIcon from "/iconsImg/fire.png";
 import fetchInfo from "../../Utils/GetInfo";
+import Img from "../Img/Img";
 
 function Hero(props) {
   const { mode } = useContext(ThemeContext);
 
   const [infoData, setInfoData] = useState();
   const [animTitle, setAnimTitle] = useState();
-  const [imgLoaded, setImgLoaded] = useState(true);
 
   const getInfo = async () => {
     const info = await fetchInfo();
@@ -29,10 +29,6 @@ function Hero(props) {
   useEffect(() => {
     getInfo();
   }, []);
-
-  function handleImgLoad() {
-    setImgLoaded(false);
-  }
 
   const handleHoverTextEnter = (e) => {
     gsap.to(e.target, 0.3, {
@@ -135,13 +131,11 @@ function Hero(props) {
             {infoData ? (
               <>
                 <img src={fireIcon} alt="" className="imgIcon fireIcon" />
-                <div className={imgLoaded ? "placeholder" : ""}></div>
-                <img
-                  src={infoData.profileImg}
-                  alt="chetan khulage"
-                  onLoad={handleImgLoad}
+                <Img
                   className="myImg"
                   title="It's me"
+                  src={infoData.profileImg}
+                  alt="chetan khulage"
                 />
               </>
             ) : (

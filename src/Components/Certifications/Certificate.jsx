@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
+import Img from "../Img/Img";
 
 function Certificate(props) {
-  const [imgLoaded, setImgLoaded] = useState(true);
-
-  function handleImgLoad() {
-    setImgLoaded(false);
-  }
-
   return (
     <Tilt
       perspective={1000}
@@ -24,7 +19,7 @@ function Certificate(props) {
     >
       <div className="Certificate">
         <div className="heading">{props.name}</div>
-        <img src={props.imgSrc} onLoad={handleImgLoad} className="img" alt="" />
+        <Img src={props.imgSrc} className="img" alt="" />
         {props.credLink ? (
           <a href={props.credLink} className="button" target="_blank">
             credentials{" "}
