@@ -10,11 +10,13 @@ import Footer from "../Footer/Footer";
 import penIcon from "/iconsImg/pen.png";
 import fetchProjects from "../../Utils/GetProjects";
 import Img from "../Img/Img";
+import ImgView from "../ImgView/ImgView";
 
 function MainProject() {
   const ProjectId = useParams();
 
   const [project, setProject] = useState(null);
+  const [activeImg, setActiveImg] = useState(null);
 
   const getProjects = async () => {
     const allProjects = await fetchProjects();
@@ -77,9 +79,9 @@ function MainProject() {
                 <Img src={project.imgSrc} />
               </Tilt>
               {project.imgs &&
-                project.imgs.map((img) => (
+                project.imgs.map((img, _) => (
                   <Tilt
-                    key={img}
+                    key={_}
                     className="tilt-img"
                     tiltMaxAngleX={10}
                     tiltMaxAngleY={10}
@@ -92,7 +94,12 @@ function MainProject() {
                     transitionSpeed={1000}
                     gyroscope={false}
                   >
-                    <Img src={img} />
+                    <Img
+                      src={img}
+                      onClick={() => {
+                        setActiveImg(img);
+                      }}
+                    />
                   </Tilt>
                 ))}
             </div>
@@ -118,7 +125,7 @@ function MainProject() {
           </div>
         </div>
       )}
-
+      <ImgView imgSrc={activeImg} closeImg={setActiveImg} />
       <Footer />
     </motion.div>
   );

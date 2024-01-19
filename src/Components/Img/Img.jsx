@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Img = ({ src, className, title, alt }) => {
+const Img = ({ src, className, title, alt, onClick }) => {
   const [ImgLoaded, setImgLoaded] = useState(false);
 
   function handleImgLoad() {
@@ -8,7 +8,7 @@ const Img = ({ src, className, title, alt }) => {
   }
 
   return (
-    <div>
+    <div onClick={onClick}>
       <div className={ImgLoaded ? "none" : "placeholder"}></div>
       <img
         src={src}
