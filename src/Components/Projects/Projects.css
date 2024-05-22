@@ -39,6 +39,16 @@
   box-shadow: 0 0 0 2px var(--primary-color),
     0 0 130px -50px var(--primary-color);
 }
+.projects .Project .update {
+  color: var(--light-text-c);
+  font-size: 0.8rem;
+  width: max-content;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--border-c);
+  border-radius: 10rem;
+  font-family: var(--ff);
+  margin-bottom: 0.8rem;
+}
 .projects .Project .placeholder {
   height: 100%;
   position: absolute;

@@ -27,6 +27,9 @@ function Project(props) {
         glareBorderRadius="10px"
       >
         <div className="Project">
+          {props.isInDevelopment && (
+            <div className="update">Still in development</div>
+          )}
           <Tilt
             perspective={1000}
             glareEnable={true}

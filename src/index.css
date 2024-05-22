@@ -2,6 +2,15 @@
   --primary-color: #0167ff;
   --primary-gradient: linear-gradient(145deg, #01ccff, #0167ff);
 } */
+
+/* 
+test colors for future use
+
+
+  --primary-color: #2b2b2b;
+  --primary-gradient: linear-gradient(145deg, #2b2b2b, #616161);
+*/
+
 .light {
   --primary-color: #ff014f;
   --secondary-color: #ecf0f3;

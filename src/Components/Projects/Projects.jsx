@@ -35,6 +35,7 @@ function Projects(props) {
               link={project.link}
               gitLink={project.gitLink}
               year={project.year}
+              isInDevelopment={project.isInDevelopment}
               isTilt={props.isTilt}
             />
           ))
