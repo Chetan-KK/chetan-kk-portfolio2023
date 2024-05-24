@@ -21,6 +21,7 @@ function MainProject() {
   const getProjects = async () => {
     const allProjects = await fetchProjects();
     setProject(allProjects[ProjectId.id]);
+    console.log(allProjects[ProjectId.id]);
   };
 
   useEffect(() => {
@@ -52,6 +53,7 @@ function MainProject() {
             <div className="titles">
               <div className="main-title">
                 # {project.title}
+                <span className="sub-heading year">({project.year})</span>
                 <img src={penIcon} alt="" className="imgIcon penIcon" />
               </div>
               <div className="heading">

@@ -11,7 +11,7 @@ const ImgView = ({ imgSrc, closeImg }) => {
             closeImg(null);
           }}
         >
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         </div>
         <img src={imgSrc} alt="" />
       </div>

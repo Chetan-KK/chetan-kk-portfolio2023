@@ -3,20 +3,30 @@
   --primary-gradient: linear-gradient(145deg, #01ccff, #0167ff);
 } */
 
-/* 
-test colors for future use
+/* orignal colors
 
-
-  --primary-color: #2b2b2b;
-  --primary-gradient: linear-gradient(145deg, #2b2b2b, #616161);
+.light{
+--primary-color: #ff014f;
+--primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
+}
+.dark{
+  --primary-color: #ff014f;
+  --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
+}
 */
 
+/* test colors for future use
+
+  --primary-color: #2b2b2b;
+  --primary-gradient: linear-gradient(145deg, #2b2b2b, #616161); */
+
 .light {
-  --primary-color: #ff014f;
+  --primary-color: #2b2b2b;
+  --primary-gradient: linear-gradient(145deg, #2b2b2b, #616161);
+
   --secondary-color: #ecf0f3;
   --secondary-color-b: #e4e4e4;
   --placeholder: #c0c0c0;
-  --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #e2e8ec, #ffffff);
   --overlay-gradient: linear-gradient(160deg, #e2e8ec6e, #ffffff93);
   --blur-c: rgba(255, 255, 255, 0.5);
@@ -30,11 +40,12 @@ test colors for future use
   --transition: 0.2s;
 }
 .dark {
-  --primary-color: #ff014f;
+  --primary-color: #e3e3e3;
+  --primary-gradient: linear-gradient(145deg, #797979, #cacaca);
+
   --secondary-color: #212428;
   --secondary-color-b: #2e2e2e;
   --placeholder: #858585;
-  --primary-gradient: linear-gradient(145deg, #ff014f, #d11414);
   --button-gradient: linear-gradient(145deg, #1e2024, #23272b);
   --overlay-gradient: linear-gradient(160deg, #1e202493, #23272b);
   --blur-c: rgba(32, 32, 32, 0.5);

@@ -30,6 +30,10 @@
   font-family: var(--ff);
   color: var(--light-text-c);
 }
+.Footer .logo g {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
+}
 @media screen and (max-width: 840px) {
   .Footer {
     padding: 2rem 3rem 1rem 3rem;

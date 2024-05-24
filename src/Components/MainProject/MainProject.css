@@ -3,12 +3,19 @@
 }
 .MainProject .main-title {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 .MainProject .main-title .penIcon {
   width: 8rem;
   right: 0;
   top: -40%;
   position: absolute;
+}
+.MainProject .main-title .year {
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 .MainProject .button {
   margin-bottom: 1rem;
@@ -95,6 +102,9 @@
 }
 
 @media screen and (max-width: 550px) {
+  .MainProject .main-title .penIcon {
+    display: none;
+  }
   .MainProject .button {
     width: auto;
   }
