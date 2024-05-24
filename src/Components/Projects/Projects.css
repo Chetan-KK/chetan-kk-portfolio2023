@@ -2,14 +2,80 @@
   margin: 5vw;
   text-align: center;
 }
-.projects {
+
+.Projects .inputWrapper {
+  width: fit-content;
+  margin: auto;
+  align-items: flex-end;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Projects .input {
+  color: var(--light-text-c);
+  z-index: 1;
+  width: calc(50vw + 10rem);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  box-shadow: var(--shadow);
+  border: none;
+  background-image: var(--button-gradient);
+  border-radius: 5px;
+  font-family: var(--ff);
+  transition: var(--transition);
+}
+
+.Projects .tip {
+  color: var(--primary-color);
+  font-family: var(--ff);
+  font-weight: 600;
+  transform: translate(-10px, 10px);
+  font-size: 0.8rem;
+  transition: var(--transition);
+}
+.Projects .hide {
+  transform: translate(-50px, 50px);
+  opacity: 0;
+}
+
+.Projects .input:hover {
+  box-shadow: 0 0 50px -10px var(--primary-color);
+}
+
+.Projects .filter-buttons {
+  justify-content: center;
+  margin: 3rem 0;
+  opacity: 0.5;
+  pointer-events: none;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: -1;
+}
+.Projects .filter-buttons::before {
+  content: "Currently filter buttons are not available";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--light-text-c);
+  background-color: var(--secondary-color);
+  padding: 0.3rem 0.9rem;
+  box-shadow: var(--shadow);
+  border-radius: 100px;
+  border: 2px solid var(--border-c);
+  z-index: 1;
+  font-family: var(--ff);
+}
+
+.projects-list {
   margin-top: 3rem;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 3rem;
 }
 
-.projects .Project {
+.projects-list .Project {
   background-color: var(--secondary-color);
   min-width: 18rem;
   width: 20rem;
@@ -20,26 +86,26 @@
   padding: 2rem;
   transition: var(--transition);
 }
-.projects .Project .starIcon {
+.projects-list .Project .starIcon {
   width: 5rem;
   right: 0;
   z-index: -99;
   top: 0;
   transition: var(--transition);
 }
-.projects .Project:hover .starIcon {
+.projects-list .Project:hover .starIcon {
   width: 5rem;
   rotate: 10deg;
   right: -30%;
   top: -30%;
   animation: floating 3s infinite ease-in-out;
 }
-.projects .Project:hover {
+.projects-list .Project:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 0 2px var(--primary-color),
     0 0 130px -50px var(--primary-color);
 }
-.projects .Project .update {
+.projects-list .Project .update {
   color: var(--light-text-c);
   font-size: 0.8rem;
   width: max-content;
@@ -49,7 +115,7 @@
   font-family: var(--ff);
   margin-bottom: 0.8rem;
 }
-.projects .Project .placeholder {
+.projects-list .Project .placeholder {
   height: 100%;
   position: absolute;
   top: 0;
@@ -57,75 +123,89 @@
   width: 100%;
   border-radius: 10px;
 }
-.projects .Project .projectImg {
+.projects-list .Project .projectImg {
   width: 15rem;
   height: 9rem;
   border-radius: 5px;
   transition: var(--transition);
 }
-.projects .Project .projectImg:hover {
+.projects-list .Project .projectImg:hover {
   box-shadow: 0 0 130px -50px var(--primary-color);
 }
-.projects .Project .title {
+.projects-list .Project .title {
   justify-content: space-between;
   font-family: var(--ff);
   margin: 2rem 0 0 0;
   position: relative;
 }
-.projects .Project .title .name {
+.projects-list .Project .title .name {
   text-align: left;
 }
-.projects .Project .title .name {
+.projects-list .Project .title .name {
   color: var(--primary-color);
   font-weight: 500;
 }
-.projects .Project .title .year {
+.projects-list .Project .title .year {
   color: var(--text-c-link);
   width: 4.5rem;
   font-size: 0.8rem;
 }
-.projects .Project .desc {
+.projects-list .Project .desc {
   margin: 2rem 0 3rem 0;
   text-align: left;
 }
-.projects .Project .desc a {
+.projects-list .Project .desc a {
   font-size: 0.7rem;
   color: var(--light-text-c);
   font-family: var(--ff);
 }
-.projects .Project .button {
+.projects-list .Project .button {
   padding: 0.7rem 1.4rem;
   z-index: 1;
 }
-.projects .Project .git {
+.projects-list .Project .git {
   padding: 0.7rem 1rem;
 }
+
+@media screen and (max-width: 720px) {
+  .Projects .filter-buttons .button {
+    width: 43vw;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+  }
+  .Projects .filter-buttons {
+    justify-content: center;
+    margin: 1.5rem 0 1rem 0;
+    gap: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
-  .projects .Project .starIcon {
+  .projects-list .Project .starIcon {
     right: 40%;
   }
-  .projects .Project:hover .starIcon {
+  .projects-list .Project:hover .starIcon {
     width: 3rem;
     rotate: 10deg;
     right: 10% !important;
     top: -50% !important;
     animation: floating 3s infinite ease-in-out;
   }
-  .projects .Project {
+  .projects-list .Project {
     width: 80vw;
     padding: 2rem 1rem;
     margin: 0;
   }
-  .projects .Project .projectImg {
+  .projects-list .Project .projectImg {
     width: 85%;
     height: auto;
   }
 }
 @media screen and (max-width: 400px) {
-  .projects .Project .starIcon {
+  .projects-list .Project .starIcon {
     right: 10%;
   }
-  .projects .Project:hover .starIcon {
+  .projects-list .Project:hover .starIcon {
     right: 10%;
     top: -20%;
   }
