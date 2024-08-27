@@ -14,9 +14,13 @@ function MainLoading() {
   return (
     <>
       <div
-        className={`MainLoading loadingBack flex ${loading ? "" : "none"}`}
+        className={`MainLoading loadingBack flex`}
+        style={{ transform: loading ? "" : "translateY(-100%)" }}
       ></div>
-      <div className={`MainLoading flex ${loading ? "" : "none"}`}>
+      <div
+        className={`MainLoading flex`}
+        style={{ transform: loading ? "" : "translateY(-100%)" }}
+      >
         <div className="loader flex">
           <div className="inner-loader"></div>
         </div>
