@@ -44,7 +44,7 @@ function Project(props) {
             glareBorderRadius="5px"
           >
             <img src={starIcon} alt="" className="imgIcon starIcon" />
-            <Link to={`/${props.id}`} className="imgWrapper">
+            <Link to={`/${props.title}`} className="imgWrapper">
               <div className={imgLoaded ? "placeholder" : ""}></div>
               <img
                 src={props.imgSrc}
@@ -55,13 +55,13 @@ function Project(props) {
             </Link>
           </Tilt>
           <div className="title flex">
-            <Link to={`/${props.id}`} className="link">
+            <Link to={`/${props.title}`} className="link">
               <div className="name">{props.title}</div>
             </Link>
             <div className="year">({props.year})</div>
           </div>
           <div className="desc">
-            <Link to={`/${props.id}`}>
+            <Link to={`/${props.title}`}>
               {props.desc.slice(0, 100)} <b>read more...</b>
             </Link>
           </div>
