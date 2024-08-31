@@ -21,8 +21,6 @@ function MainProject() {
   const getProjects = async () => {
     const allProjects = await fetchProjects();
 
-    // setProject(allProjects[ProjectId.id]);
-    // console.log(allProjects.filter((project) => project.title === ProjectId));
     const project = allProjects.find(
       (project) => project.title === ProjectId.id
     );
