@@ -32,7 +32,7 @@
 .Skills .skills-row {
   gap: 4rem;
   margin: 2rem 0;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 .Skills .skills-row .row-1,
 .Skills .skills-row .row-2 {

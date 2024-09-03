@@ -58,15 +58,19 @@ function Hero(props) {
               {animTitle ? (
                 <>
                   {animTitle.split("").map((char, i) => (
-                    <div
+                    <span
                       key={i}
                       onMouseEnter={handleHoverTextEnter}
                       onMouseLeave={handleHoverTextLeave}
                       className="anim_Title-Char"
                       title="Isn't it cool 😃"
                     >
-                      {char}
-                    </div>
+                      {char == " " ? (
+                        <span style={{ margin: "6px" }}></span>
+                      ) : (
+                        char
+                      )}
+                    </span>
                   ))}
                 </>
               ) : (

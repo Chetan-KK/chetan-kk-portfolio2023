@@ -14,7 +14,9 @@ function Projects(props) {
   const [filterd, setFilterd] = useState([]);
 
   const getProjects = async () => {
-    setProjects(await fetchProjects());
+    const allProjects = await fetchProjects();
+
+    setProjects(allProjects);
   };
 
   useEffect(() => {
@@ -42,6 +44,7 @@ function Projects(props) {
     setInputFilledCount(searchText.length);
 
     if (searchText.length > 0) {
+      //add filter by stack here
       let filterd = projects.filter((text) =>
         text.title.toLowerCase().includes(searchText.toLowerCase())
       );
@@ -115,6 +118,7 @@ function Projects(props) {
                   imgSrc={project.imgSrc}
                   title={project.title}
                   desc={project.desc}
+                  stack={project.stack}
                   link={project.link}
                   gitLink={project.gitLink}
                   year={project.year}
@@ -131,6 +135,7 @@ function Projects(props) {
                 imgSrc={project.imgSrc}
                 title={project.title}
                 desc={project.desc}
+                stack={project.stack}
                 link={project.link}
                 gitLink={project.gitLink}
                 year={project.year}

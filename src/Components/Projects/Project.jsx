@@ -64,6 +64,11 @@ function Project(props) {
             <Link to={`/${props.title}`}>
               {props.desc.slice(0, 100)} <b>read more...</b>
             </Link>
+            <div className="flex stack">
+              {props.stack.map((stack) => (
+                <span className="update stackLang">{stack}</span>
+              ))}
+            </div>
           </div>
           <div className="buttons">
             <a
