@@ -13,6 +13,7 @@ import { ThemeContext } from "../../Context/ThemeContex";
 import fireIcon from "/iconsImg/fire.png";
 import fetchInfo from "../../Utils/GetInfo";
 import Img from "../Img/Img";
+import MaxWidthWrapper from "../MaxWidthWrapper/MaxWidthWrapper";
 
 function Hero(props) {
   const { mode } = useContext(ThemeContext);
@@ -48,7 +49,7 @@ function Hero(props) {
   };
 
   return (
-    <div className="Hero flex" id="hero">
+    <MaxWidthWrapper className="Hero flex" id="hero">
       <div className="left">
         <div className="heading">Welcome</div>
         <div className="main-titles">
@@ -148,7 +149,7 @@ function Hero(props) {
           </div>
         </Tilt>
       </div>
-    </div>
+    </MaxWidthWrapper>
   );
 }
 

@@ -44,10 +44,20 @@ function Projects(props) {
     setInputFilledCount(searchText.length);
 
     if (searchText.length > 0) {
-      //add filter by stack here
-      let filterd = projects.filter((text) =>
-        text.title.toLowerCase().includes(searchText.toLowerCase())
-      );
+      let filterd = projects.filter((project) => {
+        let text = searchText.toLowerCase();
+
+        let titleFound = project.title.toLowerCase().includes(text);
+
+        let filterd = project.stack.filter((stack) =>
+          stack.toLowerCase().includes(text)
+        );
+
+        return filterd.length > 0 || titleFound;
+      });
+
+      console.log(filterd);
+
       setFilterd(filterd);
     } else {
       if (searchText.length === 0) {
@@ -63,7 +73,7 @@ function Projects(props) {
         <b>Here's some of my projects</b>
       </div>
 
-      <div className="filter-buttons flex">
+      {/* <div className="filter-buttons flex">
         <div className="button" onClick={handleProjects}>
           All
         </div>
@@ -79,7 +89,7 @@ function Projects(props) {
         <div className="button" onClick={handleProjects}>
           In development
         </div>
-      </div>
+      </div> */}
       <Tilt
         tiltMaxAngleX={5}
         tiltMaxAngleY={5}
@@ -101,7 +111,7 @@ function Projects(props) {
           onChange={(e) => {
             setSearchText(e.target.value);
           }}
-          placeholder="Search by technologies..."
+          placeholder="Search by project name or technologies..."
           required
         />
       </Tilt>
@@ -109,7 +119,9 @@ function Projects(props) {
         {projects ? (
           searchText.length > 0 ? (
             filterd.length === 0 ? (
-              <div className="sub-heading">No Projects found</div>
+              <div className="sub-heading">
+                No Projects found with string "{searchText}"
+              </div>
             ) : (
               filterd.map((project, i) => (
                 <Project

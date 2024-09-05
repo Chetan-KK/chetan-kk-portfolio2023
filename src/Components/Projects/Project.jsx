@@ -66,7 +66,9 @@ function Project(props) {
             </Link>
             <div className="flex stack">
               {props.stack.map((stack) => (
-                <span className="update stackLang">{stack}</span>
+                <span className="update stackLang" key={stack}>
+                  {stack}
+                </span>
               ))}
             </div>
           </div>

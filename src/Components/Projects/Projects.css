@@ -46,26 +46,8 @@
 .Projects .filter-buttons {
   justify-content: center;
   margin: 3rem 0;
-  opacity: 0.5;
-  pointer-events: none;
   flex-wrap: wrap;
   position: relative;
-  z-index: -1;
-}
-.Projects .filter-buttons::before {
-  content: "Currently filter buttons are not available";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--light-text-c);
-  background-color: var(--secondary-color);
-  padding: 0.3rem 0.9rem;
-  box-shadow: var(--shadow);
-  border-radius: 100px;
-  border: 2px solid var(--border-c);
-  z-index: 1;
-  font-family: var(--ff);
 }
 
 .projects-list {
@@ -163,6 +145,9 @@
 .projects-list .Project .desc .stack .stackLang {
   margin: 0;
   font-size: 0.7rem;
+}
+.projects-list .Project .desc .stack .stackLang.active {
+  background-color: var(--secondary-color-b);
 }
 .projects-list .Project .desc a {
   font-size: 0.7rem;
