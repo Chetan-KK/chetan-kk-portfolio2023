@@ -56,8 +56,6 @@ function Projects(props) {
         return filterd.length > 0 || titleFound;
       });
 
-      console.log(filterd);
-
       setFilterd(filterd);
     } else {
       if (searchText.length === 0) {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./MaxWidthWrapper.css";
 
-// used in hero only
+// never used
 const MaxWidthWrapper = ({ children, className, ...props }) => {
   return (
     <div className={`${className} MaxWidthWrapper`} {...props}>
