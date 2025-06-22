@@ -49,12 +49,18 @@
 .Hero .right .myImg {
   height: 30rem;
   width: 25rem;
+  object-fit: cover;
+  filter: grayscale(10%);
   box-shadow: var(--shadow);
+}
+.Hero .right .myImg {
+  filter: grayscale(0%);
 }
 .Hero .right .fireIcon {
   height: 8rem;
-  left: -15%;
-  bottom: 5%;
+  left: -25%;
+  z-index: 1;
+  bottom: -10%;
   position: absolute;
   animation: floating 3s infinite ease-in-out;
 }
